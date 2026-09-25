@@ -1,0 +1,22 @@
+# Data generation & processing
+pandas>=2.2
+numpy>=1.26
+faker>=25.0
+pyyaml>=6.0
+python-dotenv>=1.0
+
+# Database (SQL Server)
+sqlalchemy>=2.0
+pyodbc>=5.1
+
+# Excel
+openpyxl>=3.1
+xlsxwriter>=3.2
+
+# Analytics
+scikit-learn>=1.5
+statsmodels>=0.14
+matplotlib>=3.9
+
+# Notebooks
+jupyter>=1.0

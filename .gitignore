@@ -1,0 +1,31 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.ipynb_checkpoints/
+
+# Secrets & local config
+.env
+config/config.yaml
+
+# Data: generated core-banking extracts are large -> rebuild with python/generator
+data/raw/*
+data/staging/*
+!data/raw/.gitkeep
+!data/staging/.gitkeep
+
+# Excel temp files
+~$*
+*.tmp
+
+# Power BI (PBIP) local/cache files
+powerbi/**/.pbi/localSettings.json
+powerbi/**/.pbi/cache.abf
+*.pbix.bak
+
+# OS / editors
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
