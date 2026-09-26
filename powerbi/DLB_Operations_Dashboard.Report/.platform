@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Report",
+    "displayName": "DLB_Operations_Dashboard"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "dff50bec-8a04-4c35-90ea-5f5bddef5d45"
+  }
+}
