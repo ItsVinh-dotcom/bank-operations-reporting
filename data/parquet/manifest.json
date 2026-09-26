@@ -1,0 +1,3807 @@
+{
+"eod/20260803/DLB_ATM_DAILY_20260803.csv": {
+"entity": "ATM_DAILY",
+"rows": 183,
+"trailer": "TRL|183|20260803"
+},
+"eod/20260803/DLB_BRANCH_20260803.csv": {
+"entity": "BRANCH",
+"rows": 0,
+"trailer": "TRL|0|20260803"
+},
+"eod/20260803/DLB_BRANCH_OPS_20260803.csv": {
+"entity": "BRANCH_OPS",
+"rows": 40,
+"trailer": "TRL|40|20260803"
+},
+"eod/20260803/DLB_CARD_20260803.csv": {
+"entity": "CARD",
+"rows": 30,
+"trailer": "TRL|30|20260803"
+},
+"eod/20260803/DLB_CARD_TXN_20260803.csv": {
+"entity": "CARD_TXN",
+"rows": 933,
+"trailer": "TRL|933|20260803"
+},
+"eod/20260803/DLB_CASA_ACCOUNT_20260803.csv": {
+"entity": "CASA_ACCOUNT",
+"rows": 11,
+"trailer": "TRL|11|20260803"
+},
+"eod/20260803/DLB_CASA_BALANCE_20260803.csv": {
+"entity": "CASA_BALANCE",
+"rows": 0,
+"trailer": "TRL|0|20260803"
+},
+"eod/20260803/DLB_COMPLAINT_20260803.csv": {
+"entity": "COMPLAINT",
+"rows": 15,
+"trailer": "TRL|15|20260803"
+},
+"eod/20260803/DLB_CUSTOMER_20260803.csv": {
+"entity": "CUSTOMER",
+"rows": 11,
+"trailer": "TRL|11|20260803"
+},
+"eod/20260803/DLB_GL_BALANCE_20260803.csv": {
+"entity": "GL_BALANCE",
+"rows": 0,
+"trailer": "TRL|0|20260803"
+},
+"eod/20260803/DLB_LOAN_20260803.csv": {
+"entity": "LOAN",
+"rows": 11,
+"trailer": "TRL|11|20260803"
+},
+"eod/20260803/DLB_LOAN_BALANCE_20260803.csv": {
+"entity": "LOAN_BALANCE",
+"rows": 0,
+"trailer": "TRL|0|20260803"
+},
+"eod/20260803/DLB_TD_BALANCE_20260803.csv": {
+"entity": "TD_BALANCE",
+"rows": 0,
+"trailer": "TRL|0|20260803"
+},
+"eod/20260803/DLB_TERM_DEPOSIT_20260803.csv": {
+"entity": "TERM_DEPOSIT",
+"rows": 64,
+"trailer": "TRL|64|20260803"
+},
+"eod/20260803/DLB_TXN_20260803.csv": {
+"entity": "TXN",
+"rows": 8279,
+"trailer": "TRL|8279|20260803"
+},
+"eod/20260804/DLB_ATM_DAILY_20260804.csv": {
+"entity": "ATM_DAILY",
+"rows": 61,
+"trailer": "TRL|61|20260804"
+},
+"eod/20260804/DLB_BRANCH_20260804.csv": {
+"entity": "BRANCH",
+"rows": 0,
+"trailer": "TRL|0|20260804"
+},
+"eod/20260804/DLB_BRANCH_OPS_20260804.csv": {
+"entity": "BRANCH_OPS",
+"rows": 40,
+"trailer": "TRL|40|20260804"
+},
+"eod/20260804/DLB_CARD_20260804.csv": {
+"entity": "CARD",
+"rows": 21,
+"trailer": "TRL|21|20260804"
+},
+"eod/20260804/DLB_CARD_TXN_20260804.csv": {
+"entity": "CARD_TXN",
+"rows": 349,
+"trailer": "TRL|349|20260804"
+},
+"eod/20260804/DLB_CASA_ACCOUNT_20260804.csv": {
+"entity": "CASA_ACCOUNT",
+"rows": 9,
+"trailer": "TRL|9|20260804"
+},
+"eod/20260804/DLB_CASA_BALANCE_20260804.csv": {
+"entity": "CASA_BALANCE",
+"rows": 0,
+"trailer": "TRL|0|20260804"
+},
+"eod/20260804/DLB_COMPLAINT_20260804.csv": {
+"entity": "COMPLAINT",
+"rows": 13,
+"trailer": "TRL|13|20260804"
+},
+"eod/20260804/DLB_CUSTOMER_20260804.csv": {
+"entity": "CUSTOMER",
+"rows": 9,
+"trailer": "TRL|9|20260804"
+},
+"eod/20260804/DLB_GL_BALANCE_20260804.csv": {
+"entity": "GL_BALANCE",
+"rows": 0,
+"trailer": "TRL|0|20260804"
+},
+"eod/20260804/DLB_LOAN_20260804.csv": {
+"entity": "LOAN",
+"rows": 14,
+"trailer": "TRL|14|20260804"
+},
+"eod/20260804/DLB_LOAN_BALANCE_20260804.csv": {
+"entity": "LOAN_BALANCE",
+"rows": 0,
+"trailer": "TRL|0|20260804"
+},
+"eod/20260804/DLB_TD_BALANCE_20260804.csv": {
+"entity": "TD_BALANCE",
+"rows": 0,
+"trailer": "TRL|0|20260804"
+},
+"eod/20260804/DLB_TERM_DEPOSIT_20260804.csv": {
+"entity": "TERM_DEPOSIT",
+"rows": 24,
+"trailer": "TRL|24|20260804"
+},
+"eod/20260804/DLB_TXN_20260804.csv": {
+"entity": "TXN",
+"rows": 3620,
+"trailer": "TRL|3620|20260804"
+},
+"eod/20260805/DLB_ATM_DAILY_20260805.csv": {
+"entity": "ATM_DAILY",
+"rows": 61,
+"trailer": "TRL|61|20260805"
+},
+"eod/20260805/DLB_BRANCH_20260805.csv": {
+"entity": "BRANCH",
+"rows": 0,
+"trailer": "TRL|0|20260805"
+},
+"eod/20260805/DLB_BRANCH_OPS_20260805.csv": {
+"entity": "BRANCH_OPS",
+"rows": 40,
+"trailer": "TRL|40|20260805"
+},
+"eod/20260805/DLB_CARD_20260805.csv": {
+"entity": "CARD",
+"rows": 14,
+"trailer": "TRL|14|20260805"
+},
+"eod/20260805/DLB_CARD_TXN_20260805.csv": {
+"entity": "CARD_TXN",
+"rows": 438,
+"trailer": "TRL|438|20260805"
+},
+"eod/20260805/DLB_CASA_ACCOUNT_20260805.csv": {
+"entity": "CASA_ACCOUNT",
+"rows": 8,
+"trailer": "TRL|8|20260805"
+},
+"eod/20260805/DLB_CASA_BALANCE_20260805.csv": {
+"entity": "CASA_BALANCE",
+"rows": 0,
+"trailer": "TRL|0|20260805"
+},
+"eod/20260805/DLB_COMPLAINT_20260805.csv": {
+"entity": "COMPLAINT",
+"rows": 4,
+"trailer": "TRL|4|20260805"
+},
+"eod/20260805/DLB_CUSTOMER_20260805.csv": {
+"entity": "CUSTOMER",
+"rows": 10,
+"trailer": "TRL|10|20260805"
+},
+"eod/20260805/DLB_GL_BALANCE_20260805.csv": {
+"entity": "GL_BALANCE",
+"rows": 0,
+"trailer": "TRL|0|20260805"
+},
+"eod/20260805/DLB_LOAN_20260805.csv": {
+"entity": "LOAN",
+"rows": 11,
+"trailer": "TRL|11|20260805"
+},
+"eod/20260805/DLB_LOAN_BALANCE_20260805.csv": {
+"entity": "LOAN_BALANCE",
+"rows": 0,
+"trailer": "TRL|0|20260805"
+},
+"eod/20260805/DLB_TD_BALANCE_20260805.csv": {
+"entity": "TD_BALANCE",
+"rows": 0,
+"trailer": "TRL|0|20260805"
+},
+"eod/20260805/DLB_TERM_DEPOSIT_20260805.csv": {
+"entity": "TERM_DEPOSIT",
+"rows": 28,
+"trailer": "TRL|28|20260805"
+},
+"eod/20260805/DLB_TXN_20260805.csv": {
+"entity": "TXN",
+"rows": 5423,
+"trailer": "TRL|5423|20260805"
+},
+"eod/20260806/DLB_ATM_DAILY_20260806.csv": {
+"entity": "ATM_DAILY",
+"rows": 61,
+"trailer": "TRL|61|20260806"
+},
+"eod/20260806/DLB_BRANCH_20260806.csv": {
+"entity": "BRANCH",
+"rows": 0,
+"trailer": "TRL|0|20260806"
+},
+"eod/20260806/DLB_BRANCH_OPS_20260806.csv": {
+"entity": "BRANCH_OPS",
+"rows": 40,
+"trailer": "TRL|40|20260806"
+},
+"eod/20260806/DLB_CARD_20260806.csv": {
+"entity": "CARD",
+"rows": 20,
+"trailer": "TRL|20|20260806"
+},
+"eod/20260806/DLB_CARD_TXN_20260806.csv": {
+"entity": "CARD_TXN",
+"rows": 465,
+"trailer": "TRL|465|20260806"
+},
+"eod/20260806/DLB_CASA_ACCOUNT_20260806.csv": {
+"entity": "CASA_ACCOUNT",
+"rows": 11,
+"trailer": "TRL|11|20260806"
+},
+"eod/20260806/DLB_CASA_BALANCE_20260806.csv": {
+"entity": "CASA_BALANCE",
+"rows": 0,
+"trailer": "TRL|0|20260806"
+},
+"eod/20260806/DLB_COMPLAINT_20260806.csv": {
+"entity": "COMPLAINT",
+"rows": 11,
+"trailer": "TRL|11|20260806"
+},
+"eod/20260806/DLB_CUSTOMER_20260806.csv": {
+"entity": "CUSTOMER",
+"rows": 10,
+"trailer": "TRL|10|20260806"
+},
+"eod/20260806/DLB_GL_BALANCE_20260806.csv": {
+"entity": "GL_BALANCE",
+"rows": 0,
+"trailer": "TRL|0|20260806"
+},
+"eod/20260806/DLB_LOAN_20260806.csv": {
+"entity": "LOAN",
+"rows": 9,
+"trailer": "TRL|9|20260806"
+},
+"eod/20260806/DLB_LOAN_BALANCE_20260806.csv": {
+"entity": "LOAN_BALANCE",
+"rows": 0,
+"trailer": "TRL|0|20260806"
+},
+"eod/20260806/DLB_TD_BALANCE_20260806.csv": {
+"entity": "TD_BALANCE",
+"rows": 0,
+"trailer": "TRL|0|20260806"
+},
+"eod/20260806/DLB_TERM_DEPOSIT_20260806.csv": {
+"entity": "TERM_DEPOSIT",
+"rows": 36,
+"trailer": "TRL|36|20260806"
+},
+"eod/20260806/DLB_TXN_20260806.csv": {
+"entity": "TXN",
+"rows": 5482,
+"trailer": "TRL|5482|20260806"
+},
+"eod/20260807/DLB_ATM_DAILY_20260807.csv": {
+"entity": "ATM_DAILY",
+"rows": 61,
+"trailer": "TRL|61|20260807"
+},
+"eod/20260807/DLB_BRANCH_20260807.csv": {
+"entity": "BRANCH",
+"rows": 0,
+"trailer": "TRL|0|20260807"
+},
+"eod/20260807/DLB_BRANCH_OPS_20260807.csv": {
+"entity": "BRANCH_OPS",
+"rows": 40,
+"trailer": "TRL|40|20260807"
+},
+"eod/20260807/DLB_CARD_20260807.csv": {
+"entity": "CARD",
+"rows": 12,
+"trailer": "TRL|12|20260807"
+},
+"eod/20260807/DLB_CARD_TXN_20260807.csv": {
+"entity": "CARD_TXN",
+"rows": 444,
+"trailer": "TRL|444|20260807"
+},
+"eod/20260807/DLB_CASA_ACCOUNT_20260807.csv": {
+"entity": "CASA_ACCOUNT",
+"rows": 6,
+"trailer": "TRL|6|20260807"
+},
+"eod/20260807/DLB_CASA_BALANCE_20260807.csv": {
+"entity": "CASA_BALANCE",
+"rows": 0,
+"trailer": "TRL|0|20260807"
+},
+"eod/20260807/DLB_COMPLAINT_20260807.csv": {
+"entity": "COMPLAINT",
+"rows": 6,
+"trailer": "TRL|6|20260807"
+},
+"eod/20260807/DLB_CUSTOMER_20260807.csv": {
+"entity": "CUSTOMER",
+"rows": 5,
+"trailer": "TRL|5|20260807"
+},
+"eod/20260807/DLB_GL_BALANCE_20260807.csv": {
+"entity": "GL_BALANCE",
+"rows": 0,
+"trailer": "TRL|0|20260807"
+},
+"eod/20260807/DLB_LOAN_20260807.csv": {
+"entity": "LOAN",
+"rows": 11,
+"trailer": "TRL|11|20260807"
+},
+"eod/20260807/DLB_LOAN_BALANCE_20260807.csv": {
+"entity": "LOAN_BALANCE",
+"rows": 0,
+"trailer": "TRL|0|20260807"
+},
+"eod/20260807/DLB_TD_BALANCE_20260807.csv": {
+"entity": "TD_BALANCE",
+"rows": 0,
+"trailer": "TRL|0|20260807"
+},
+"eod/20260807/DLB_TERM_DEPOSIT_20260807.csv": {
+"entity": "TERM_DEPOSIT",
+"rows": 20,
+"trailer": "TRL|20|20260807"
+},
+"eod/20260807/DLB_TXN_20260807.csv": {
+"entity": "TXN",
+"rows": 5408,
+"trailer": "TRL|5408|20260807"
+},
+"eod/20260810/DLB_ATM_DAILY_20260810.csv": {
+"entity": "ATM_DAILY",
+"rows": 183,
+"trailer": "TRL|183|20260810"
+},
+"eod/20260810/DLB_BRANCH_20260810.csv": {
+"entity": "BRANCH",
+"rows": 0,
+"trailer": "TRL|0|20260810"
+},
+"eod/20260810/DLB_BRANCH_OPS_20260810.csv": {
+"entity": "BRANCH_OPS",
+"rows": 40,
+"trailer": "TRL|40|20260810"
+},
+"eod/20260810/DLB_CARD_20260810.csv": {
+"entity": "CARD",
+"rows": 42,
+"trailer": "TRL|42|20260810"
+},
+"eod/20260810/DLB_CARD_TXN_20260810.csv": {
+"entity": "CARD_TXN",
+"rows": 1153,
+"trailer": "TRL|1153|20260810"
+},
+"eod/20260810/DLB_CASA_ACCOUNT_20260810.csv": {
+"entity": "CASA_ACCOUNT",
+"rows": 22,
+"trailer": "TRL|22|20260810"
+},
+"eod/20260810/DLB_CASA_BALANCE_20260810.csv": {
+"entity": "CASA_BALANCE",
+"rows": 0,
+"trailer": "TRL|0|20260810"
+},
+"eod/20260810/DLB_COMPLAINT_20260810.csv": {
+"entity": "COMPLAINT",
+"rows": 13,
+"trailer": "TRL|13|20260810"
+},
+"eod/20260810/DLB_CUSTOMER_20260810.csv": {
+"entity": "CUSTOMER",
+"rows": 23,
+"trailer": "TRL|23|20260810"
+},
+"eod/20260810/DLB_GL_BALANCE_20260810.csv": {
+"entity": "GL_BALANCE",
+"rows": 0,
+"trailer": "TRL|0|20260810"
+},
+"eod/20260810/DLB_LOAN_20260810.csv": {
+"entity": "LOAN",
+"rows": 11,
+"trailer": "TRL|11|20260810"
+},
+"eod/20260810/DLB_LOAN_BALANCE_20260810.csv": {
+"entity": "LOAN_BALANCE",
+"rows": 0,
+"trailer": "TRL|0|20260810"
+},
+"eod/20260810/DLB_TD_BALANCE_20260810.csv": {
+"entity": "TD_BALANCE",
+"rows": 0,
+"trailer": "TRL|0|20260810"
+},
+"eod/20260810/DLB_TERM_DEPOSIT_20260810.csv": {
+"entity": "TERM_DEPOSIT",
+"rows": 48,
+"trailer": "TRL|48|20260810"
+},
+"eod/20260810/DLB_TXN_20260810.csv": {
+"entity": "TXN",
+"rows": 11515,
+"trailer": "TRL|11515|20260810"
+},
+"eod/20260811/DLB_ATM_DAILY_20260811.csv": {
+"entity": "ATM_DAILY",
+"rows": 61,
+"trailer": "TRL|61|20260811"
+},
+"eod/20260811/DLB_BRANCH_20260811.csv": {
+"entity": "BRANCH",
+"rows": 0,
+"trailer": "TRL|0|20260811"
+},
+"eod/20260811/DLB_BRANCH_OPS_20260811.csv": {
+"entity": "BRANCH_OPS",
+"rows": 40,
+"trailer": "TRL|40|20260811"
+},
+"eod/20260811/DLB_CARD_20260811.csv": {
+"entity": "CARD",
+"rows": 20,
+"trailer": "TRL|20|20260811"
+},
+"eod/20260811/DLB_CARD_TXN_20260811.csv": {
+"entity": "CARD_TXN",
+"rows": 353,
+"trailer": "TRL|353|20260811"
+},
+"eod/20260811/DLB_CASA_ACCOUNT_20260811.csv": {
+"entity": "CASA_ACCOUNT",
+"rows": 8,
+"trailer": "TRL|8|20260811"
+},
+"eod/20260811/DLB_CASA_BALANCE_20260811.csv": {
+"entity": "CASA_BALANCE",
+"rows": 0,
+"trailer": "TRL|0|20260811"
+},
+"eod/20260811/DLB_COMPLAINT_20260811.csv": {
+"entity": "COMPLAINT",
+"rows": 10,
+"trailer": "TRL|10|20260811"
+},
+"eod/20260811/DLB_CUSTOMER_20260811.csv": {
+"entity": "CUSTOMER",
+"rows": 13,
+"trailer": "TRL|13|20260811"
+},
+"eod/20260811/DLB_GL_BALANCE_20260811.csv": {
+"entity": "GL_BALANCE",
+"rows": 0,
+"trailer": "TRL|0|20260811"
+},
+"eod/20260811/DLB_LOAN_20260811.csv": {
+"entity": "LOAN",
+"rows": 9,
+"trailer": "TRL|9|20260811"
+},
+"eod/20260811/DLB_LOAN_BALANCE_20260811.csv": {
+"entity": "LOAN_BALANCE",
+"rows": 0,
+"trailer": "TRL|0|20260811"
+},
+"eod/20260811/DLB_TD_BALANCE_20260811.csv": {
+"entity": "TD_BALANCE",
+"rows": 0,
+"trailer": "TRL|0|20260811"
+},
+"eod/20260811/DLB_TERM_DEPOSIT_20260811.csv": {
+"entity": "TERM_DEPOSIT",
+"rows": 19,
+"trailer": "TRL|19|20260811"
+},
+"eod/20260811/DLB_TXN_20260811.csv": {
+"entity": "TXN",
+"rows": 3704,
+"trailer": "TRL|3704|20260811"
+},
+"eod/20260812/DLB_ATM_DAILY_20260812.csv": {
+"entity": "ATM_DAILY",
+"rows": 61,
+"trailer": "TRL|61|20260812"
+},
+"eod/20260812/DLB_BRANCH_20260812.csv": {
+"entity": "BRANCH",
+"rows": 0,
+"trailer": "TRL|0|20260812"
+},
+"eod/20260812/DLB_BRANCH_OPS_20260812.csv": {
+"entity": "BRANCH_OPS",
+"rows": 40,
+"trailer": "TRL|40|20260812"
+},
+"eod/20260812/DLB_CARD_20260812.csv": {
+"entity": "CARD",
+"rows": 16,
+"trailer": "TRL|16|20260812"
+},
+"eod/20260812/DLB_CARD_TXN_20260812.csv": {
+"entity": "CARD_TXN",
+"rows": 354,
+"trailer": "TRL|354|20260812"
+},
+"eod/20260812/DLB_CASA_ACCOUNT_20260812.csv": {
+"entity": "CASA_ACCOUNT",
+"rows": 10,
+"trailer": "TRL|10|20260812"
+},
+"eod/20260812/DLB_CASA_BALANCE_20260812.csv": {
+"entity": "CASA_BALANCE",
+"rows": 0,
+"trailer": "TRL|0|20260812"
+},
+"eod/20260812/DLB_COMPLAINT_20260812.csv": {
+"entity": "COMPLAINT",
+"rows": 10,
+"trailer": "TRL|10|20260812"
+},
+"eod/20260812/DLB_CUSTOMER_20260812.csv": {
+"entity": "CUSTOMER",
+"rows": 9,
+"trailer": "TRL|9|20260812"
+},
+"eod/20260812/DLB_GL_BALANCE_20260812.csv": {
+"entity": "GL_BALANCE",
+"rows": 0,
+"trailer": "TRL|0|20260812"
+},
+"eod/20260812/DLB_LOAN_20260812.csv": {
+"entity": "LOAN",
+"rows": 8,
+"trailer": "TRL|8|20260812"
+},
+"eod/20260812/DLB_LOAN_BALANCE_20260812.csv": {
+"entity": "LOAN_BALANCE",
+"rows": 0,
+"trailer": "TRL|0|20260812"
+},
+"eod/20260812/DLB_TD_BALANCE_20260812.csv": {
+"entity": "TD_BALANCE",
+"rows": 0,
+"trailer": "TRL|0|20260812"
+},
+"eod/20260812/DLB_TERM_DEPOSIT_20260812.csv": {
+"entity": "TERM_DEPOSIT",
+"rows": 20,
+"trailer": "TRL|20|20260812"
+},
+"eod/20260812/DLB_TXN_20260812.csv": {
+"entity": "TXN",
+"rows": 3693,
+"trailer": "TRL|3693|20260812"
+},
+"eod/20260813/DLB_ATM_DAILY_20260813.csv": {
+"entity": "ATM_DAILY",
+"rows": 61,
+"trailer": "TRL|61|20260813"
+},
+"eod/20260813/DLB_BRANCH_20260813.csv": {
+"entity": "BRANCH",
+"rows": 0,
+"trailer": "TRL|0|20260813"
+},
+"eod/20260813/DLB_BRANCH_OPS_20260813.csv": {
+"entity": "BRANCH_OPS",
+"rows": 40,
+"trailer": "TRL|40|20260813"
+},
+"eod/20260813/DLB_CARD_20260813.csv": {
+"entity": "CARD",
+"rows": 15,
+"trailer": "TRL|15|20260813"
+},
+"eod/20260813/DLB_CARD_TXN_20260813.csv": {
+"entity": "CARD_TXN",
+"rows": 330,
+"trailer": "TRL|330|20260813"
+},
+"eod/20260813/DLB_CASA_ACCOUNT_20260813.csv": {
+"entity": "CASA_ACCOUNT",
+"rows": 8,
+"trailer": "TRL|8|20260813"
+},
+"eod/20260813/DLB_CASA_BALANCE_20260813.csv": {
+"entity": "CASA_BALANCE",
+"rows": 0,
+"trailer": "TRL|0|20260813"
+},
+"eod/20260813/DLB_COMPLAINT_20260813.csv": {
+"entity": "COMPLAINT",
+"rows": 7,
+"trailer": "TRL|7|20260813"
+},
+"eod/20260813/DLB_CUSTOMER_20260813.csv": {
+"entity": "CUSTOMER",
+"rows": 11,
+"trailer": "TRL|11|20260813"
+},
+"eod/20260813/DLB_GL_BALANCE_20260813.csv": {
+"entity": "GL_BALANCE",
+"rows": 0,
+"trailer": "TRL|0|20260813"
+},
+"eod/20260813/DLB_LOAN_20260813.csv": {
+"entity": "LOAN",
+"rows": 14,
+"trailer": "TRL|14|20260813"
+},
+"eod/20260813/DLB_LOAN_BALANCE_20260813.csv": {
+"entity": "LOAN_BALANCE",
+"rows": 0,
+"trailer": "TRL|0|20260813"
+},
+"eod/20260813/DLB_TD_BALANCE_20260813.csv": {
+"entity": "TD_BALANCE",
+"rows": 0,
+"trailer": "TRL|0|20260813"
+},
+"eod/20260813/DLB_TERM_DEPOSIT_20260813.csv": {
+"entity": "TERM_DEPOSIT",
+"rows": 21,
+"trailer": "TRL|21|20260813"
+},
+"eod/20260813/DLB_TXN_20260813.csv": {
+"entity": "TXN",
+"rows": 3629,
+"trailer": "TRL|3629|20260813"
+},
+"eod/20260814/DLB_ATM_DAILY_20260814.csv": {
+"entity": "ATM_DAILY",
+"rows": 61,
+"trailer": "TRL|61|20260814"
+},
+"eod/20260814/DLB_BRANCH_20260814.csv": {
+"entity": "BRANCH",
+"rows": 0,
+"trailer": "TRL|0|20260814"
+},
+"eod/20260814/DLB_BRANCH_OPS_20260814.csv": {
+"entity": "BRANCH_OPS",
+"rows": 40,
+"trailer": "TRL|40|20260814"
+},
+"eod/20260814/DLB_CARD_20260814.csv": {
+"entity": "CARD",
+"rows": 20,
+"trailer": "TRL|20|20260814"
+},
+"eod/20260814/DLB_CARD_TXN_20260814.csv": {
+"entity": "CARD_TXN",
+"rows": 381,
+"trailer": "TRL|381|20260814"
+},
+"eod/20260814/DLB_CASA_ACCOUNT_20260814.csv": {
+"entity": "CASA_ACCOUNT",
+"rows": 8,
+"trailer": "TRL|8|20260814"
+},
+"eod/20260814/DLB_CASA_BALANCE_20260814.csv": {
+"entity": "CASA_BALANCE",
+"rows": 0,
+"trailer": "TRL|0|20260814"
+},
+"eod/20260814/DLB_COMPLAINT_20260814.csv": {
+"entity": "COMPLAINT",
+"rows": 13,
+"trailer": "TRL|13|20260814"
+},
+"eod/20260814/DLB_CUSTOMER_20260814.csv": {
+"entity": "CUSTOMER",
+"rows": 11,
+"trailer": "TRL|11|20260814"
+},
+"eod/20260814/DLB_GL_BALANCE_20260814.csv": {
+"entity": "GL_BALANCE",
+"rows": 0,
+"trailer": "TRL|0|20260814"
+},
+"eod/20260814/DLB_LOAN_20260814.csv": {
+"entity": "LOAN",
+"rows": 15,
+"trailer": "TRL|15|20260814"
+},
+"eod/20260814/DLB_LOAN_BALANCE_20260814.csv": {
+"entity": "LOAN_BALANCE",
+"rows": 0,
+"trailer": "TRL|0|20260814"
+},
+"eod/20260814/DLB_TD_BALANCE_20260814.csv": {
+"entity": "TD_BALANCE",
+"rows": 0,
+"trailer": "TRL|0|20260814"
+},
+"eod/20260814/DLB_TERM_DEPOSIT_20260814.csv": {
+"entity": "TERM_DEPOSIT",
+"rows": 19,
+"trailer": "TRL|19|20260814"
+},
+"eod/20260814/DLB_TXN_20260814.csv": {
+"entity": "TXN",
+"rows": 3737,
+"trailer": "TRL|3737|20260814"
+},
+"eod/20260817/DLB_ATM_DAILY_20260817.csv": {
+"entity": "ATM_DAILY",
+"rows": 183,
+"trailer": "TRL|183|20260817"
+},
+"eod/20260817/DLB_BRANCH_20260817.csv": {
+"entity": "BRANCH",
+"rows": 0,
+"trailer": "TRL|0|20260817"
+},
+"eod/20260817/DLB_BRANCH_OPS_20260817.csv": {
+"entity": "BRANCH_OPS",
+"rows": 40,
+"trailer": "TRL|40|20260817"
+},
+"eod/20260817/DLB_CARD_20260817.csv": {
+"entity": "CARD",
+"rows": 44,
+"trailer": "TRL|44|20260817"
+},
+"eod/20260817/DLB_CARD_TXN_20260817.csv": {
+"entity": "CARD_TXN",
+"rows": 937,
+"trailer": "TRL|937|20260817"
+},
+"eod/20260817/DLB_CASA_ACCOUNT_20260817.csv": {
+"entity": "CASA_ACCOUNT",
+"rows": 22,
+"trailer": "TRL|22|20260817"
+},
+"eod/20260817/DLB_CASA_BALANCE_20260817.csv": {
+"entity": "CASA_BALANCE",
+"rows": 0,
+"trailer": "TRL|0|20260817"
+},
+"eod/20260817/DLB_COMPLAINT_20260817.csv": {
+"entity": "COMPLAINT",
+"rows": 5,
+"trailer": "TRL|5|20260817"
+},
+"eod/20260817/DLB_CUSTOMER_20260817.csv": {
+"entity": "CUSTOMER",
+"rows": 21,
+"trailer": "TRL|21|20260817"
+},
+"eod/20260817/DLB_GL_BALANCE_20260817.csv": {
+"entity": "GL_BALANCE",
+"rows": 0,
+"trailer": "TRL|0|20260817"
+},
+"eod/20260817/DLB_LOAN_20260817.csv": {
+"entity": "LOAN",
+"rows": 11,
+"trailer": "TRL|11|20260817"
+},
+"eod/20260817/DLB_LOAN_BALANCE_20260817.csv": {
+"entity": "LOAN_BALANCE",
+"rows": 0,
+"trailer": "TRL|0|20260817"
+},
+"eod/20260817/DLB_TD_BALANCE_20260817.csv": {
+"entity": "TD_BALANCE",
+"rows": 0,
+"trailer": "TRL|0|20260817"
+},
+"eod/20260817/DLB_TERM_DEPOSIT_20260817.csv": {
+"entity": "TERM_DEPOSIT",
+"rows": 33,
+"trailer": "TRL|33|20260817"
+},
+"eod/20260817/DLB_TXN_20260817.csv": {
+"entity": "TXN",
+"rows": 8464,
+"trailer": "TRL|8464|20260817"
+},
+"eod/20260818/DLB_ATM_DAILY_20260818.csv": {
+"entity": "ATM_DAILY",
+"rows": 61,
+"trailer": "TRL|61|20260818"
+},
+"eod/20260818/DLB_BRANCH_20260818.csv": {
+"entity": "BRANCH",
+"rows": 0,
+"trailer": "TRL|0|20260818"
+},
+"eod/20260818/DLB_BRANCH_OPS_20260818.csv": {
+"entity": "BRANCH_OPS",
+"rows": 40,
+"trailer": "TRL|40|20260818"
+},
+"eod/20260818/DLB_CARD_20260818.csv": {
+"entity": "CARD",
+"rows": 12,
+"trailer": "TRL|12|20260818"
+},
+"eod/20260818/DLB_CARD_TXN_20260818.csv": {
+"entity": "CARD_TXN",
+"rows": 383,
+"trailer": "TRL|383|20260818"
+},
+"eod/20260818/DLB_CASA_ACCOUNT_20260818.csv": {
+"entity": "CASA_ACCOUNT",
+"rows": 6,
+"trailer": "TRL|6|20260818"
+},
+"eod/20260818/DLB_CASA_BALANCE_20260818.csv": {
+"entity": "CASA_BALANCE",
+"rows": 0,
+"trailer": "TRL|0|20260818"
+},
+"eod/20260818/DLB_COMPLAINT_20260818.csv": {
+"entity": "COMPLAINT",
+"rows": 5,
+"trailer": "TRL|5|20260818"
+},
+"eod/20260818/DLB_CUSTOMER_20260818.csv": {
+"entity": "CUSTOMER",
+"rows": 9,
+"trailer": "TRL|9|20260818"
+},
+"eod/20260818/DLB_GL_BALANCE_20260818.csv": {
+"entity": "GL_BALANCE",
+"rows": 0,
+"trailer": "TRL|0|20260818"
+},
+"eod/20260818/DLB_LOAN_20260818.csv": {
+"entity": "LOAN",
+"rows": 9,
+"trailer": "TRL|9|20260818"
+},
+"eod/20260818/DLB_LOAN_BALANCE_20260818.csv": {
+"entity": "LOAN_BALANCE",
+"rows": 0,
+"trailer": "TRL|0|20260818"
+},
+"eod/20260818/DLB_TD_BALANCE_20260818.csv": {
+"entity": "TD_BALANCE",
+"rows": 0,
+"trailer": "TRL|0|20260818"
+},
+"eod/20260818/DLB_TERM_DEPOSIT_20260818.csv": {
+"entity": "TERM_DEPOSIT",
+"rows": 20,
+"trailer": "TRL|20|20260818"
+},
+"eod/20260818/DLB_TXN_20260818.csv": {
+"entity": "TXN",
+"rows": 3592,
+"trailer": "TRL|3592|20260818"
+},
+"eod/20260819/DLB_ATM_DAILY_20260819.csv": {
+"entity": "ATM_DAILY",
+"rows": 61,
+"trailer": "TRL|61|20260819"
+},
+"eod/20260819/DLB_BRANCH_20260819.csv": {
+"entity": "BRANCH",
+"rows": 0,
+"trailer": "TRL|0|20260819"
+},
+"eod/20260819/DLB_BRANCH_OPS_20260819.csv": {
+"entity": "BRANCH_OPS",
+"rows": 40,
+"trailer": "TRL|40|20260819"
+},
+"eod/20260819/DLB_CARD_20260819.csv": {
+"entity": "CARD",
+"rows": 20,
+"trailer": "TRL|20|20260819"
+},
+"eod/20260819/DLB_CARD_TXN_20260819.csv": {
+"entity": "CARD_TXN",
+"rows": 371,
+"trailer": "TRL|371|20260819"
+},
+"eod/20260819/DLB_CASA_ACCOUNT_20260819.csv": {
+"entity": "CASA_ACCOUNT",
+"rows": 12,
+"trailer": "TRL|12|20260819"
+},
+"eod/20260819/DLB_CASA_BALANCE_20260819.csv": {
+"entity": "CASA_BALANCE",
+"rows": 0,
+"trailer": "TRL|0|20260819"
+},
+"eod/20260819/DLB_COMPLAINT_20260819.csv": {
+"entity": "COMPLAINT",
+"rows": 9,
+"trailer": "TRL|9|20260819"
+},
+"eod/20260819/DLB_CUSTOMER_20260819.csv": {
+"entity": "CUSTOMER",
+"rows": 14,
+"trailer": "TRL|14|20260819"
+},
+"eod/20260819/DLB_GL_BALANCE_20260819.csv": {
+"entity": "GL_BALANCE",
+"rows": 0,
+"trailer": "TRL|0|20260819"
+},
+"eod/20260819/DLB_LOAN_20260819.csv": {
+"entity": "LOAN",
+"rows": 16,
+"trailer": "TRL|16|20260819"
+},
+"eod/20260819/DLB_LOAN_BALANCE_20260819.csv": {
+"entity": "LOAN_BALANCE",
+"rows": 0,
+"trailer": "TRL|0|20260819"
+},
+"eod/20260819/DLB_TD_BALANCE_20260819.csv": {
+"entity": "TD_BALANCE",
+"rows": 0,
+"trailer": "TRL|0|20260819"
+},
+"eod/20260819/DLB_TERM_DEPOSIT_20260819.csv": {
+"entity": "TERM_DEPOSIT",
+"rows": 15,
+"trailer": "TRL|15|20260819"
+},
+"eod/20260819/DLB_TXN_20260819.csv": {
+"entity": "TXN",
+"rows": 3614,
+"trailer": "TRL|3651|20260819"
+},
+"eod/20260819/DLB_TXN_20260819_R1.csv": {
+"entity": "TXN",
+"rows": 3614,
+"trailer": "TRL|3614|20260819"
+},
+"eod/20260820/DLB_ATM_DAILY_20260820.csv": {
+"entity": "ATM_DAILY",
+"rows": 61,
+"trailer": "TRL|61|20260820"
+},
+"eod/20260820/DLB_BRANCH_20260820.csv": {
+"entity": "BRANCH",
+"rows": 0,
+"trailer": "TRL|0|20260820"
+},
+"eod/20260820/DLB_BRANCH_OPS_20260820.csv": {
+"entity": "BRANCH_OPS",
+"rows": 40,
+"trailer": "TRL|40|20260820"
+},
+"eod/20260820/DLB_CARD_20260820.csv": {
+"entity": "CARD",
+"rows": 18,
+"trailer": "TRL|18|20260820"
+},
+"eod/20260820/DLB_CARD_TXN_20260820.csv": {
+"entity": "CARD_TXN",
+"rows": 375,
+"trailer": "TRL|375|20260820"
+},
+"eod/20260820/DLB_CASA_ACCOUNT_20260820.csv": {
+"entity": "CASA_ACCOUNT",
+"rows": 10,
+"trailer": "TRL|10|20260820"
+},
+"eod/20260820/DLB_CASA_BALANCE_20260820.csv": {
+"entity": "CASA_BALANCE",
+"rows": 0,
+"trailer": "TRL|0|20260820"
+},
+"eod/20260820/DLB_COMPLAINT_20260820.csv": {
+"entity": "COMPLAINT",
+"rows": 6,
+"trailer": "TRL|6|20260820"
+},
+"eod/20260820/DLB_CUSTOMER_20260820.csv": {
+"entity": "CUSTOMER",
+"rows": 10,
+"trailer": "TRL|10|20260820"
+},
+"eod/20260820/DLB_GL_BALANCE_20260820.csv": {
+"entity": "GL_BALANCE",
+"rows": 0,
+"trailer": "TRL|0|20260820"
+},
+"eod/20260820/DLB_LOAN_20260820.csv": {
+"entity": "LOAN",
+"rows": 9,
+"trailer": "TRL|9|20260820"
+},
+"eod/20260820/DLB_LOAN_BALANCE_20260820.csv": {
+"entity": "LOAN_BALANCE",
+"rows": 0,
+"trailer": "TRL|0|20260820"
+},
+"eod/20260820/DLB_TD_BALANCE_20260820.csv": {
+"entity": "TD_BALANCE",
+"rows": 0,
+"trailer": "TRL|0|20260820"
+},
+"eod/20260820/DLB_TERM_DEPOSIT_20260820.csv": {
+"entity": "TERM_DEPOSIT",
+"rows": 14,
+"trailer": "TRL|14|20260820"
+},
+"eod/20260820/DLB_TXN_20260820.csv": {
+"entity": "TXN",
+"rows": 3624,
+"trailer": "TRL|3624|20260820"
+},
+"eod/20260821/DLB_ATM_DAILY_20260821.csv": {
+"entity": "ATM_DAILY",
+"rows": 61,
+"trailer": "TRL|61|20260821"
+},
+"eod/20260821/DLB_BRANCH_20260821.csv": {
+"entity": "BRANCH",
+"rows": 0,
+"trailer": "TRL|0|20260821"
+},
+"eod/20260821/DLB_BRANCH_OPS_20260821.csv": {
+"entity": "BRANCH_OPS",
+"rows": 40,
+"trailer": "TRL|40|20260821"
+},
+"eod/20260821/DLB_CARD_20260821.csv": {
+"entity": "CARD",
+"rows": 21,
+"trailer": "TRL|21|20260821"
+},
+"eod/20260821/DLB_CARD_TXN_20260821.csv": {
+"entity": "CARD_TXN",
+"rows": 368,
+"trailer": "TRL|368|20260821"
+},
+"eod/20260821/DLB_CASA_ACCOUNT_20260821.csv": {
+"entity": "CASA_ACCOUNT",
+"rows": 10,
+"trailer": "TRL|10|20260821"
+},
+"eod/20260821/DLB_CASA_BALANCE_20260821.csv": {
+"entity": "CASA_BALANCE",
+"rows": 0,
+"trailer": "TRL|0|20260821"
+},
+"eod/20260821/DLB_COMPLAINT_20260821.csv": {
+"entity": "COMPLAINT",
+"rows": 6,
+"trailer": "TRL|6|20260821"
+},
+"eod/20260821/DLB_CUSTOMER_20260821.csv": {
+"entity": "CUSTOMER",
+"rows": 9,
+"trailer": "TRL|9|20260821"
+},
+"eod/20260821/DLB_GL_BALANCE_20260821.csv": {
+"entity": "GL_BALANCE",
+"rows": 0,
+"trailer": "TRL|0|20260821"
+},
+"eod/20260821/DLB_LOAN_20260821.csv": {
+"entity": "LOAN",
+"rows": 7,
+"trailer": "TRL|7|20260821"
+},
+"eod/20260821/DLB_LOAN_BALANCE_20260821.csv": {
+"entity": "LOAN_BALANCE",
+"rows": 0,
+"trailer": "TRL|0|20260821"
+},
+"eod/20260821/DLB_TD_BALANCE_20260821.csv": {
+"entity": "TD_BALANCE",
+"rows": 0,
+"trailer": "TRL|0|20260821"
+},
+"eod/20260821/DLB_TERM_DEPOSIT_20260821.csv": {
+"entity": "TERM_DEPOSIT",
+"rows": 30,
+"trailer": "TRL|30|20260821"
+},
+"eod/20260821/DLB_TXN_20260821.csv": {
+"entity": "TXN",
+"rows": 3732,
+"trailer": "TRL|3732|20260821"
+},
+"eod/20260824/DLB_ATM_DAILY_20260824.csv": {
+"entity": "ATM_DAILY",
+"rows": 183,
+"trailer": "TRL|183|20260824"
+},
+"eod/20260824/DLB_BRANCH_20260824.csv": {
+"entity": "BRANCH",
+"rows": 0,
+"trailer": "TRL|0|20260824"
+},
+"eod/20260824/DLB_BRANCH_OPS_20260824.csv": {
+"entity": "BRANCH_OPS",
+"rows": 40,
+"trailer": "TRL|40|20260824"
+},
+"eod/20260824/DLB_CARD_20260824.csv": {
+"entity": "CARD",
+"rows": 33,
+"trailer": "TRL|33|20260824"
+},
+"eod/20260824/DLB_CARD_TXN_20260824.csv": {
+"entity": "CARD_TXN",
+"rows": 955,
+"trailer": "TRL|955|20260824"
+},
+"eod/20260824/DLB_CASA_ACCOUNT_20260824.csv": {
+"entity": "CASA_ACCOUNT",
+"rows": 17,
+"trailer": "TRL|17|20260824"
+},
+"eod/20260824/DLB_CASA_BALANCE_20260824.csv": {
+"entity": "CASA_BALANCE",
+"rows": 0,
+"trailer": "TRL|0|20260824"
+},
+"eod/20260824/DLB_COMPLAINT_20260824.csv": {
+"entity": "COMPLAINT",
+"rows": 15,
+"trailer": "TRL|15|20260824"
+},
+"eod/20260824/DLB_CUSTOMER_20260824.csv": {
+"entity": "CUSTOMER",
+"rows": 15,
+"trailer": "TRL|15|20260824"
+},
+"eod/20260824/DLB_GL_BALANCE_20260824.csv": {
+"entity": "GL_BALANCE",
+"rows": 0,
+"trailer": "TRL|0|20260824"
+},
+"eod/20260824/DLB_LOAN_20260824.csv": {
+"entity": "LOAN",
+"rows": 13,
+"trailer": "TRL|13|20260824"
+},
+"eod/20260824/DLB_LOAN_BALANCE_20260824.csv": {
+"entity": "LOAN_BALANCE",
+"rows": 0,
+"trailer": "TRL|0|20260824"
+},
+"eod/20260824/DLB_TD_BALANCE_20260824.csv": {
+"entity": "TD_BALANCE",
+"rows": 0,
+"trailer": "TRL|0|20260824"
+},
+"eod/20260824/DLB_TERM_DEPOSIT_20260824.csv": {
+"entity": "TERM_DEPOSIT",
+"rows": 71,
+"trailer": "TRL|71|20260824"
+},
+"eod/20260824/DLB_TXN_20260824.csv": {
+"entity": "TXN",
+"rows": 8566,
+"trailer": "TRL|8566|20260824"
+},
+"eod/20260825/DLB_ATM_DAILY_20260825.csv": {
+"entity": "ATM_DAILY",
+"rows": 61,
+"trailer": "TRL|61|20260825"
+},
+"eod/20260825/DLB_BRANCH_20260825.csv": {
+"entity": "BRANCH",
+"rows": 0,
+"trailer": "TRL|0|20260825"
+},
+"eod/20260825/DLB_BRANCH_OPS_20260825.csv": {
+"entity": "BRANCH_OPS",
+"rows": 40,
+"trailer": "TRL|40|20260825"
+},
+"eod/20260825/DLB_CARD_20260825.csv": {
+"entity": "CARD",
+"rows": 29,
+"trailer": "TRL|29|20260825"
+},
+"eod/20260825/DLB_CARD_TXN_20260825.csv": {
+"entity": "CARD_TXN",
+"rows": 369,
+"trailer": "TRL|369|20260825"
+},
+"eod/20260825/DLB_CASA_ACCOUNT_20260825.csv": {
+"entity": "CASA_ACCOUNT",
+"rows": 14,
+"trailer": "TRL|14|20260825"
+},
+"eod/20260825/DLB_CASA_BALANCE_20260825.csv": {
+"entity": "CASA_BALANCE",
+"rows": 0,
+"trailer": "TRL|0|20260825"
+},
+"eod/20260825/DLB_COMPLAINT_20260825.csv": {
+"entity": "COMPLAINT",
+"rows": 12,
+"trailer": "TRL|12|20260825"
+},
+"eod/20260825/DLB_CUSTOMER_20260825.csv": {
+"entity": "CUSTOMER",
+"rows": 12,
+"trailer": "TRL|12|20260825"
+},
+"eod/20260825/DLB_GL_BALANCE_20260825.csv": {
+"entity": "GL_BALANCE",
+"rows": 0,
+"trailer": "TRL|0|20260825"
+},
+"eod/20260825/DLB_LOAN_20260825.csv": {
+"entity": "LOAN",
+"rows": 19,
+"trailer": "TRL|19|20260825"
+},
+"eod/20260825/DLB_LOAN_BALANCE_20260825.csv": {
+"entity": "LOAN_BALANCE",
+"rows": 0,
+"trailer": "TRL|0|20260825"
+},
+"eod/20260825/DLB_TD_BALANCE_20260825.csv": {
+"entity": "TD_BALANCE",
+"rows": 0,
+"trailer": "TRL|0|20260825"
+},
+"eod/20260825/DLB_TERM_DEPOSIT_20260825.csv": {
+"entity": "TERM_DEPOSIT",
+"rows": 30,
+"trailer": "TRL|30|20260825"
+},
+"eod/20260825/DLB_TXN_20260825.csv": {
+"entity": "TXN",
+"rows": 3617,
+"trailer": "TRL|3617|20260825"
+},
+"eod/20260826/DLB_ATM_DAILY_20260826.csv": {
+"entity": "ATM_DAILY",
+"rows": 61,
+"trailer": "TRL|61|20260826"
+},
+"eod/20260826/DLB_BRANCH_20260826.csv": {
+"entity": "BRANCH",
+"rows": 0,
+"trailer": "TRL|0|20260826"
+},
+"eod/20260826/DLB_BRANCH_OPS_20260826.csv": {
+"entity": "BRANCH_OPS",
+"rows": 40,
+"trailer": "TRL|40|20260826"
+},
+"eod/20260826/DLB_CARD_20260826.csv": {
+"entity": "CARD",
+"rows": 19,
+"trailer": "TRL|19|20260826"
+},
+"eod/20260826/DLB_CARD_TXN_20260826.csv": {
+"entity": "CARD_TXN",
+"rows": 415,
+"trailer": "TRL|415|20260826"
+},
+"eod/20260826/DLB_CASA_ACCOUNT_20260826.csv": {
+"entity": "CASA_ACCOUNT",
+"rows": 11,
+"trailer": "TRL|11|20260826"
+},
+"eod/20260826/DLB_CASA_BALANCE_20260826.csv": {
+"entity": "CASA_BALANCE",
+"rows": 0,
+"trailer": "TRL|0|20260826"
+},
+"eod/20260826/DLB_COMPLAINT_20260826.csv": {
+"entity": "COMPLAINT",
+"rows": 12,
+"trailer": "TRL|12|20260826"
+},
+"eod/20260826/DLB_CUSTOMER_20260826.csv": {
+"entity": "CUSTOMER",
+"rows": 11,
+"trailer": "TRL|11|20260826"
+},
+"eod/20260826/DLB_GL_BALANCE_20260826.csv": {
+"entity": "GL_BALANCE",
+"rows": 0,
+"trailer": "TRL|0|20260826"
+},
+"eod/20260826/DLB_LOAN_20260826.csv": {
+"entity": "LOAN",
+"rows": 11,
+"trailer": "TRL|11|20260826"
+},
+"eod/20260826/DLB_LOAN_BALANCE_20260826.csv": {
+"entity": "LOAN_BALANCE",
+"rows": 0,
+"trailer": "TRL|0|20260826"
+},
+"eod/20260826/DLB_TD_BALANCE_20260826.csv": {
+"entity": "TD_BALANCE",
+"rows": 0,
+"trailer": "TRL|0|20260826"
+},
+"eod/20260826/DLB_TERM_DEPOSIT_20260826.csv": {
+"entity": "TERM_DEPOSIT",
+"rows": 30,
+"trailer": "TRL|30|20260826"
+},
+"eod/20260826/DLB_TXN_20260826.csv": {
+"entity": "TXN",
+"rows": 3774,
+"trailer": "TRL|3774|20260826"
+},
+"eod/20260827/DLB_ATM_DAILY_20260827.csv": {
+"entity": "ATM_DAILY",
+"rows": 61,
+"trailer": "TRL|61|20260827"
+},
+"eod/20260827/DLB_BRANCH_20260827.csv": {
+"entity": "BRANCH",
+"rows": 0,
+"trailer": "TRL|0|20260827"
+},
+"eod/20260827/DLB_BRANCH_OPS_20260827.csv": {
+"entity": "BRANCH_OPS",
+"rows": 40,
+"trailer": "TRL|40|20260827"
+},
+"eod/20260827/DLB_CARD_20260827.csv": {
+"entity": "CARD",
+"rows": 16,
+"trailer": "TRL|16|20260827"
+},
+"eod/20260827/DLB_CARD_TXN_20260827.csv": {
+"entity": "CARD_TXN",
+"rows": 357,
+"trailer": "TRL|357|20260827"
+},
+"eod/20260827/DLB_CASA_ACCOUNT_20260827.csv": {
+"entity": "CASA_ACCOUNT",
+"rows": 6,
+"trailer": "TRL|6|20260827"
+},
+"eod/20260827/DLB_CASA_BALANCE_20260827.csv": {
+"entity": "CASA_BALANCE",
+"rows": 0,
+"trailer": "TRL|0|20260827"
+},
+"eod/20260827/DLB_COMPLAINT_20260827.csv": {
+"entity": "COMPLAINT",
+"rows": 14,
+"trailer": "TRL|14|20260827"
+},
+"eod/20260827/DLB_CUSTOMER_20260827.csv": {
+"entity": "CUSTOMER",
+"rows": 6,
+"trailer": "TRL|6|20260827"
+},
+"eod/20260827/DLB_GL_BALANCE_20260827.csv": {
+"entity": "GL_BALANCE",
+"rows": 0,
+"trailer": "TRL|0|20260827"
+},
+"eod/20260827/DLB_LOAN_20260827.csv": {
+"entity": "LOAN",
+"rows": 15,
+"trailer": "TRL|15|20260827"
+},
+"eod/20260827/DLB_LOAN_BALANCE_20260827.csv": {
+"entity": "LOAN_BALANCE",
+"rows": 0,
+"trailer": "TRL|0|20260827"
+},
+"eod/20260827/DLB_TD_BALANCE_20260827.csv": {
+"entity": "TD_BALANCE",
+"rows": 0,
+"trailer": "TRL|0|20260827"
+},
+"eod/20260827/DLB_TERM_DEPOSIT_20260827.csv": {
+"entity": "TERM_DEPOSIT",
+"rows": 27,
+"trailer": "TRL|27|20260827"
+},
+"eod/20260827/DLB_TXN_20260827.csv": {
+"entity": "TXN",
+"rows": 3625,
+"trailer": "TRL|3625|20260827"
+},
+"eod/20260828/DLB_ATM_DAILY_20260828.csv": {
+"entity": "ATM_DAILY",
+"rows": 61,
+"trailer": "TRL|61|20260828"
+},
+"eod/20260828/DLB_BRANCH_20260828.csv": {
+"entity": "BRANCH",
+"rows": 0,
+"trailer": "TRL|0|20260828"
+},
+"eod/20260828/DLB_BRANCH_OPS_20260828.csv": {
+"entity": "BRANCH_OPS",
+"rows": 40,
+"trailer": "TRL|40|20260828"
+},
+"eod/20260828/DLB_CARD_20260828.csv": {
+"entity": "CARD",
+"rows": 19,
+"trailer": "TRL|19|20260828"
+},
+"eod/20260828/DLB_CARD_TXN_20260828.csv": {
+"entity": "CARD_TXN",
+"rows": 372,
+"trailer": "TRL|372|20260828"
+},
+"eod/20260828/DLB_CASA_ACCOUNT_20260828.csv": {
+"entity": "CASA_ACCOUNT",
+"rows": 8,
+"trailer": "TRL|8|20260828"
+},
+"eod/20260828/DLB_CASA_BALANCE_20260828.csv": {
+"entity": "CASA_BALANCE",
+"rows": 0,
+"trailer": "TRL|0|20260828"
+},
+"eod/20260828/DLB_COMPLAINT_20260828.csv": {
+"entity": "COMPLAINT",
+"rows": 12,
+"trailer": "TRL|12|20260828"
+},
+"eod/20260828/DLB_CUSTOMER_20260828.csv": {
+"entity": "CUSTOMER",
+"rows": 7,
+"trailer": "TRL|7|20260828"
+},
+"eod/20260828/DLB_GL_BALANCE_20260828.csv": {
+"entity": "GL_BALANCE",
+"rows": 0,
+"trailer": "TRL|0|20260828"
+},
+"eod/20260828/DLB_LOAN_20260828.csv": {
+"entity": "LOAN",
+"rows": 13,
+"trailer": "TRL|13|20260828"
+},
+"eod/20260828/DLB_LOAN_BALANCE_20260828.csv": {
+"entity": "LOAN_BALANCE",
+"rows": 0,
+"trailer": "TRL|0|20260828"
+},
+"eod/20260828/DLB_TD_BALANCE_20260828.csv": {
+"entity": "TD_BALANCE",
+"rows": 0,
+"trailer": "TRL|0|20260828"
+},
+"eod/20260828/DLB_TERM_DEPOSIT_20260828.csv": {
+"entity": "TERM_DEPOSIT",
+"rows": 31,
+"trailer": "TRL|31|20260828"
+},
+"eod/20260828/DLB_TXN_20260828.csv": {
+"entity": "TXN",
+"rows": 3644,
+"trailer": "TRL|3644|20260828"
+},
+"eod/20260831/DLB_ATM_DAILY_20260831.csv": {
+"entity": "ATM_DAILY",
+"rows": 183,
+"trailer": "TRL|183|20260831"
+},
+"eod/20260831/DLB_BRANCH_20260831.csv": {
+"entity": "BRANCH",
+"rows": 0,
+"trailer": "TRL|0|20260831"
+},
+"eod/20260831/DLB_BRANCH_OPS_20260831.csv": {
+"entity": "BRANCH_OPS",
+"rows": 40,
+"trailer": "TRL|40|20260831"
+},
+"eod/20260831/DLB_CARD_20260831.csv": {
+"entity": "CARD",
+"rows": 31,
+"trailer": "TRL|31|20260831"
+},
+"eod/20260831/DLB_CARD_TXN_20260831.csv": {
+"entity": "CARD_TXN",
+"rows": 977,
+"trailer": "TRL|977|20260831"
+},
+"eod/20260831/DLB_CASA_ACCOUNT_20260831.csv": {
+"entity": "CASA_ACCOUNT",
+"rows": 16,
+"trailer": "TRL|16|20260831"
+},
+"eod/20260831/DLB_CASA_BALANCE_20260831.csv": {
+"entity": "CASA_BALANCE",
+"rows": 12420,
+"trailer": "TRL|12420|20260831"
+},
+"eod/20260831/DLB_COMPLAINT_20260831.csv": {
+"entity": "COMPLAINT",
+"rows": 15,
+"trailer": "TRL|15|20260831"
+},
+"eod/20260831/DLB_CUSTOMER_20260831.csv": {
+"entity": "CUSTOMER",
+"rows": 13,
+"trailer": "TRL|13|20260831"
+},
+"eod/20260831/DLB_GL_BALANCE_20260831.csv": {
+"entity": "GL_BALANCE",
+"rows": 396,
+"trailer": "TRL|396|20260831"
+},
+"eod/20260831/DLB_LOAN_20260831.csv": {
+"entity": "LOAN",
+"rows": 18,
+"trailer": "TRL|18|20260831"
+},
+"eod/20260831/DLB_LOAN_BALANCE_20260831.csv": {
+"entity": "LOAN_BALANCE",
+"rows": 5301,
+"trailer": "TRL|5301|20260831"
+},
+"eod/20260831/DLB_TD_BALANCE_20260831.csv": {
+"entity": "TD_BALANCE",
+"rows": 2489,
+"trailer": "TRL|2489|20260831"
+},
+"eod/20260831/DLB_TERM_DEPOSIT_20260831.csv": {
+"entity": "TERM_DEPOSIT",
+"rows": 31,
+"trailer": "TRL|31|20260831"
+},
+"eod/20260831/DLB_TXN_20260831.csv": {
+"entity": "TXN",
+"rows": 30469,
+"trailer": "TRL|30469|20260831"
+},
+"history/202312/DLB_BRANCH_20231231.csv": {
+"entity": "BRANCH",
+"rows": 40,
+"trailer": "TRL|40|20231231"
+},
+"history/202312/DLB_CARD_20231231.csv": {
+"entity": "CARD",
+"rows": 17091,
+"trailer": "TRL|17091|20231231"
+},
+"history/202312/DLB_CASA_ACCOUNT_20231231.csv": {
+"entity": "CASA_ACCOUNT",
+"rows": 9273,
+"trailer": "TRL|9273|20231231"
+},
+"history/202312/DLB_CASA_BALANCE_20231231.csv": {
+"entity": "CASA_BALANCE",
+"rows": 9273,
+"trailer": "TRL|9273|20231231"
+},
+"history/202312/DLB_CUSTOMER_20231231.csv": {
+"entity": "CUSTOMER",
+"rows": 8543,
+"trailer": "TRL|8543|20231231"
+},
+"history/202312/DLB_GL_BALANCE_20231231.csv": {
+"entity": "GL_BALANCE",
+"rows": 274,
+"trailer": "TRL|274|20231231"
+},
+"history/202312/DLB_LOAN_20231231.csv": {
+"entity": "LOAN",
+"rows": 2871,
+"trailer": "TRL|2871|20231231"
+},
+"history/202312/DLB_LOAN_BALANCE_20231231.csv": {
+"entity": "LOAN_BALANCE",
+"rows": 2734,
+"trailer": "TRL|2734|20231231"
+},
+"history/202312/DLB_TD_BALANCE_20231231.csv": {
+"entity": "TD_BALANCE",
+"rows": 1806,
+"trailer": "TRL|1806|20231231"
+},
+"history/202312/DLB_TERM_DEPOSIT_20231231.csv": {
+"entity": "TERM_DEPOSIT",
+"rows": 1806,
+"trailer": "TRL|1806|20231231"
+},
+"history/202401/DLB_ATM_DAILY_20240131.csv": {
+"entity": "ATM_DAILY",
+"rows": 1891,
+"trailer": "TRL|1891|20240131"
+},
+"history/202401/DLB_BRANCH_OPS_20240131.csv": {
+"entity": "BRANCH_OPS",
+"rows": 880,
+"trailer": "TRL|880|20240131"
+},
+"history/202401/DLB_CARD_20240131.csv": {
+"entity": "CARD",
+"rows": 325,
+"trailer": "TRL|325|20240131"
+},
+"history/202401/DLB_CARD_TXN_20240131.csv": {
+"entity": "CARD_TXN",
+"rows": 4009,
+"trailer": "TRL|4009|20240131"
+},
+"history/202401/DLB_CASA_ACCOUNT_20240131.csv": {
+"entity": "CASA_ACCOUNT",
+"rows": 183,
+"trailer": "TRL|183|20240131"
+},
+"history/202401/DLB_CASA_BALANCE_20240131.csv": {
+"entity": "CASA_BALANCE",
+"rows": 9414,
+"trailer": "TRL|9414|20240131"
+},
+"history/202401/DLB_COMPLAINT_20240131.csv": {
+"entity": "COMPLAINT",
+"rows": 160,
+"trailer": "TRL|160|20240131"
+},
+"history/202401/DLB_CUSTOMER_20240131.csv": {
+"entity": "CUSTOMER",
+"rows": 157,
+"trailer": "TRL|157|20240131"
+},
+"history/202401/DLB_GL_BALANCE_20240131.csv": {
+"entity": "GL_BALANCE",
+"rows": 285,
+"trailer": "TRL|285|20240131"
+},
+"history/202401/DLB_LOAN_20240131.csv": {
+"entity": "LOAN",
+"rows": 298,
+"trailer": "TRL|298|20240131"
+},
+"history/202401/DLB_LOAN_BALANCE_20240131.csv": {
+"entity": "LOAN_BALANCE",
+"rows": 2916,
+"trailer": "TRL|2916|20240131"
+},
+"history/202401/DLB_TD_BALANCE_20240131.csv": {
+"entity": "TD_BALANCE",
+"rows": 1881,
+"trailer": "TRL|1881|20240131"
+},
+"history/202401/DLB_TERM_DEPOSIT_20240131.csv": {
+"entity": "TERM_DEPOSIT",
+"rows": 797,
+"trailer": "TRL|797|20240131"
+},
+"history/202401/DLB_TXN_20240131.csv": {
+"entity": "TXN",
+"rows": 103027,
+"trailer": "TRL|103027|20240131"
+},
+"history/202402/DLB_ATM_DAILY_20240229.csv": {
+"entity": "ATM_DAILY",
+"rows": 1769,
+"trailer": "TRL|1769|20240229"
+},
+"history/202402/DLB_BRANCH_OPS_20240229.csv": {
+"entity": "BRANCH_OPS",
+"rows": 640,
+"trailer": "TRL|640|20240229"
+},
+"history/202402/DLB_CARD_20240229.csv": {
+"entity": "CARD",
+"rows": 247,
+"trailer": "TRL|247|20240229"
+},
+"history/202402/DLB_CARD_TXN_20240229.csv": {
+"entity": "CARD_TXN",
+"rows": 5254,
+"trailer": "TRL|5254|20240229"
+},
+"history/202402/DLB_CASA_ACCOUNT_20240229.csv": {
+"entity": "CASA_ACCOUNT",
+"rows": 125,
+"trailer": "TRL|125|20240229"
+},
+"history/202402/DLB_CASA_BALANCE_20240229.csv": {
+"entity": "CASA_BALANCE",
+"rows": 9468,
+"trailer": "TRL|9468|20240229"
+},
+"history/202402/DLB_COMPLAINT_20240229.csv": {
+"entity": "COMPLAINT",
+"rows": 127,
+"trailer": "TRL|127|20240229"
+},
+"history/202402/DLB_CUSTOMER_20240229.csv": {
+"entity": "CUSTOMER",
+"rows": 101,
+"trailer": "TRL|101|20240229"
+},
+"history/202402/DLB_GL_BALANCE_20240229.csv": {
+"entity": "GL_BALANCE",
+"rows": 296,
+"trailer": "TRL|296|20240229"
+},
+"history/202402/DLB_LOAN_20240229.csv": {
+"entity": "LOAN",
+"rows": 246,
+"trailer": "TRL|246|20240229"
+},
+"history/202402/DLB_LOAN_BALANCE_20240229.csv": {
+"entity": "LOAN_BALANCE",
+"rows": 2959,
+"trailer": "TRL|2959|20240229"
+},
+"history/202402/DLB_TD_BALANCE_20240229.csv": {
+"entity": "TD_BALANCE",
+"rows": 1851,
+"trailer": "TRL|1851|20240229"
+},
+"history/202402/DLB_TERM_DEPOSIT_20240229.csv": {
+"entity": "TERM_DEPOSIT",
+"rows": 662,
+"trailer": "TRL|662|20240229"
+},
+"history/202402/DLB_TXN_20240229.csv": {
+"entity": "TXN",
+"rows": 103720,
+"trailer": "TRL|103720|20240229"
+},
+"history/202403/DLB_ATM_DAILY_20240331.csv": {
+"entity": "ATM_DAILY",
+"rows": 1769,
+"trailer": "TRL|1769|20240331"
+},
+"history/202403/DLB_BRANCH_OPS_20240331.csv": {
+"entity": "BRANCH_OPS",
+"rows": 840,
+"trailer": "TRL|840|20240331"
+},
+"history/202403/DLB_CARD_20240331.csv": {
+"entity": "CARD",
+"rows": 387,
+"trailer": "TRL|387|20240331"
+},
+"history/202403/DLB_CARD_TXN_20240331.csv": {
+"entity": "CARD_TXN",
+"rows": 4068,
+"trailer": "TRL|4068|20240331"
+},
+"history/202403/DLB_CASA_ACCOUNT_20240331.csv": {
+"entity": "CASA_ACCOUNT",
+"rows": 193,
+"trailer": "TRL|193|20240331"
+},
+"history/202403/DLB_CASA_BALANCE_20240331.csv": {
+"entity": "CASA_BALANCE",
+"rows": 9591,
+"trailer": "TRL|9591|20240331"
+},
+"history/202403/DLB_COMPLAINT_20240331.csv": {
+"entity": "COMPLAINT",
+"rows": 152,
+"trailer": "TRL|152|20240331"
+},
+"history/202403/DLB_CUSTOMER_20240331.csv": {
+"entity": "CUSTOMER",
+"rows": 178,
+"trailer": "TRL|178|20240331"
+},
+"history/202403/DLB_GL_BALANCE_20240331.csv": {
+"entity": "GL_BALANCE",
+"rows": 308,
+"trailer": "TRL|308|20240331"
+},
+"history/202403/DLB_LOAN_20240331.csv": {
+"entity": "LOAN",
+"rows": 299,
+"trailer": "TRL|299|20240331"
+},
+"history/202403/DLB_LOAN_BALANCE_20240331.csv": {
+"entity": "LOAN_BALANCE",
+"rows": 3038,
+"trailer": "TRL|3038|20240331"
+},
+"history/202403/DLB_TD_BALANCE_20240331.csv": {
+"entity": "TD_BALANCE",
+"rows": 1926,
+"trailer": "TRL|1926|20240331"
+},
+"history/202403/DLB_TERM_DEPOSIT_20240331.csv": {
+"entity": "TERM_DEPOSIT",
+"rows": 723,
+"trailer": "TRL|723|20240331"
+},
+"history/202403/DLB_TXN_20240331.csv": {
+"entity": "TXN",
+"rows": 80921,
+"trailer": "TRL|80921|20240331"
+},
+"history/202404/DLB_ATM_DAILY_20240430.csv": {
+"entity": "ATM_DAILY",
+"rows": 1708,
+"trailer": "TRL|1708|20240430"
+},
+"history/202404/DLB_BRANCH_OPS_20240430.csv": {
+"entity": "BRANCH_OPS",
+"rows": 760,
+"trailer": "TRL|760|20240430"
+},
+"history/202404/DLB_CARD_20240430.csv": {
+"entity": "CARD",
+"rows": 333,
+"trailer": "TRL|333|20240430"
+},
+"history/202404/DLB_CARD_TXN_20240430.csv": {
+"entity": "CARD_TXN",
+"rows": 4258,
+"trailer": "TRL|4258|20240430"
+},
+"history/202404/DLB_CASA_ACCOUNT_20240430.csv": {
+"entity": "CASA_ACCOUNT",
+"rows": 161,
+"trailer": "TRL|161|20240430"
+},
+"history/202404/DLB_CASA_BALANCE_20240430.csv": {
+"entity": "CASA_BALANCE",
+"rows": 9676,
+"trailer": "TRL|9676|20240430"
+},
+"history/202404/DLB_COMPLAINT_20240430.csv": {
+"entity": "COMPLAINT",
+"rows": 130,
+"trailer": "TRL|130|20240430"
+},
+"history/202404/DLB_CUSTOMER_20240430.csv": {
+"entity": "CUSTOMER",
+"rows": 155,
+"trailer": "TRL|155|20240430"
+},
+"history/202404/DLB_GL_BALANCE_20240430.csv": {
+"entity": "GL_BALANCE",
+"rows": 318,
+"trailer": "TRL|318|20240430"
+},
+"history/202404/DLB_LOAN_20240430.csv": {
+"entity": "LOAN",
+"rows": 238,
+"trailer": "TRL|238|20240430"
+},
+"history/202404/DLB_LOAN_BALANCE_20240430.csv": {
+"entity": "LOAN_BALANCE",
+"rows": 3069,
+"trailer": "TRL|3069|20240430"
+},
+"history/202404/DLB_TD_BALANCE_20240430.csv": {
+"entity": "TD_BALANCE",
+"rows": 1923,
+"trailer": "TRL|1923|20240430"
+},
+"history/202404/DLB_TERM_DEPOSIT_20240430.csv": {
+"entity": "TERM_DEPOSIT",
+"rows": 553,
+"trailer": "TRL|553|20240430"
+},
+"history/202404/DLB_TXN_20240430.csv": {
+"entity": "TXN",
+"rows": 98101,
+"trailer": "TRL|98101|20240430"
+},
+"history/202405/DLB_ATM_DAILY_20240531.csv": {
+"entity": "ATM_DAILY",
+"rows": 2135,
+"trailer": "TRL|2135|20240531"
+},
+"history/202405/DLB_BRANCH_OPS_20240531.csv": {
+"entity": "BRANCH_OPS",
+"rows": 880,
+"trailer": "TRL|880|20240531"
+},
+"history/202405/DLB_CARD_20240531.csv": {
+"entity": "CARD",
+"rows": 312,
+"trailer": "TRL|312|20240531"
+},
+"history/202405/DLB_CARD_TXN_20240531.csv": {
+"entity": "CARD_TXN",
+"rows": 5366,
+"trailer": "TRL|5366|20240531"
+},
+"history/202405/DLB_CASA_ACCOUNT_20240531.csv": {
+"entity": "CASA_ACCOUNT",
+"rows": 157,
+"trailer": "TRL|157|20240531"
+},
+"history/202405/DLB_CASA_BALANCE_20240531.csv": {
+"entity": "CASA_BALANCE",
+"rows": 9766,
+"trailer": "TRL|9766|20240531"
+},
+"history/202405/DLB_COMPLAINT_20240531.csv": {
+"entity": "COMPLAINT",
+"rows": 202,
+"trailer": "TRL|202|20240531"
+},
+"history/202405/DLB_CUSTOMER_20240531.csv": {
+"entity": "CUSTOMER",
+"rows": 150,
+"trailer": "TRL|150|20240531"
+},
+"history/202405/DLB_GL_BALANCE_20240531.csv": {
+"entity": "GL_BALANCE",
+"rows": 341,
+"trailer": "TRL|341|20240531"
+},
+"history/202405/DLB_LOAN_20240531.csv": {
+"entity": "LOAN",
+"rows": 251,
+"trailer": "TRL|251|20240531"
+},
+"history/202405/DLB_LOAN_BALANCE_20240531.csv": {
+"entity": "LOAN_BALANCE",
+"rows": 3123,
+"trailer": "TRL|3123|20240531"
+},
+"history/202405/DLB_TD_BALANCE_20240531.csv": {
+"entity": "TD_BALANCE",
+"rows": 1907,
+"trailer": "TRL|1907|20240531"
+},
+"history/202405/DLB_TERM_DEPOSIT_20240531.csv": {
+"entity": "TERM_DEPOSIT",
+"rows": 494,
+"trailer": "TRL|494|20240531"
+},
+"history/202405/DLB_TXN_20240531.csv": {
+"entity": "TXN",
+"rows": 128036,
+"trailer": "TRL|128036|20240531"
+},
+"history/202406/DLB_ATM_DAILY_20240630.csv": {
+"entity": "ATM_DAILY",
+"rows": 1708,
+"trailer": "TRL|1708|20240630"
+},
+"history/202406/DLB_BRANCH_OPS_20240630.csv": {
+"entity": "BRANCH_OPS",
+"rows": 800,
+"trailer": "TRL|800|20240630"
+},
+"history/202406/DLB_CARD_20240630.csv": {
+"entity": "CARD",
+"rows": 341,
+"trailer": "TRL|341|20240630"
+},
+"history/202406/DLB_CARD_TXN_20240630.csv": {
+"entity": "CARD_TXN",
+"rows": 4660,
+"trailer": "TRL|4660|20240630"
+},
+"history/202406/DLB_CASA_ACCOUNT_20240630.csv": {
+"entity": "CASA_ACCOUNT",
+"rows": 177,
+"trailer": "TRL|177|20240630"
+},
+"history/202406/DLB_CASA_BALANCE_20240630.csv": {
+"entity": "CASA_BALANCE",
+"rows": 9881,
+"trailer": "TRL|9881|20240630"
+},
+"history/202406/DLB_COMPLAINT_20240630.csv": {
+"entity": "COMPLAINT",
+"rows": 148,
+"trailer": "TRL|148|20240630"
+},
+"history/202406/DLB_CUSTOMER_20240630.csv": {
+"entity": "CUSTOMER",
+"rows": 169,
+"trailer": "TRL|169|20240630"
+},
+"history/202406/DLB_GL_BALANCE_20240630.csv": {
+"entity": "GL_BALANCE",
+"rows": 339,
+"trailer": "TRL|339|20240630"
+},
+"history/202406/DLB_LOAN_20240630.csv": {
+"entity": "LOAN",
+"rows": 301,
+"trailer": "TRL|301|20240630"
+},
+"history/202406/DLB_LOAN_BALANCE_20240630.csv": {
+"entity": "LOAN_BALANCE",
+"rows": 3233,
+"trailer": "TRL|3233|20240630"
+},
+"history/202406/DLB_TD_BALANCE_20240630.csv": {
+"entity": "TD_BALANCE",
+"rows": 2075,
+"trailer": "TRL|2075|20240630"
+},
+"history/202406/DLB_TERM_DEPOSIT_20240630.csv": {
+"entity": "TERM_DEPOSIT",
+"rows": 694,
+"trailer": "TRL|694|20240630"
+},
+"history/202406/DLB_TXN_20240630.csv": {
+"entity": "TXN",
+"rows": 82486,
+"trailer": "TRL|82486|20240630"
+},
+"history/202407/DLB_ATM_DAILY_20240731.csv": {
+"entity": "ATM_DAILY",
+"rows": 2013,
+"trailer": "TRL|2013|20240731"
+},
+"history/202407/DLB_BRANCH_OPS_20240731.csv": {
+"entity": "BRANCH_OPS",
+"rows": 920,
+"trailer": "TRL|920|20240731"
+},
+"history/202407/DLB_CARD_20240731.csv": {
+"entity": "CARD",
+"rows": 332,
+"trailer": "TRL|332|20240731"
+},
+"history/202407/DLB_CARD_TXN_20240731.csv": {
+"entity": "CARD_TXN",
+"rows": 5516,
+"trailer": "TRL|5516|20240731"
+},
+"history/202407/DLB_CASA_ACCOUNT_20240731.csv": {
+"entity": "CASA_ACCOUNT",
+"rows": 169,
+"trailer": "TRL|169|20240731"
+},
+"history/202407/DLB_CASA_BALANCE_20240731.csv": {
+"entity": "CASA_BALANCE",
+"rows": 9980,
+"trailer": "TRL|9980|20240731"
+},
+"history/202407/DLB_COMPLAINT_20240731.csv": {
+"entity": "COMPLAINT",
+"rows": 154,
+"trailer": "TRL|154|20240731"
+},
+"history/202407/DLB_CUSTOMER_20240731.csv": {
+"entity": "CUSTOMER",
+"rows": 163,
+"trailer": "TRL|163|20240731"
+},
+"history/202407/DLB_GL_BALANCE_20240731.csv": {
+"entity": "GL_BALANCE",
+"rows": 339,
+"trailer": "TRL|339|20240731"
+},
+"history/202407/DLB_LOAN_20240731.csv": {
+"entity": "LOAN",
+"rows": 259,
+"trailer": "TRL|259|20240731"
+},
+"history/202407/DLB_LOAN_BALANCE_20240731.csv": {
+"entity": "LOAN_BALANCE",
+"rows": 3311,
+"trailer": "TRL|3311|20240731"
+},
+"history/202407/DLB_TD_BALANCE_20240731.csv": {
+"entity": "TD_BALANCE",
+"rows": 2041,
+"trailer": "TRL|2041|20240731"
+},
+"history/202407/DLB_TERM_DEPOSIT_20240731.csv": {
+"entity": "TERM_DEPOSIT",
+"rows": 502,
+"trailer": "TRL|502|20240731"
+},
+"history/202407/DLB_TXN_20240731.csv": {
+"entity": "TXN",
+"rows": 126772,
+"trailer": "TRL|126772|20240731"
+},
+"history/202408/DLB_ATM_DAILY_20240831.csv": {
+"entity": "ATM_DAILY",
+"rows": 1830,
+"trailer": "TRL|1830|20240831"
+},
+"history/202408/DLB_BRANCH_OPS_20240831.csv": {
+"entity": "BRANCH_OPS",
+"rows": 880,
+"trailer": "TRL|880|20240831"
+},
+"history/202408/DLB_CARD_20240831.csv": {
+"entity": "CARD",
+"rows": 363,
+"trailer": "TRL|363|20240831"
+},
+"history/202408/DLB_CARD_TXN_20240831.csv": {
+"entity": "CARD_TXN",
+"rows": 5203,
+"trailer": "TRL|5203|20240831"
+},
+"history/202408/DLB_CASA_ACCOUNT_20240831.csv": {
+"entity": "CASA_ACCOUNT",
+"rows": 204,
+"trailer": "TRL|204|20240831"
+},
+"history/202408/DLB_CASA_BALANCE_20240831.csv": {
+"entity": "CASA_BALANCE",
+"rows": 10093,
+"trailer": "TRL|10093|20240831"
+},
+"history/202408/DLB_COMPLAINT_20240831.csv": {
+"entity": "COMPLAINT",
+"rows": 168,
+"trailer": "TRL|168|20240831"
+},
+"history/202408/DLB_CUSTOMER_20240831.csv": {
+"entity": "CUSTOMER",
+"rows": 185,
+"trailer": "TRL|185|20240831"
+},
+"history/202408/DLB_GL_BALANCE_20240831.csv": {
+"entity": "GL_BALANCE",
+"rows": 341,
+"trailer": "TRL|341|20240831"
+},
+"history/202408/DLB_LOAN_20240831.csv": {
+"entity": "LOAN",
+"rows": 297,
+"trailer": "TRL|297|20240831"
+},
+"history/202408/DLB_LOAN_BALANCE_20240831.csv": {
+"entity": "LOAN_BALANCE",
+"rows": 3444,
+"trailer": "TRL|3444|20240831"
+},
+"history/202408/DLB_TD_BALANCE_20240831.csv": {
+"entity": "TD_BALANCE",
+"rows": 2087,
+"trailer": "TRL|2087|20240831"
+},
+"history/202408/DLB_TERM_DEPOSIT_20240831.csv": {
+"entity": "TERM_DEPOSIT",
+"rows": 518,
+"trailer": "TRL|518|20240831"
+},
+"history/202408/DLB_TXN_20240831.csv": {
+"entity": "TXN",
+"rows": 86756,
+"trailer": "TRL|86756|20240831"
+},
+"history/202409/DLB_ATM_DAILY_20240930.csv": {
+"entity": "ATM_DAILY",
+"rows": 1891,
+"trailer": "TRL|1891|20240930"
+},
+"history/202409/DLB_BRANCH_OPS_20240930.csv": {
+"entity": "BRANCH_OPS",
+"rows": 760,
+"trailer": "TRL|760|20240930"
+},
+"history/202409/DLB_CARD_20240930.csv": {
+"entity": "CARD",
+"rows": 331,
+"trailer": "TRL|331|20240930"
+},
+"history/202409/DLB_CARD_TXN_20240930.csv": {
+"entity": "CARD_TXN",
+"rows": 5850,
+"trailer": "TRL|5850|20240930"
+},
+"history/202409/DLB_CASA_ACCOUNT_20240930.csv": {
+"entity": "CASA_ACCOUNT",
+"rows": 178,
+"trailer": "TRL|178|20240930"
+},
+"history/202409/DLB_CASA_BALANCE_20240930.csv": {
+"entity": "CASA_BALANCE",
+"rows": 10162,
+"trailer": "TRL|10162|20240930"
+},
+"history/202409/DLB_COMPLAINT_20240930.csv": {
+"entity": "COMPLAINT",
+"rows": 146,
+"trailer": "TRL|146|20240930"
+},
+"history/202409/DLB_CUSTOMER_20240930.csv": {
+"entity": "CUSTOMER",
+"rows": 171,
+"trailer": "TRL|171|20240930"
+},
+"history/202409/DLB_GL_BALANCE_20240930.csv": {
+"entity": "GL_BALANCE",
+"rows": 329,
+"trailer": "TRL|329|20240930"
+},
+"history/202409/DLB_LOAN_20240930.csv": {
+"entity": "LOAN",
+"rows": 285,
+"trailer": "TRL|285|20240930"
+},
+"history/202409/DLB_LOAN_BALANCE_20240930.csv": {
+"entity": "LOAN_BALANCE",
+"rows": 3530,
+"trailer": "TRL|3530|20240930"
+},
+"history/202409/DLB_TD_BALANCE_20240930.csv": {
+"entity": "TD_BALANCE",
+"rows": 2139,
+"trailer": "TRL|2139|20240930"
+},
+"history/202409/DLB_TERM_DEPOSIT_20240930.csv": {
+"entity": "TERM_DEPOSIT",
+"rows": 588,
+"trailer": "TRL|588|20240930"
+},
+"history/202409/DLB_TXN_20240930.csv": {
+"entity": "TXN",
+"rows": 126978,
+"trailer": "TRL|126978|20240930"
+},
+"history/202410/DLB_ATM_DAILY_20241031.csv": {
+"entity": "ATM_DAILY",
+"rows": 1891,
+"trailer": "TRL|1891|20241031"
+},
+"history/202410/DLB_BRANCH_OPS_20241031.csv": {
+"entity": "BRANCH_OPS",
+"rows": 920,
+"trailer": "TRL|920|20241031"
+},
+"history/202410/DLB_CARD_20241031.csv": {
+"entity": "CARD",
+"rows": 320,
+"trailer": "TRL|320|20241031"
+},
+"history/202410/DLB_CARD_TXN_20241031.csv": {
+"entity": "CARD_TXN",
+"rows": 5972,
+"trailer": "TRL|5972|20241031"
+},
+"history/202410/DLB_CASA_ACCOUNT_20241031.csv": {
+"entity": "CASA_ACCOUNT",
+"rows": 164,
+"trailer": "TRL|164|20241031"
+},
+"history/202410/DLB_CASA_BALANCE_20241031.csv": {
+"entity": "CASA_BALANCE",
+"rows": 10231,
+"trailer": "TRL|10231|20241031"
+},
+"history/202410/DLB_COMPLAINT_20241031.csv": {
+"entity": "COMPLAINT",
+"rows": 154,
+"trailer": "TRL|154|20241031"
+},
+"history/202410/DLB_CUSTOMER_20241031.csv": {
+"entity": "CUSTOMER",
+"rows": 147,
+"trailer": "TRL|147|20241031"
+},
+"history/202410/DLB_GL_BALANCE_20241031.csv": {
+"entity": "GL_BALANCE",
+"rows": 341,
+"trailer": "TRL|341|20241031"
+},
+"history/202410/DLB_LOAN_20241031.csv": {
+"entity": "LOAN",
+"rows": 219,
+"trailer": "TRL|219|20241031"
+},
+"history/202410/DLB_LOAN_BALANCE_20241031.csv": {
+"entity": "LOAN_BALANCE",
+"rows": 3538,
+"trailer": "TRL|3538|20241031"
+},
+"history/202410/DLB_TD_BALANCE_20241031.csv": {
+"entity": "TD_BALANCE",
+"rows": 2196,
+"trailer": "TRL|2196|20241031"
+},
+"history/202410/DLB_TERM_DEPOSIT_20241031.csv": {
+"entity": "TERM_DEPOSIT",
+"rows": 497,
+"trailer": "TRL|497|20241031"
+},
+"history/202410/DLB_TXN_20241031.csv": {
+"entity": "TXN",
+"rows": 108009,
+"trailer": "TRL|108009|20241031"
+},
+"history/202411/DLB_ATM_DAILY_20241130.csv": {
+"entity": "ATM_DAILY",
+"rows": 1769,
+"trailer": "TRL|1769|20241130"
+},
+"history/202411/DLB_BRANCH_OPS_20241130.csv": {
+"entity": "BRANCH_OPS",
+"rows": 840,
+"trailer": "TRL|840|20241130"
+},
+"history/202411/DLB_CARD_20241130.csv": {
+"entity": "CARD",
+"rows": 366,
+"trailer": "TRL|366|20241130"
+},
+"history/202411/DLB_CARD_TXN_20241130.csv": {
+"entity": "CARD_TXN",
+"rows": 5932,
+"trailer": "TRL|5932|20241130"
+},
+"history/202411/DLB_CASA_ACCOUNT_20241130.csv": {
+"entity": "CASA_ACCOUNT",
+"rows": 190,
+"trailer": "TRL|190|20241130"
+},
+"history/202411/DLB_CASA_BALANCE_20241130.csv": {
+"entity": "CASA_BALANCE",
+"rows": 10339,
+"trailer": "TRL|10339|20241130"
+},
+"history/202411/DLB_COMPLAINT_20241130.csv": {
+"entity": "COMPLAINT",
+"rows": 158,
+"trailer": "TRL|158|20241130"
+},
+"history/202411/DLB_CUSTOMER_20241130.csv": {
+"entity": "CUSTOMER",
+"rows": 167,
+"trailer": "TRL|167|20241130"
+},
+"history/202411/DLB_GL_BALANCE_20241130.csv": {
+"entity": "GL_BALANCE",
+"rows": 347,
+"trailer": "TRL|347|20241130"
+},
+"history/202411/DLB_LOAN_20241130.csv": {
+"entity": "LOAN",
+"rows": 255,
+"trailer": "TRL|255|20241130"
+},
+"history/202411/DLB_LOAN_BALANCE_20241130.csv": {
+"entity": "LOAN_BALANCE",
+"rows": 3613,
+"trailer": "TRL|3613|20241130"
+},
+"history/202411/DLB_TD_BALANCE_20241130.csv": {
+"entity": "TD_BALANCE",
+"rows": 2191,
+"trailer": "TRL|2191|20241130"
+},
+"history/202411/DLB_TERM_DEPOSIT_20241130.csv": {
+"entity": "TERM_DEPOSIT",
+"rows": 435,
+"trailer": "TRL|435|20241130"
+},
+"history/202411/DLB_TXN_20241130.csv": {
+"entity": "TXN",
+"rows": 88896,
+"trailer": "TRL|88896|20241130"
+},
+"history/202412/DLB_ATM_DAILY_20241231.csv": {
+"entity": "ATM_DAILY",
+"rows": 1952,
+"trailer": "TRL|1952|20241231"
+},
+"history/202412/DLB_BRANCH_OPS_20241231.csv": {
+"entity": "BRANCH_OPS",
+"rows": 880,
+"trailer": "TRL|880|20241231"
+},
+"history/202412/DLB_CARD_20241231.csv": {
+"entity": "CARD",
+"rows": 388,
+"trailer": "TRL|388|20241231"
+},
+"history/202412/DLB_CARD_TXN_20241231.csv": {
+"entity": "CARD_TXN",
+"rows": 7311,
+"trailer": "TRL|7311|20241231"
+},
+"history/202412/DLB_CASA_ACCOUNT_20241231.csv": {
+"entity": "CASA_ACCOUNT",
+"rows": 205,
+"trailer": "TRL|205|20241231"
+},
+"history/202412/DLB_CASA_BALANCE_20241231.csv": {
+"entity": "CASA_BALANCE",
+"rows": 10456,
+"trailer": "TRL|10456|20241231"
+},
+"history/202412/DLB_COMPLAINT_20241231.csv": {
+"entity": "COMPLAINT",
+"rows": 182,
+"trailer": "TRL|182|20241231"
+},
+"history/202412/DLB_CUSTOMER_20241231.csv": {
+"entity": "CUSTOMER",
+"rows": 186,
+"trailer": "TRL|186|20241231"
+},
+"history/202412/DLB_GL_BALANCE_20241231.csv": {
+"entity": "GL_BALANCE",
+"rows": 352,
+"trailer": "TRL|352|20241231"
+},
+"history/202412/DLB_LOAN_20241231.csv": {
+"entity": "LOAN",
+"rows": 271,
+"trailer": "TRL|271|20241231"
+},
+"history/202412/DLB_LOAN_BALANCE_20241231.csv": {
+"entity": "LOAN_BALANCE",
+"rows": 3688,
+"trailer": "TRL|3688|20241231"
+},
+"history/202412/DLB_TD_BALANCE_20241231.csv": {
+"entity": "TD_BALANCE",
+"rows": 2222,
+"trailer": "TRL|2222|20241231"
+},
+"history/202412/DLB_TERM_DEPOSIT_20241231.csv": {
+"entity": "TERM_DEPOSIT",
+"rows": 535,
+"trailer": "TRL|535|20241231"
+},
+"history/202412/DLB_TXN_20241231.csv": {
+"entity": "TXN",
+"rows": 130508,
+"trailer": "TRL|130508|20241231"
+},
+"history/202501/DLB_ATM_DAILY_20250131.csv": {
+"entity": "ATM_DAILY",
+"rows": 1464,
+"trailer": "TRL|1464|20250131"
+},
+"history/202501/DLB_BRANCH_OPS_20250131.csv": {
+"entity": "BRANCH_OPS",
+"rows": 680,
+"trailer": "TRL|680|20250131"
+},
+"history/202501/DLB_CARD_20250131.csv": {
+"entity": "CARD",
+"rows": 319,
+"trailer": "TRL|319|20250131"
+},
+"history/202501/DLB_CARD_TXN_20250131.csv": {
+"entity": "CARD_TXN",
+"rows": 6781,
+"trailer": "TRL|6781|20250131"
+},
+"history/202501/DLB_CASA_ACCOUNT_20250131.csv": {
+"entity": "CASA_ACCOUNT",
+"rows": 172,
+"trailer": "TRL|172|20250131"
+},
+"history/202501/DLB_CASA_BALANCE_20250131.csv": {
+"entity": "CASA_BALANCE",
+"rows": 10543,
+"trailer": "TRL|10543|20250131"
+},
+"history/202501/DLB_COMPLAINT_20250131.csv": {
+"entity": "COMPLAINT",
+"rows": 141,
+"trailer": "TRL|141|20250131"
+},
+"history/202501/DLB_CUSTOMER_20250131.csv": {
+"entity": "CUSTOMER",
+"rows": 160,
+"trailer": "TRL|160|20250131"
+},
+"history/202501/DLB_GL_BALANCE_20250131.csv": {
+"entity": "GL_BALANCE",
+"rows": 356,
+"trailer": "TRL|356|20250131"
+},
+"history/202501/DLB_LOAN_20250131.csv": {
+"entity": "LOAN",
+"rows": 243,
+"trailer": "TRL|243|20250131"
+},
+"history/202501/DLB_LOAN_BALANCE_20250131.csv": {
+"entity": "LOAN_BALANCE",
+"rows": 3729,
+"trailer": "TRL|3729|20250131"
+},
+"history/202501/DLB_TD_BALANCE_20250131.csv": {
+"entity": "TD_BALANCE",
+"rows": 2165,
+"trailer": "TRL|2165|20250131"
+},
+"history/202501/DLB_TERM_DEPOSIT_20250131.csv": {
+"entity": "TERM_DEPOSIT",
+"rows": 523,
+"trailer": "TRL|523|20250131"
+},
+"history/202501/DLB_TXN_20250131.csv": {
+"entity": "TXN",
+"rows": 80089,
+"trailer": "TRL|80089|20250131"
+},
+"history/202502/DLB_ATM_DAILY_20250228.csv": {
+"entity": "ATM_DAILY",
+"rows": 2135,
+"trailer": "TRL|2135|20250228"
+},
+"history/202502/DLB_BRANCH_OPS_20250228.csv": {
+"entity": "BRANCH_OPS",
+"rows": 800,
+"trailer": "TRL|800|20250228"
+},
+"history/202502/DLB_CARD_20250228.csv": {
+"entity": "CARD",
+"rows": 299,
+"trailer": "TRL|299|20250228"
+},
+"history/202502/DLB_CARD_TXN_20250228.csv": {
+"entity": "CARD_TXN",
+"rows": 8311,
+"trailer": "TRL|8311|20250228"
+},
+"history/202502/DLB_CASA_ACCOUNT_20250228.csv": {
+"entity": "CASA_ACCOUNT",
+"rows": 147,
+"trailer": "TRL|147|20250228"
+},
+"history/202502/DLB_CASA_BALANCE_20250228.csv": {
+"entity": "CASA_BALANCE",
+"rows": 10599,
+"trailer": "TRL|10599|20250228"
+},
+"history/202502/DLB_COMPLAINT_20250228.csv": {
+"entity": "COMPLAINT",
+"rows": 231,
+"trailer": "TRL|231|20250228"
+},
+"history/202502/DLB_CUSTOMER_20250228.csv": {
+"entity": "CUSTOMER",
+"rows": 144,
+"trailer": "TRL|144|20250228"
+},
+"history/202502/DLB_GL_BALANCE_20250228.csv": {
+"entity": "GL_BALANCE",
+"rows": 361,
+"trailer": "TRL|361|20250228"
+},
+"history/202502/DLB_LOAN_20250228.csv": {
+"entity": "LOAN",
+"rows": 225,
+"trailer": "TRL|225|20250228"
+},
+"history/202502/DLB_LOAN_BALANCE_20250228.csv": {
+"entity": "LOAN_BALANCE",
+"rows": 3778,
+"trailer": "TRL|3778|20250228"
+},
+"history/202502/DLB_TD_BALANCE_20250228.csv": {
+"entity": "TD_BALANCE",
+"rows": 2293,
+"trailer": "TRL|2293|20250228"
+},
+"history/202502/DLB_TERM_DEPOSIT_20250228.csv": {
+"entity": "TERM_DEPOSIT",
+"rows": 572,
+"trailer": "TRL|572|20250228"
+},
+"history/202502/DLB_TXN_20250228.csv": {
+"entity": "TXN",
+"rows": 151419,
+"trailer": "TRL|151419|20250228"
+},
+"history/202503/DLB_ATM_DAILY_20250331.csv": {
+"entity": "ATM_DAILY",
+"rows": 1891,
+"trailer": "TRL|1891|20250331"
+},
+"history/202503/DLB_BRANCH_OPS_20250331.csv": {
+"entity": "BRANCH_OPS",
+"rows": 840,
+"trailer": "TRL|840|20250331"
+},
+"history/202503/DLB_CARD_20250331.csv": {
+"entity": "CARD",
+"rows": 384,
+"trailer": "TRL|384|20250331"
+},
+"history/202503/DLB_CARD_TXN_20250331.csv": {
+"entity": "CARD_TXN",
+"rows": 6996,
+"trailer": "TRL|6996|20250331"
+},
+"history/202503/DLB_CASA_ACCOUNT_20250331.csv": {
+"entity": "CASA_ACCOUNT",
+"rows": 190,
+"trailer": "TRL|190|20250331"
+},
+"history/202503/DLB_CASA_BALANCE_20250331.csv": {
+"entity": "CASA_BALANCE",
+"rows": 10692,
+"trailer": "TRL|10692|20250331"
+},
+"history/202503/DLB_COMPLAINT_20250331.csv": {
+"entity": "COMPLAINT",
+"rows": 180,
+"trailer": "TRL|180|20250331"
+},
+"history/202503/DLB_CUSTOMER_20250331.csv": {
+"entity": "CUSTOMER",
+"rows": 182,
+"trailer": "TRL|182|20250331"
+},
+"history/202503/DLB_GL_BALANCE_20250331.csv": {
+"entity": "GL_BALANCE",
+"rows": 369,
+"trailer": "TRL|369|20250331"
+},
+"history/202503/DLB_LOAN_20250331.csv": {
+"entity": "LOAN",
+"rows": 353,
+"trailer": "TRL|353|20250331"
+},
+"history/202503/DLB_LOAN_BALANCE_20250331.csv": {
+"entity": "LOAN_BALANCE",
+"rows": 3960,
+"trailer": "TRL|3960|20250331"
+},
+"history/202503/DLB_TD_BALANCE_20250331.csv": {
+"entity": "TD_BALANCE",
+"rows": 2192,
+"trailer": "TRL|2192|20250331"
+},
+"history/202503/DLB_TERM_DEPOSIT_20250331.csv": {
+"entity": "TERM_DEPOSIT",
+"rows": 551,
+"trailer": "TRL|551|20250331"
+},
+"history/202503/DLB_TXN_20250331.csv": {
+"entity": "TXN",
+"rows": 113070,
+"trailer": "TRL|113070|20250331"
+},
+"history/202504/DLB_ATM_DAILY_20250430.csv": {
+"entity": "ATM_DAILY",
+"rows": 1769,
+"trailer": "TRL|1769|20250430"
+},
+"history/202504/DLB_BRANCH_OPS_20250430.csv": {
+"entity": "BRANCH_OPS",
+"rows": 800,
+"trailer": "TRL|800|20250430"
+},
+"history/202504/DLB_CARD_20250430.csv": {
+"entity": "CARD",
+"rows": 533,
+"trailer": "TRL|533|20250430"
+},
+"history/202504/DLB_CARD_TXN_20250430.csv": {
+"entity": "CARD_TXN",
+"rows": 6907,
+"trailer": "TRL|6907|20250430"
+},
+"history/202504/DLB_CASA_ACCOUNT_20250430.csv": {
+"entity": "CASA_ACCOUNT",
+"rows": 220,
+"trailer": "TRL|220|20250430"
+},
+"history/202504/DLB_CASA_BALANCE_20250430.csv": {
+"entity": "CASA_BALANCE",
+"rows": 10824,
+"trailer": "TRL|10824|20250430"
+},
+"history/202504/DLB_COMPLAINT_20250430.csv": {
+"entity": "COMPLAINT",
+"rows": 165,
+"trailer": "TRL|165|20250430"
+},
+"history/202504/DLB_CUSTOMER_20250430.csv": {
+"entity": "CUSTOMER",
+"rows": 202,
+"trailer": "TRL|202|20250430"
+},
+"history/202504/DLB_GL_BALANCE_20250430.csv": {
+"entity": "GL_BALANCE",
+"rows": 366,
+"trailer": "TRL|366|20250430"
+},
+"history/202504/DLB_LOAN_20250430.csv": {
+"entity": "LOAN",
+"rows": 348,
+"trailer": "TRL|348|20250430"
+},
+"history/202504/DLB_LOAN_BALANCE_20250430.csv": {
+"entity": "LOAN_BALANCE",
+"rows": 4034,
+"trailer": "TRL|4034|20250430"
+},
+"history/202504/DLB_TD_BALANCE_20250430.csv": {
+"entity": "TD_BALANCE",
+"rows": 2270,
+"trailer": "TRL|2270|20250430"
+},
+"history/202504/DLB_TERM_DEPOSIT_20250430.csv": {
+"entity": "TERM_DEPOSIT",
+"rows": 580,
+"trailer": "TRL|580|20250430"
+},
+"history/202504/DLB_TXN_20250430.csv": {
+"entity": "TXN",
+"rows": 93211,
+"trailer": "TRL|93211|20250430"
+},
+"history/202505/DLB_ATM_DAILY_20250531.csv": {
+"entity": "ATM_DAILY",
+"rows": 1891,
+"trailer": "TRL|1891|20250531"
+},
+"history/202505/DLB_BRANCH_OPS_20250531.csv": {
+"entity": "BRANCH_OPS",
+"rows": 800,
+"trailer": "TRL|800|20250531"
+},
+"history/202505/DLB_CARD_20250531.csv": {
+"entity": "CARD",
+"rows": 552,
+"trailer": "TRL|552|20250531"
+},
+"history/202505/DLB_CARD_TXN_20250531.csv": {
+"entity": "CARD_TXN",
+"rows": 7118,
+"trailer": "TRL|7118|20250531"
+},
+"history/202505/DLB_CASA_ACCOUNT_20250531.csv": {
+"entity": "CASA_ACCOUNT",
+"rows": 220,
+"trailer": "TRL|220|20250531"
+},
+"history/202505/DLB_CASA_BALANCE_20250531.csv": {
+"entity": "CASA_BALANCE",
+"rows": 10962,
+"trailer": "TRL|10962|20250531"
+},
+"history/202505/DLB_COMPLAINT_20250531.csv": {
+"entity": "COMPLAINT",
+"rows": 197,
+"trailer": "TRL|197|20250531"
+},
+"history/202505/DLB_CUSTOMER_20250531.csv": {
+"entity": "CUSTOMER",
+"rows": 203,
+"trailer": "TRL|203|20250531"
+},
+"history/202505/DLB_GL_BALANCE_20250531.csv": {
+"entity": "GL_BALANCE",
+"rows": 372,
+"trailer": "TRL|372|20250531"
+},
+"history/202505/DLB_LOAN_20250531.csv": {
+"entity": "LOAN",
+"rows": 330,
+"trailer": "TRL|330|20250531"
+},
+"history/202505/DLB_LOAN_BALANCE_20250531.csv": {
+"entity": "LOAN_BALANCE",
+"rows": 4100,
+"trailer": "TRL|4100|20250531"
+},
+"history/202505/DLB_TD_BALANCE_20250531.csv": {
+"entity": "TD_BALANCE",
+"rows": 2315,
+"trailer": "TRL|2315|20250531"
+},
+"history/202505/DLB_TERM_DEPOSIT_20250531.csv": {
+"entity": "TERM_DEPOSIT",
+"rows": 471,
+"trailer": "TRL|471|20250531"
+},
+"history/202505/DLB_TXN_20250531.csv": {
+"entity": "TXN",
+"rows": 115531,
+"trailer": "TRL|115531|20250531"
+},
+"history/202506/DLB_ATM_DAILY_20250630.csv": {
+"entity": "ATM_DAILY",
+"rows": 1891,
+"trailer": "TRL|1891|20250630"
+},
+"history/202506/DLB_BRANCH_OPS_20250630.csv": {
+"entity": "BRANCH_OPS",
+"rows": 840,
+"trailer": "TRL|840|20250630"
+},
+"history/202506/DLB_CARD_20250630.csv": {
+"entity": "CARD",
+"rows": 606,
+"trailer": "TRL|606|20250630"
+},
+"history/202506/DLB_CARD_TXN_20250630.csv": {
+"entity": "CARD_TXN",
+"rows": 7628,
+"trailer": "TRL|7628|20250630"
+},
+"history/202506/DLB_CASA_ACCOUNT_20250630.csv": {
+"entity": "CASA_ACCOUNT",
+"rows": 217,
+"trailer": "TRL|217|20250630"
+},
+"history/202506/DLB_CASA_BALANCE_20250630.csv": {
+"entity": "CASA_BALANCE",
+"rows": 11095,
+"trailer": "TRL|11095|20250630"
+},
+"history/202506/DLB_COMPLAINT_20250630.csv": {
+"entity": "COMPLAINT",
+"rows": 191,
+"trailer": "TRL|191|20250630"
+},
+"history/202506/DLB_CUSTOMER_20250630.csv": {
+"entity": "CUSTOMER",
+"rows": 206,
+"trailer": "TRL|206|20250630"
+},
+"history/202506/DLB_GL_BALANCE_20250630.csv": {
+"entity": "GL_BALANCE",
+"rows": 372,
+"trailer": "TRL|372|20250630"
+},
+"history/202506/DLB_LOAN_20250630.csv": {
+"entity": "LOAN",
+"rows": 404,
+"trailer": "TRL|404|20250630"
+},
+"history/202506/DLB_LOAN_BALANCE_20250630.csv": {
+"entity": "LOAN_BALANCE",
+"rows": 4216,
+"trailer": "TRL|4216|20250630"
+},
+"history/202506/DLB_TD_BALANCE_20250630.csv": {
+"entity": "TD_BALANCE",
+"rows": 2394,
+"trailer": "TRL|2394|20250630"
+},
+"history/202506/DLB_TERM_DEPOSIT_20250630.csv": {
+"entity": "TERM_DEPOSIT",
+"rows": 755,
+"trailer": "TRL|755|20250630"
+},
+"history/202506/DLB_TXN_20250630.csv": {
+"entity": "TXN",
+"rows": 138937,
+"trailer": "TRL|138937|20250630"
+},
+"history/202507/DLB_ATM_DAILY_20250731.csv": {
+"entity": "ATM_DAILY",
+"rows": 1891,
+"trailer": "TRL|1891|20250731"
+},
+"history/202507/DLB_BRANCH_20250731.csv": {
+"entity": "BRANCH",
+"rows": 13,
+"trailer": "TRL|13|20250731"
+},
+"history/202507/DLB_BRANCH_OPS_20250731.csv": {
+"entity": "BRANCH_OPS",
+"rows": 920,
+"trailer": "TRL|920|20250731"
+},
+"history/202507/DLB_CARD_20250731.csv": {
+"entity": "CARD",
+"rows": 350,
+"trailer": "TRL|350|20250731"
+},
+"history/202507/DLB_CARD_TXN_20250731.csv": {
+"entity": "CARD_TXN",
+"rows": 7737,
+"trailer": "TRL|7737|20250731"
+},
+"history/202507/DLB_CASA_ACCOUNT_20250731.csv": {
+"entity": "CASA_ACCOUNT",
+"rows": 175,
+"trailer": "TRL|175|20250731"
+},
+"history/202507/DLB_CASA_BALANCE_20250731.csv": {
+"entity": "CASA_BALANCE",
+"rows": 11178,
+"trailer": "TRL|11178|20250731"
+},
+"history/202507/DLB_COMPLAINT_20250731.csv": {
+"entity": "COMPLAINT",
+"rows": 202,
+"trailer": "TRL|202|20250731"
+},
+"history/202507/DLB_CUSTOMER_20250731.csv": {
+"entity": "CUSTOMER",
+"rows": 2495,
+"trailer": "TRL|2495|20250731"
+},
+"history/202507/DLB_GL_BALANCE_20250731.csv": {
+"entity": "GL_BALANCE",
+"rows": 384,
+"trailer": "TRL|384|20250731"
+},
+"history/202507/DLB_LOAN_20250731.csv": {
+"entity": "LOAN",
+"rows": 304,
+"trailer": "TRL|304|20250731"
+},
+"history/202507/DLB_LOAN_BALANCE_20250731.csv": {
+"entity": "LOAN_BALANCE",
+"rows": 4302,
+"trailer": "TRL|4302|20250731"
+},
+"history/202507/DLB_TD_BALANCE_20250731.csv": {
+"entity": "TD_BALANCE",
+"rows": 2367,
+"trailer": "TRL|2367|20250731"
+},
+"history/202507/DLB_TERM_DEPOSIT_20250731.csv": {
+"entity": "TERM_DEPOSIT",
+"rows": 395,
+"trailer": "TRL|395|20250731"
+},
+"history/202507/DLB_TXN_20250731.csv": {
+"entity": "TXN",
+"rows": 118197,
+"trailer": "TRL|118197|20250731"
+},
+"history/202508/DLB_ATM_DAILY_20250831.csv": {
+"entity": "ATM_DAILY",
+"rows": 1769,
+"trailer": "TRL|1769|20250831"
+},
+"history/202508/DLB_BRANCH_OPS_20250831.csv": {
+"entity": "BRANCH_OPS",
+"rows": 840,
+"trailer": "TRL|840|20250831"
+},
+"history/202508/DLB_CARD_20250831.csv": {
+"entity": "CARD",
+"rows": 391,
+"trailer": "TRL|391|20250831"
+},
+"history/202508/DLB_CARD_TXN_20250831.csv": {
+"entity": "CARD_TXN",
+"rows": 7644,
+"trailer": "TRL|7644|20250831"
+},
+"history/202508/DLB_CASA_ACCOUNT_20250831.csv": {
+"entity": "CASA_ACCOUNT",
+"rows": 196,
+"trailer": "TRL|196|20250831"
+},
+"history/202508/DLB_CASA_BALANCE_20250831.csv": {
+"entity": "CASA_BALANCE",
+"rows": 11280,
+"trailer": "TRL|11280|20250831"
+},
+"history/202508/DLB_COMPLAINT_20250831.csv": {
+"entity": "COMPLAINT",
+"rows": 218,
+"trailer": "TRL|218|20250831"
+},
+"history/202508/DLB_CUSTOMER_20250831.csv": {
+"entity": "CUSTOMER",
+"rows": 188,
+"trailer": "TRL|188|20250831"
+},
+"history/202508/DLB_GL_BALANCE_20250831.csv": {
+"entity": "GL_BALANCE",
+"rows": 379,
+"trailer": "TRL|379|20250831"
+},
+"history/202508/DLB_LOAN_20250831.csv": {
+"entity": "LOAN",
+"rows": 214,
+"trailer": "TRL|214|20250831"
+},
+"history/202508/DLB_LOAN_BALANCE_20250831.csv": {
+"entity": "LOAN_BALANCE",
+"rows": 4313,
+"trailer": "TRL|4313|20250831"
+},
+"history/202508/DLB_TD_BALANCE_20250831.csv": {
+"entity": "TD_BALANCE",
+"rows": 2464,
+"trailer": "TRL|2464|20250831"
+},
+"history/202508/DLB_TERM_DEPOSIT_20250831.csv": {
+"entity": "TERM_DEPOSIT",
+"rows": 695,
+"trailer": "TRL|695|20250831"
+},
+"history/202508/DLB_TXN_20250831.csv": {
+"entity": "TXN",
+"rows": 95297,
+"trailer": "TRL|95297|20250831"
+},
+"history/202509/DLB_ATM_DAILY_20250930.csv": {
+"entity": "ATM_DAILY",
+"rows": 1952,
+"trailer": "TRL|1952|20250930"
+},
+"history/202509/DLB_BRANCH_OPS_20250930.csv": {
+"entity": "BRANCH_OPS",
+"rows": 800,
+"trailer": "TRL|800|20250930"
+},
+"history/202509/DLB_CARD_20250930.csv": {
+"entity": "CARD",
+"rows": 343,
+"trailer": "TRL|343|20250930"
+},
+"history/202509/DLB_CARD_TXN_20250930.csv": {
+"entity": "CARD_TXN",
+"rows": 8526,
+"trailer": "TRL|8526|20250930"
+},
+"history/202509/DLB_CASA_ACCOUNT_20250930.csv": {
+"entity": "CASA_ACCOUNT",
+"rows": 165,
+"trailer": "TRL|165|20250930"
+},
+"history/202509/DLB_CASA_BALANCE_20250930.csv": {
+"entity": "CASA_BALANCE",
+"rows": 11358,
+"trailer": "TRL|11358|20250930"
+},
+"history/202509/DLB_COMPLAINT_20250930.csv": {
+"entity": "COMPLAINT",
+"rows": 322,
+"trailer": "TRL|322|20250930"
+},
+"history/202509/DLB_CUSTOMER_20250930.csv": {
+"entity": "CUSTOMER",
+"rows": 158,
+"trailer": "TRL|158|20250930"
+},
+"history/202509/DLB_GL_BALANCE_20250930.csv": {
+"entity": "GL_BALANCE",
+"rows": 370,
+"trailer": "TRL|370|20250930"
+},
+"history/202509/DLB_LOAN_20250930.csv": {
+"entity": "LOAN",
+"rows": 309,
+"trailer": "TRL|309|20250930"
+},
+"history/202509/DLB_LOAN_BALANCE_20250930.csv": {
+"entity": "LOAN_BALANCE",
+"rows": 4384,
+"trailer": "TRL|4384|20250930"
+},
+"history/202509/DLB_TD_BALANCE_20250930.csv": {
+"entity": "TD_BALANCE",
+"rows": 2575,
+"trailer": "TRL|2575|20250930"
+},
+"history/202509/DLB_TERM_DEPOSIT_20250930.csv": {
+"entity": "TERM_DEPOSIT",
+"rows": 615,
+"trailer": "TRL|615|20250930"
+},
+"history/202509/DLB_TXN_20250930.csv": {
+"entity": "TXN",
+"rows": 144823,
+"trailer": "TRL|144823|20250930"
+},
+"history/202510/DLB_ATM_DAILY_20251031.csv": {
+"entity": "ATM_DAILY",
+"rows": 1891,
+"trailer": "TRL|1891|20251031"
+},
+"history/202510/DLB_BRANCH_OPS_20251031.csv": {
+"entity": "BRANCH_OPS",
+"rows": 920,
+"trailer": "TRL|920|20251031"
+},
+"history/202510/DLB_CARD_20251031.csv": {
+"entity": "CARD",
+"rows": 366,
+"trailer": "TRL|366|20251031"
+},
+"history/202510/DLB_CARD_TXN_20251031.csv": {
+"entity": "CARD_TXN",
+"rows": 8470,
+"trailer": "TRL|8470|20251031"
+},
+"history/202510/DLB_CASA_ACCOUNT_20251031.csv": {
+"entity": "CASA_ACCOUNT",
+"rows": 183,
+"trailer": "TRL|183|20251031"
+},
+"history/202510/DLB_CASA_BALANCE_20251031.csv": {
+"entity": "CASA_BALANCE",
+"rows": 11451,
+"trailer": "TRL|11451|20251031"
+},
+"history/202510/DLB_COMPLAINT_20251031.csv": {
+"entity": "COMPLAINT",
+"rows": 319,
+"trailer": "TRL|319|20251031"
+},
+"history/202510/DLB_CUSTOMER_20251031.csv": {
+"entity": "CUSTOMER",
+"rows": 177,
+"trailer": "TRL|177|20251031"
+},
+"history/202510/DLB_GL_BALANCE_20251031.csv": {
+"entity": "GL_BALANCE",
+"rows": 381,
+"trailer": "TRL|381|20251031"
+},
+"history/202510/DLB_LOAN_20251031.csv": {
+"entity": "LOAN",
+"rows": 303,
+"trailer": "TRL|303|20251031"
+},
+"history/202510/DLB_LOAN_BALANCE_20251031.csv": {
+"entity": "LOAN_BALANCE",
+"rows": 4477,
+"trailer": "TRL|4477|20251031"
+},
+"history/202510/DLB_TD_BALANCE_20251031.csv": {
+"entity": "TD_BALANCE",
+"rows": 2629,
+"trailer": "TRL|2629|20251031"
+},
+"history/202510/DLB_TERM_DEPOSIT_20251031.csv": {
+"entity": "TERM_DEPOSIT",
+"rows": 568,
+"trailer": "TRL|568|20251031"
+},
+"history/202510/DLB_TXN_20251031.csv": {
+"entity": "TXN",
+"rows": 121691,
+"trailer": "TRL|121691|20251031"
+},
+"history/202511/DLB_ATM_DAILY_20251130.csv": {
+"entity": "ATM_DAILY",
+"rows": 1708,
+"trailer": "TRL|1708|20251130"
+},
+"history/202511/DLB_BRANCH_OPS_20251130.csv": {
+"entity": "BRANCH_OPS",
+"rows": 800,
+"trailer": "TRL|800|20251130"
+},
+"history/202511/DLB_CARD_20251130.csv": {
+"entity": "CARD",
+"rows": 403,
+"trailer": "TRL|403|20251130"
+},
+"history/202511/DLB_CARD_TXN_20251130.csv": {
+"entity": "CARD_TXN",
+"rows": 8186,
+"trailer": "TRL|8186|20251130"
+},
+"history/202511/DLB_CASA_ACCOUNT_20251130.csv": {
+"entity": "CASA_ACCOUNT",
+"rows": 203,
+"trailer": "TRL|203|20251130"
+},
+"history/202511/DLB_CASA_BALANCE_20251130.csv": {
+"entity": "CASA_BALANCE",
+"rows": 11559,
+"trailer": "TRL|11559|20251130"
+},
+"history/202511/DLB_COMPLAINT_20251130.csv": {
+"entity": "COMPLAINT",
+"rows": 201,
+"trailer": "TRL|201|20251130"
+},
+"history/202511/DLB_CUSTOMER_20251130.csv": {
+"entity": "CUSTOMER",
+"rows": 199,
+"trailer": "TRL|199|20251130"
+},
+"history/202511/DLB_GL_BALANCE_20251130.csv": {
+"entity": "GL_BALANCE",
+"rows": 389,
+"trailer": "TRL|389|20251130"
+},
+"history/202511/DLB_LOAN_20251130.csv": {
+"entity": "LOAN",
+"rows": 224,
+"trailer": "TRL|224|20251130"
+},
+"history/202511/DLB_LOAN_BALANCE_20251130.csv": {
+"entity": "LOAN_BALANCE",
+"rows": 4537,
+"trailer": "TRL|4537|20251130"
+},
+"history/202511/DLB_TD_BALANCE_20251130.csv": {
+"entity": "TD_BALANCE",
+"rows": 2550,
+"trailer": "TRL|2550|20251130"
+},
+"history/202511/DLB_TERM_DEPOSIT_20251130.csv": {
+"entity": "TERM_DEPOSIT",
+"rows": 401,
+"trailer": "TRL|401|20251130"
+},
+"history/202511/DLB_TXN_20251130.csv": {
+"entity": "TXN",
+"rows": 97126,
+"trailer": "TRL|97126|20251130"
+},
+"history/202512/DLB_ATM_DAILY_20251231.csv": {
+"entity": "ATM_DAILY",
+"rows": 2013,
+"trailer": "TRL|2013|20251231"
+},
+"history/202512/DLB_BRANCH_OPS_20251231.csv": {
+"entity": "BRANCH_OPS",
+"rows": 920,
+"trailer": "TRL|920|20251231"
+},
+"history/202512/DLB_CARD_20251231.csv": {
+"entity": "CARD",
+"rows": 388,
+"trailer": "TRL|388|20251231"
+},
+"history/202512/DLB_CARD_TXN_20251231.csv": {
+"entity": "CARD_TXN",
+"rows": 10716,
+"trailer": "TRL|10716|20251231"
+},
+"history/202512/DLB_CASA_ACCOUNT_20251231.csv": {
+"entity": "CASA_ACCOUNT",
+"rows": 181,
+"trailer": "TRL|181|20251231"
+},
+"history/202512/DLB_CASA_BALANCE_20251231.csv": {
+"entity": "CASA_BALANCE",
+"rows": 11652,
+"trailer": "TRL|11652|20251231"
+},
+"history/202512/DLB_COMPLAINT_20251231.csv": {
+"entity": "COMPLAINT",
+"rows": 176,
+"trailer": "TRL|176|20251231"
+},
+"history/202512/DLB_CUSTOMER_20251231.csv": {
+"entity": "CUSTOMER",
+"rows": 179,
+"trailer": "TRL|179|20251231"
+},
+"history/202512/DLB_GL_BALANCE_20251231.csv": {
+"entity": "GL_BALANCE",
+"rows": 385,
+"trailer": "TRL|385|20251231"
+},
+"history/202512/DLB_LOAN_20251231.csv": {
+"entity": "LOAN",
+"rows": 310,
+"trailer": "TRL|310|20251231"
+},
+"history/202512/DLB_LOAN_BALANCE_20251231.csv": {
+"entity": "LOAN_BALANCE",
+"rows": 4668,
+"trailer": "TRL|4668|20251231"
+},
+"history/202512/DLB_TD_BALANCE_20251231.csv": {
+"entity": "TD_BALANCE",
+"rows": 2478,
+"trailer": "TRL|2478|20251231"
+},
+"history/202512/DLB_TERM_DEPOSIT_20251231.csv": {
+"entity": "TERM_DEPOSIT",
+"rows": 514,
+"trailer": "TRL|514|20251231"
+},
+"history/202512/DLB_TXN_20251231.csv": {
+"entity": "TXN",
+"rows": 148682,
+"trailer": "TRL|148682|20251231"
+},
+"history/202601/DLB_ATM_DAILY_20260131.csv": {
+"entity": "ATM_DAILY",
+"rows": 1830,
+"trailer": "TRL|1830|20260131"
+},
+"history/202601/DLB_BRANCH_OPS_20260131.csv": {
+"entity": "BRANCH_OPS",
+"rows": 840,
+"trailer": "TRL|840|20260131"
+},
+"history/202601/DLB_CARD_20260131.csv": {
+"entity": "CARD",
+"rows": 357,
+"trailer": "TRL|357|20260131"
+},
+"history/202601/DLB_CARD_TXN_20260131.csv": {
+"entity": "CARD_TXN",
+"rows": 8856,
+"trailer": "TRL|8856|20260131"
+},
+"history/202601/DLB_CASA_ACCOUNT_20260131.csv": {
+"entity": "CASA_ACCOUNT",
+"rows": 161,
+"trailer": "TRL|161|20260131"
+},
+"history/202601/DLB_CASA_BALANCE_20260131.csv": {
+"entity": "CASA_BALANCE",
+"rows": 11722,
+"trailer": "TRL|11722|20260131"
+},
+"history/202601/DLB_COMPLAINT_20260131.csv": {
+"entity": "COMPLAINT",
+"rows": 217,
+"trailer": "TRL|217|20260131"
+},
+"history/202601/DLB_CUSTOMER_20260131.csv": {
+"entity": "CUSTOMER",
+"rows": 165,
+"trailer": "TRL|165|20260131"
+},
+"history/202601/DLB_GL_BALANCE_20260131.csv": {
+"entity": "GL_BALANCE",
+"rows": 385,
+"trailer": "TRL|385|20260131"
+},
+"history/202601/DLB_LOAN_20260131.csv": {
+"entity": "LOAN",
+"rows": 278,
+"trailer": "TRL|278|20260131"
+},
+"history/202601/DLB_LOAN_BALANCE_20260131.csv": {
+"entity": "LOAN_BALANCE",
+"rows": 4734,
+"trailer": "TRL|4734|20260131"
+},
+"history/202601/DLB_TD_BALANCE_20260131.csv": {
+"entity": "TD_BALANCE",
+"rows": 2380,
+"trailer": "TRL|2380|20260131"
+},
+"history/202601/DLB_TERM_DEPOSIT_20260131.csv": {
+"entity": "TERM_DEPOSIT",
+"rows": 460,
+"trailer": "TRL|460|20260131"
+},
+"history/202601/DLB_TXN_20260131.csv": {
+"entity": "TXN",
+"rows": 104499,
+"trailer": "TRL|104499|20260131"
+},
+"history/202602/DLB_ATM_DAILY_20260228.csv": {
+"entity": "ATM_DAILY",
+"rows": 1708,
+"trailer": "TRL|1708|20260228"
+},
+"history/202602/DLB_BRANCH_OPS_20260228.csv": {
+"entity": "BRANCH_OPS",
+"rows": 600,
+"trailer": "TRL|600|20260228"
+},
+"history/202602/DLB_CARD_20260228.csv": {
+"entity": "CARD",
+"rows": 338,
+"trailer": "TRL|338|20260228"
+},
+"history/202602/DLB_CARD_TXN_20260228.csv": {
+"entity": "CARD_TXN",
+"rows": 12357,
+"trailer": "TRL|12357|20260228"
+},
+"history/202602/DLB_CASA_ACCOUNT_20260228.csv": {
+"entity": "CASA_ACCOUNT",
+"rows": 157,
+"trailer": "TRL|157|20260228"
+},
+"history/202602/DLB_CASA_BALANCE_20260228.csv": {
+"entity": "CASA_BALANCE",
+"rows": 11775,
+"trailer": "TRL|11775|20260228"
+},
+"history/202602/DLB_COMPLAINT_20260228.csv": {
+"entity": "COMPLAINT",
+"rows": 162,
+"trailer": "TRL|162|20260228"
+},
+"history/202602/DLB_CUSTOMER_20260228.csv": {
+"entity": "CUSTOMER",
+"rows": 163,
+"trailer": "TRL|163|20260228"
+},
+"history/202602/DLB_GL_BALANCE_20260228.csv": {
+"entity": "GL_BALANCE",
+"rows": 393,
+"trailer": "TRL|393|20260228"
+},
+"history/202602/DLB_LOAN_20260228.csv": {
+"entity": "LOAN",
+"rows": 219,
+"trailer": "TRL|219|20260228"
+},
+"history/202602/DLB_LOAN_BALANCE_20260228.csv": {
+"entity": "LOAN_BALANCE",
+"rows": 4753,
+"trailer": "TRL|4753|20260228"
+},
+"history/202602/DLB_TD_BALANCE_20260228.csv": {
+"entity": "TD_BALANCE",
+"rows": 2262,
+"trailer": "TRL|2262|20260228"
+},
+"history/202602/DLB_TERM_DEPOSIT_20260228.csv": {
+"entity": "TERM_DEPOSIT",
+"rows": 586,
+"trailer": "TRL|586|20260228"
+},
+"history/202602/DLB_TXN_20260228.csv": {
+"entity": "TXN",
+"rows": 128880,
+"trailer": "TRL|128880|20260228"
+},
+"history/202603/DLB_ATM_DAILY_20260331.csv": {
+"entity": "ATM_DAILY",
+"rows": 1952,
+"trailer": "TRL|1952|20260331"
+},
+"history/202603/DLB_BRANCH_OPS_20260331.csv": {
+"entity": "BRANCH_OPS",
+"rows": 880,
+"trailer": "TRL|880|20260331"
+},
+"history/202603/DLB_CARD_20260331.csv": {
+"entity": "CARD",
+"rows": 440,
+"trailer": "TRL|440|20260331"
+},
+"history/202603/DLB_CARD_TXN_20260331.csv": {
+"entity": "CARD_TXN",
+"rows": 10245,
+"trailer": "TRL|10245|20260331"
+},
+"history/202603/DLB_CASA_ACCOUNT_20260331.csv": {
+"entity": "CASA_ACCOUNT",
+"rows": 218,
+"trailer": "TRL|218|20260331"
+},
+"history/202603/DLB_CASA_BALANCE_20260331.csv": {
+"entity": "CASA_BALANCE",
+"rows": 11889,
+"trailer": "TRL|11889|20260331"
+},
+"history/202603/DLB_COMPLAINT_20260331.csv": {
+"entity": "COMPLAINT",
+"rows": 436,
+"trailer": "TRL|436|20260331"
+},
+"history/202603/DLB_CUSTOMER_20260331.csv": {
+"entity": "CUSTOMER",
+"rows": 219,
+"trailer": "TRL|219|20260331"
+},
+"history/202603/DLB_GL_BALANCE_20260331.csv": {
+"entity": "GL_BALANCE",
+"rows": 388,
+"trailer": "TRL|388|20260331"
+},
+"history/202603/DLB_LOAN_20260331.csv": {
+"entity": "LOAN",
+"rows": 404,
+"trailer": "TRL|404|20260331"
+},
+"history/202603/DLB_LOAN_BALANCE_20260331.csv": {
+"entity": "LOAN_BALANCE",
+"rows": 4949,
+"trailer": "TRL|4949|20260331"
+},
+"history/202603/DLB_TD_BALANCE_20260331.csv": {
+"entity": "TD_BALANCE",
+"rows": 2256,
+"trailer": "TRL|2256|20260331"
+},
+"history/202603/DLB_TERM_DEPOSIT_20260331.csv": {
+"entity": "TERM_DEPOSIT",
+"rows": 516,
+"trailer": "TRL|516|20260331"
+},
+"history/202603/DLB_TXN_20260331.csv": {
+"entity": "TXN",
+"rows": 149085,
+"trailer": "TRL|149085|20260331"
+},
+"history/202604/DLB_ATM_DAILY_20260430.csv": {
+"entity": "ATM_DAILY",
+"rows": 1769,
+"trailer": "TRL|1769|20260430"
+},
+"history/202604/DLB_BRANCH_OPS_20260430.csv": {
+"entity": "BRANCH_OPS",
+"rows": 800,
+"trailer": "TRL|800|20260430"
+},
+"history/202604/DLB_CARD_20260430.csv": {
+"entity": "CARD",
+"rows": 412,
+"trailer": "TRL|412|20260430"
+},
+"history/202604/DLB_CARD_TXN_20260430.csv": {
+"entity": "CARD_TXN",
+"rows": 10043,
+"trailer": "TRL|10043|20260430"
+},
+"history/202604/DLB_CASA_ACCOUNT_20260430.csv": {
+"entity": "CASA_ACCOUNT",
+"rows": 198,
+"trailer": "TRL|198|20260430"
+},
+"history/202604/DLB_CASA_BALANCE_20260430.csv": {
+"entity": "CASA_BALANCE",
+"rows": 11985,
+"trailer": "TRL|11985|20260430"
+},
+"history/202604/DLB_COMPLAINT_20260430.csv": {
+"entity": "COMPLAINT",
+"rows": 196,
+"trailer": "TRL|196|20260430"
+},
+"history/202604/DLB_CUSTOMER_20260430.csv": {
+"entity": "CUSTOMER",
+"rows": 202,
+"trailer": "TRL|202|20260430"
+},
+"history/202604/DLB_GL_BALANCE_20260430.csv": {
+"entity": "GL_BALANCE",
+"rows": 391,
+"trailer": "TRL|391|20260430"
+},
+"history/202604/DLB_LOAN_20260430.csv": {
+"entity": "LOAN",
+"rows": 251,
+"trailer": "TRL|251|20260430"
+},
+"history/202604/DLB_LOAN_BALANCE_20260430.csv": {
+"entity": "LOAN_BALANCE",
+"rows": 4985,
+"trailer": "TRL|4985|20260430"
+},
+"history/202604/DLB_TD_BALANCE_20260430.csv": {
+"entity": "TD_BALANCE",
+"rows": 2301,
+"trailer": "TRL|2301|20260430"
+},
+"history/202604/DLB_TERM_DEPOSIT_20260430.csv": {
+"entity": "TERM_DEPOSIT",
+"rows": 615,
+"trailer": "TRL|615|20260430"
+},
+"history/202604/DLB_TXN_20260430.csv": {
+"entity": "TXN",
+"rows": 103811,
+"trailer": "TRL|103811|20260430"
+},
+"history/202605/DLB_ATM_DAILY_20260531.csv": {
+"entity": "ATM_DAILY",
+"rows": 1830,
+"trailer": "TRL|1830|20260531"
+},
+"history/202605/DLB_BRANCH_OPS_20260531.csv": {
+"entity": "BRANCH_OPS",
+"rows": 800,
+"trailer": "TRL|800|20260531"
+},
+"history/202605/DLB_CARD_20260531.csv": {
+"entity": "CARD",
+"rows": 418,
+"trailer": "TRL|418|20260531"
+},
+"history/202605/DLB_CARD_TXN_20260531.csv": {
+"entity": "CARD_TXN",
+"rows": 10181,
+"trailer": "TRL|10181|20260531"
+},
+"history/202605/DLB_CASA_ACCOUNT_20260531.csv": {
+"entity": "CASA_ACCOUNT",
+"rows": 203,
+"trailer": "TRL|203|20260531"
+},
+"history/202605/DLB_CASA_BALANCE_20260531.csv": {
+"entity": "CASA_BALANCE",
+"rows": 12091,
+"trailer": "TRL|12091|20260531"
+},
+"history/202605/DLB_COMPLAINT_20260531.csv": {
+"entity": "COMPLAINT",
+"rows": 192,
+"trailer": "TRL|192|20260531"
+},
+"history/202605/DLB_CUSTOMER_20260531.csv": {
+"entity": "CUSTOMER",
+"rows": 197,
+"trailer": "TRL|197|20260531"
+},
+"history/202605/DLB_GL_BALANCE_20260531.csv": {
+"entity": "GL_BALANCE",
+"rows": 397,
+"trailer": "TRL|397|20260531"
+},
+"history/202605/DLB_LOAN_20260531.csv": {
+"entity": "LOAN",
+"rows": 219,
+"trailer": "TRL|219|20260531"
+},
+"history/202605/DLB_LOAN_BALANCE_20260531.csv": {
+"entity": "LOAN_BALANCE",
+"rows": 5029,
+"trailer": "TRL|5029|20260531"
+},
+"history/202605/DLB_TD_BALANCE_20260531.csv": {
+"entity": "TD_BALANCE",
+"rows": 2311,
+"trailer": "TRL|2311|20260531"
+},
+"history/202605/DLB_TERM_DEPOSIT_20260531.csv": {
+"entity": "TERM_DEPOSIT",
+"rows": 426,
+"trailer": "TRL|426|20260531"
+},
+"history/202605/DLB_TXN_20260531.csv": {
+"entity": "TXN",
+"rows": 125162,
+"trailer": "TRL|125162|20260531"
+},
+"history/202606/DLB_ATM_DAILY_20260630.csv": {
+"entity": "ATM_DAILY",
+"rows": 1952,
+"trailer": "TRL|1952|20260630"
+},
+"history/202606/DLB_BRANCH_OPS_20260630.csv": {
+"entity": "BRANCH_OPS",
+"rows": 880,
+"trailer": "TRL|880|20260630"
+},
+"history/202606/DLB_CARD_20260630.csv": {
+"entity": "CARD",
+"rows": 417,
+"trailer": "TRL|417|20260630"
+},
+"history/202606/DLB_CARD_TXN_20260630.csv": {
+"entity": "CARD_TXN",
+"rows": 11267,
+"trailer": "TRL|11267|20260630"
+},
+"history/202606/DLB_CASA_ACCOUNT_20260630.csv": {
+"entity": "CASA_ACCOUNT",
+"rows": 217,
+"trailer": "TRL|217|20260630"
+},
+"history/202606/DLB_CASA_BALANCE_20260630.csv": {
+"entity": "CASA_BALANCE",
+"rows": 12205,
+"trailer": "TRL|12205|20260630"
+},
+"history/202606/DLB_COMPLAINT_20260630.csv": {
+"entity": "COMPLAINT",
+"rows": 209,
+"trailer": "TRL|209|20260630"
+},
+"history/202606/DLB_CUSTOMER_20260630.csv": {
+"entity": "CUSTOMER",
+"rows": 212,
+"trailer": "TRL|212|20260630"
+},
+"history/202606/DLB_GL_BALANCE_20260630.csv": {
+"entity": "GL_BALANCE",
+"rows": 390,
+"trailer": "TRL|390|20260630"
+},
+"history/202606/DLB_LOAN_20260630.csv": {
+"entity": "LOAN",
+"rows": 335,
+"trailer": "TRL|335|20260630"
+},
+"history/202606/DLB_LOAN_BALANCE_20260630.csv": {
+"entity": "LOAN_BALANCE",
+"rows": 5148,
+"trailer": "TRL|5148|20260630"
+},
+"history/202606/DLB_TD_BALANCE_20260630.csv": {
+"entity": "TD_BALANCE",
+"rows": 2411,
+"trailer": "TRL|2411|20260630"
+},
+"history/202606/DLB_TERM_DEPOSIT_20260630.csv": {
+"entity": "TERM_DEPOSIT",
+"rows": 828,
+"trailer": "TRL|828|20260630"
+},
+"history/202606/DLB_TXN_20260630.csv": {
+"entity": "TXN",
+"rows": 154676,
+"trailer": "TRL|154676|20260630"
+},
+"history/202607/DLB_ATM_DAILY_20260731.csv": {
+"entity": "ATM_DAILY",
+"rows": 1891,
+"trailer": "TRL|1891|20260731"
+},
+"history/202607/DLB_BRANCH_OPS_20260731.csv": {
+"entity": "BRANCH_OPS",
+"rows": 920,
+"trailer": "TRL|920|20260731"
+},
+"history/202607/DLB_CARD_20260731.csv": {
+"entity": "CARD",
+"rows": 397,
+"trailer": "TRL|397|20260731"
+},
+"history/202607/DLB_CARD_TXN_20260731.csv": {
+"entity": "CARD_TXN",
+"rows": 10660,
+"trailer": "TRL|10660|20260731"
+},
+"history/202607/DLB_CASA_ACCOUNT_20260731.csv": {
+"entity": "CASA_ACCOUNT",
+"rows": 193,
+"trailer": "TRL|193|20260731"
+},
+"history/202607/DLB_CASA_BALANCE_20260731.csv": {
+"entity": "CASA_BALANCE",
+"rows": 12293,
+"trailer": "TRL|12293|20260731"
+},
+"history/202607/DLB_COMPLAINT_20260731.csv": {
+"entity": "COMPLAINT",
+"rows": 192,
+"trailer": "TRL|192|20260731"
+},
+"history/202607/DLB_CUSTOMER_20260731.csv": {
+"entity": "CUSTOMER",
+"rows": 219,
+"trailer": "TRL|219|20260731"
+},
+"history/202607/DLB_GL_BALANCE_20260731.csv": {
+"entity": "GL_BALANCE",
+"rows": 386,
+"trailer": "TRL|386|20260731"
+},
+"history/202607/DLB_LOAN_20260731.csv": {
+"entity": "LOAN",
+"rows": 371,
+"trailer": "TRL|371|20260731"
+},
+"history/202607/DLB_LOAN_BALANCE_20260731.csv": {
+"entity": "LOAN_BALANCE",
+"rows": 5264,
+"trailer": "TRL|5264|20260731"
+},
+"history/202607/DLB_TD_BALANCE_20260731.csv": {
+"entity": "TD_BALANCE",
+"rows": 2520,
+"trailer": "TRL|2520|20260731"
+},
+"history/202607/DLB_TERM_DEPOSIT_20260731.csv": {
+"entity": "TERM_DEPOSIT",
+"rows": 483,
+"trailer": "TRL|483|20260731"
+},
+"history/202607/DLB_TXN_20260731.csv": {
+"entity": "TXN",
+"rows": 130047,
+"trailer": "TRL|130047|20260731"
+}
+}

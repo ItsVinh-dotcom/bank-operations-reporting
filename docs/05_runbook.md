@@ -22,15 +22,24 @@ copy .env.example .env
 
 Mở file `.env`, điền `PG_PASSWORD` là mật khẩu `postgres` bạn đặt khi cài PostgreSQL.
 
-## 1. Sinh dữ liệu core banking (~2 phút, ~450 MB)
+## 1. Lấy dữ liệu core banking
+
+**Cách A (khuyên dùng): giải nén dữ liệu có sẵn trong repo** (~15 giây)
+
+```bash
+python -m python.tools.unpack_data
+```
+
+Lệnh này dựng lại 761 file CSV trong `data/raw/` từ bản nén `data/parquet/` (~50 MB).
+
+**Cách B: tự sinh lại** (~2 phút, dùng khi muốn đổi tham số)
 
 ```bash
 python -m python.generator.run_generator --clean
+python -m python.tools.pack_data        # nếu muốn cập nhật bản nén để commit
 ```
 
-Kết quả nằm trong `data/raw/history/` (33 lô tháng) và `data/raw/eod/` (21 lô ngày tháng 08/2026). Thư mục này **không** đưa lên GitHub. Cùng `random_seed` thì mọi máy sinh ra cùng một bộ dữ liệu.
-
-Muốn chạy thử nhanh với dữ liệu nhỏ: `python -m python.generator.run_generator --customers 3000 --sme 120 --clean`.
+Kết quả nằm trong `data/raw/history/` (33 lô tháng) và `data/raw/eod/` (21 lô ngày tháng 08/2026). Thư mục `data/raw` **không** đưa lên GitHub, bản nén `data/parquet` thì có. Cùng `random_seed` thì mọi máy sinh ra cùng một bộ dữ liệu.
 
 ## 2. Tạo database và các đối tượng
 

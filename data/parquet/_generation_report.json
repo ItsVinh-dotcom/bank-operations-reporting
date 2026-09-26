@@ -1,0 +1,38 @@
+{
+  "generated_rows": {
+    "BRANCH": 53,
+    "CUSTOMER": 16581,
+    "CASA_ACCOUNT": 15228,
+    "CASA_BALANCE": 357903,
+    "TXN": 3709654,
+    "TERM_DEPOSIT": 19989,
+    "TD_BALANCE": 73867,
+    "LOAN": 11988,
+    "LOAN_BALANCE": 132857,
+    "CARD": 29321,
+    "CARD_TXN": 243107,
+    "ATM_DAILY": 59414,
+    "BRANCH_OPS": 26520,
+    "COMPLAINT": 6241,
+    "GL_BALANCE": 11820
+  },
+  "injected_defects": {
+    "customer_missing_dob": 48,
+    "customer_missing_id": 36,
+    "customer_bad_phone": 24,
+    "customer_duplicate_rows": 12,
+    "txn_invalid_branch": 741,
+    "txn_negative_amount": 370,
+    "txn_late_posting": 1854,
+    "txn_duplicate_rows": 185,
+    "loan_missing_collateral": 2
+  },
+  "config": {
+    "start_date": "2024-01-01",
+    "end_date": "2026-08-31",
+    "eod_start_date": "2026-08-01",
+    "random_seed": "20260925",
+    "n_individuals": "12000",
+    "n_sme": "500"
+  }
+}
