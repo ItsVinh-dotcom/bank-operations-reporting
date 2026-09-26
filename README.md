@@ -15,7 +15,7 @@ Core Banking (mô phỏng) ──EOD──▶ file trích xuất ──Python ET
 | Hạng mục                 | Giá trị                                                                                             |
 | -------------------------- | ----------------------------------------------------------------------------------------------------- |
 | Giai đoạn                | 31/12/2023 (migration) → 31/08/2026                                                                  |
-| Mạng lưới               | 12 chi nhánh + 28 phòng giao dịch, 61 ATM, theo**34 tỉnh/thành sau sáp nhập 01/07/2025** |
+| Mạng lưới               | 12 chi nhánh + 28 phòng giao dịch, 61 ATM, theo **34 tỉnh/thành sau sáp nhập 01/07/2025** |
 | Khách hàng               | 12.000 cá nhân + 500 doanh nghiệp SME                                                              |
 | Giao dịch tài khoản     | ~3,7 triệu                                                                                           |
 | Giao dịch thẻ tín dụng | ~250 nghìn                                                                                           |
@@ -42,7 +42,10 @@ psql -U postgres -f sql/00_setup/00_create_database.sql
 python -m python.etl.setup_db                            # tạo đối tượng DB
 python -m python.etl.run_pipeline --mode all             # nạp 54 lô
 python -m python.etl.load_plan                           # nạp kế hoạch từ Excel
+python -m python.etl.run_sql sql/05_reports/02_powerbi_views.sql   # view báo cáo cho Power BI
 ```
+
+Sau đó mở `powerbi/DLB_Operations_Dashboard.pbip` và bấm **Refresh** (chi tiết: [docs/07_powerbi_model.md](docs/07_powerbi_model.md#6-mở-và-làm-mới-dữ-liệu)).
 
 Muốn tự sinh bộ dữ liệu khác (đổi quy mô, seed...): `python -m python.generator.run_generator --clean` thay cho bước giải nén.
 
@@ -59,6 +62,7 @@ bank-operations-reporting/
 │   └── raw/             # file CSV giải nén/sinh ra (gitignored)
 ├── docs/                # thiết kế, hiệu chỉnh, từ điển dữ liệu, DQ, runbook
 ├── excel/templates/     # kế hoạch kinh doanh 2024–2026
+├── powerbi/             # dashboard Power BI (PBIP: model TMDL + báo cáo PBIR)
 ├── python/
 │   ├── common/          # cấu hình, layout file
 │   ├── generator/       # mô phỏng core banking + dựng file kế hoạch Excel
@@ -70,10 +74,40 @@ bank-operations-reporting/
 │   ├── 02_core/         # dimension, fact, bảng DQ
 │   ├── 03_mart/         # mart báo cáo
 │   ├── 04_procedures/   # nạp SCD2, fact, DQ, refresh mart, điều phối lô
-│   ├── 05_reports/      # view báo cáo
+│   ├── 05_reports/      # view báo cáo (schema rpt cho Power BI)
 │   └── 06_exploration/  # bộ truy vấn khám phá dữ liệu có chú thích
 └── tests/               # pytest
 ```
+
+## Dashboard Power BI
+
+6 trang báo cáo điều hành, dữ liệu nạp từ schema `rpt` của PostgreSQL. Mọi trang có bộ lọc Năm / Vùng / Chi nhánh; biểu đồ xu hướng hiển thị 13 tháng gần nhất trong phạm vi lọc.
+
+| Trang | Trả lời câu hỏi |
+|---|---|
+| 1. Tổng quan | Quy mô, chất lượng tài sản, mức hoàn thành kế hoạch |
+| 2. Huy động | Cơ cấu CASA / có kỳ hạn, chạy số cuối quý, chi nhánh đạt kế hoạch |
+| 3. Tín dụng & Rủi ro | Nợ xấu theo chi nhánh và sản phẩm, ma trận chuyển nhóm nợ |
+| 4. Khách hàng, Thẻ & Kênh | Khách hàng mới, hiệu quả chiến dịch thẻ, chuyển dịch sang kênh số |
+| 5. Vận hành | Uptime ATM, khiếu nại, SLA, thời gian chờ tại quầy |
+| 6. Chất lượng dữ liệu | Kết quả 15 quy tắc kiểm tra sau mỗi lô ETL |
+
+![Tổng quan](docs/images/01_tong_quan.png)
+
+<details>
+<summary>Các trang còn lại</summary>
+
+![Huy động](docs/images/02_huy_dong.png)
+![Tín dụng & Rủi ro](docs/images/03_tin_dung_rui_ro.png)
+![Khách hàng, Thẻ & Kênh](docs/images/04_khach_hang_the_kenh.png)
+![Vận hành](docs/images/05_van_hanh.png)
+![Chất lượng dữ liệu](docs/images/06_chat_luong_du_lieu.png)
+
+</details>
+
+Kỹ thuật chính: star schema 3 dimension, 11 fact; 77 measure DAX với mẫu số dư cuối kỳ, YTD/YoY theo ngày chốt, cửa sổ 13 tháng động; đơn vị gắn trong format string; PBIP lưu model và báo cáo dạng văn bản để quản lý bằng Git. Xem [docs/07_powerbi_model.md](docs/07_powerbi_model.md).
+
+Số liệu Power BI khớp 100% với DWH (số dòng từng bảng và KPI chính; xem `logs/health_check.txt` sau khi chạy `python -m python.etl.health_check`).
 
 ## Điểm nhấn nghiệp vụ
 
@@ -86,12 +120,14 @@ bank-operations-reporting/
 
 ## Tài liệu
 
+0. [Bối cảnh nghiệp vụ, giải thích chỉ số, câu chuyện trong dữ liệu](docs/00_business_context.md): **nên đọc đầu tiên**
 1. [Thiết kế tổng thể](docs/01_project_blueprint.md)
 2. [Hiệu chỉnh số liệu &amp; nguồn](docs/02_calibration.md)
 3. [Từ điển dữ liệu](docs/03_data_dictionary.md)
 4. [Chất lượng dữ liệu](docs/04_data_quality.md)
 5. [Hướng dẫn chạy](docs/05_runbook.md)
 6. [Khám phá dữ liệu bằng SQL](docs/06_sql_tour.md) (bộ truy vấn trong `sql/06_exploration/`)
+7. [Power BI: mô hình dữ liệu, DAX, dashboard](docs/07_powerbi_model.md)
 
 ## Lộ trình
 
@@ -100,6 +136,6 @@ bank-operations-reporting/
 - [X] Data warehouse PostgreSQL, batch EOD, SCD2, mart
 - [X] ETL Python, kiểm soát chất lượng dữ liệu, kiểm thử
 - [X] Kế hoạch kinh doanh Excel → DWH
-- [ ] Power BI: mô hình dữ liệu, DAX, dashboard
+- [X] Power BI: mô hình dữ liệu, DAX, dashboard 6 trang
 - [ ] Excel: báo cáo ngày T-1 (Power Query), file đối chiếu GL
 - [ ] Phân tích nâng cao: dự báo nợ xấu, chấm điểm tín dụng, khách hàng rời bỏ

@@ -1,7 +1,9 @@
 """Generate the report pages (PBIR format) of DLB_Operations_Dashboard.
 
+The report layout has since been fine-tuned by hand in Power BI Desktop, so the .pbip is the source of truth.
+Re-running this script DELETES those manual edits; it therefore requires an explicit flag.
 Run with Power BI Desktop CLOSED, then reopen the .pbip:
-    python powerbi/build_report.py
+    python powerbi/build_report.py --force
 
 The semantic model (tables, relationships, DAX measures) lives in DLB_Operations_Dashboard.SemanticModel.
 This script only (re)writes the report layer: theme + 6 pages of visuals.
@@ -483,4 +485,8 @@ def write():
 
 
 if __name__ == "__main__":
+    import sys
+    if "--force" not in sys.argv:
+        sys.exit("CANH BAO: script se XOA va viet lai toan bo trang bao cao (moi chinh sua tay trong Power BI se mat).\n"
+                 "Neu that su muon dung lai bo cuc ban dau: dong Power BI roi chay  python powerbi/build_report.py --force")
     write()
