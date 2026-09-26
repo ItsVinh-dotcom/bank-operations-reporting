@@ -64,7 +64,8 @@ bank-operations-reporting/
 │   ├── 02_core/         # dimension, fact, bảng DQ
 │   ├── 03_mart/         # mart báo cáo
 │   ├── 04_procedures/   # nạp SCD2, fact, DQ, refresh mart, điều phối lô
-│   └── 05_reports/      # view báo cáo
+│   ├── 05_reports/      # view báo cáo
+│   └── 06_exploration/  # bộ truy vấn khám phá dữ liệu có chú thích
 └── tests/               # pytest
 ```
 
@@ -84,6 +85,7 @@ bank-operations-reporting/
 3. [Từ điển dữ liệu](docs/03_data_dictionary.md)
 4. [Chất lượng dữ liệu](docs/04_data_quality.md)
 5. [Hướng dẫn chạy](docs/05_runbook.md)
+6. [Khám phá dữ liệu bằng SQL](docs/06_sql_tour.md) (bộ truy vấn trong `sql/06_exploration/`)
 
 ## Lộ trình
 
