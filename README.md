@@ -12,23 +12,23 @@ Core Banking (mô phỏng) ──EOD──▶ file trích xuất ──Python ET
 
 ## Quy mô dữ liệu
 
-| Hạng mục | Giá trị |
-|---|---|
-| Giai đoạn | 31/12/2023 (migration) → 31/08/2026 |
-| Mạng lưới | 12 chi nhánh + 28 phòng giao dịch, 61 ATM, theo **34 tỉnh/thành sau sáp nhập 01/07/2025** |
-| Khách hàng | 12.000 cá nhân + 500 doanh nghiệp SME |
-| Giao dịch tài khoản | ~3,7 triệu |
-| Giao dịch thẻ tín dụng | ~250 nghìn |
-| Lô dữ liệu | 33 lô lịch sử (tháng) + 21 lô EOD (ngày làm việc tháng 08/2026) |
+| Hạng mục                 | Giá trị                                                                                             |
+| -------------------------- | ----------------------------------------------------------------------------------------------------- |
+| Giai đoạn                | 31/12/2023 (migration) → 31/08/2026                                                                  |
+| Mạng lưới               | 12 chi nhánh + 28 phòng giao dịch, 61 ATM, theo**34 tỉnh/thành sau sáp nhập 01/07/2025** |
+| Khách hàng               | 12.000 cá nhân + 500 doanh nghiệp SME                                                              |
+| Giao dịch tài khoản     | ~3,7 triệu                                                                                           |
+| Giao dịch thẻ tín dụng | ~250 nghìn                                                                                           |
+| Lô dữ liệu              | 33 lô lịch sử (tháng) + 21 lô EOD (ngày làm việc tháng 08/2026)                              |
 
 ## Công cụ
 
-| Công cụ | Vai trò |
-|---|---|
-| **Python** | Mô phỏng core banking, ETL, kiểm thử (pytest), tự động hóa |
+| Công cụ            | Vai trò                                                                                                            |
+| -------------------- | ------------------------------------------------------------------------------------------------------------------- |
+| **Python**     | Mô phỏng core banking, ETL, kiểm thử (pytest), tự động hóa                                                  |
 | **PostgreSQL** | Data warehouse: staging → dimension/fact (SCD2, partition) → mart; stored procedure xử lý lô, đối chiếu, DQ |
-| **Excel** | Kế hoạch kinh doanh (giả định, phân bổ chi nhánh, công thức) được ETL nạp vào DWH |
-| **Power BI** | Dashboard điều hành, huy động, tín dụng, thẻ & kênh số, vận hành, chất lượng dữ liệu |
+| **Excel**      | Kế hoạch kinh doanh (giả định, phân bổ chi nhánh, công thức) được ETL nạp vào DWH                    |
+| **Power BI**   | Dashboard điều hành, huy động, tín dụng, thẻ & kênh số, vận hành, chất lượng dữ liệu               |
 
 ## Chạy nhanh
 
@@ -87,7 +87,7 @@ bank-operations-reporting/
 ## Tài liệu
 
 1. [Thiết kế tổng thể](docs/01_project_blueprint.md)
-2. [Hiệu chỉnh số liệu & nguồn](docs/02_calibration.md)
+2. [Hiệu chỉnh số liệu &amp; nguồn](docs/02_calibration.md)
 3. [Từ điển dữ liệu](docs/03_data_dictionary.md)
 4. [Chất lượng dữ liệu](docs/04_data_quality.md)
 5. [Hướng dẫn chạy](docs/05_runbook.md)
@@ -95,11 +95,11 @@ bank-operations-reporting/
 
 ## Lộ trình
 
-- [x] Thiết kế tổng thể, danh mục tham chiếu
-- [x] Bộ sinh dữ liệu core banking (history + EOD)
-- [x] Data warehouse PostgreSQL, batch EOD, SCD2, mart
-- [x] ETL Python, kiểm soát chất lượng dữ liệu, kiểm thử
-- [x] Kế hoạch kinh doanh Excel → DWH
+- [X] Thiết kế tổng thể, danh mục tham chiếu
+- [X] Bộ sinh dữ liệu core banking (history + EOD)
+- [X] Data warehouse PostgreSQL, batch EOD, SCD2, mart
+- [X] ETL Python, kiểm soát chất lượng dữ liệu, kiểm thử
+- [X] Kế hoạch kinh doanh Excel → DWH
 - [ ] Power BI: mô hình dữ liệu, DAX, dashboard
 - [ ] Excel: báo cáo ngày T-1 (Power Query), file đối chiếu GL
 - [ ] Phân tích nâng cao: dự báo nợ xấu, chấm điểm tín dụng, khách hàng rời bỏ
