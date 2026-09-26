@@ -1,0 +1,69 @@
+/// Nguồn: PostgreSQL rpt.fact_atm_daily
+table FactATM
+	lineageTag: 4765d3f1-63ee-48e7-8edd-2ec4cb6c75aa
+
+	column report_date
+		dataType: dateTime
+		isHidden
+		formatString: dd/MM/yyyy
+		lineageTag: 32dfcbd3-568c-4433-8db3-4b118dda05f3
+		summarizeBy: none
+		sourceColumn: report_date
+
+	column atm_id
+		dataType: string
+		lineageTag: b208b70e-2706-4afa-b6c5-611075f8de74
+		summarizeBy: none
+		sourceColumn: atm_id
+
+	column branch_code
+		dataType: string
+		isHidden
+		lineageTag: 655a6081-347f-4f60-9a70-785c64c23835
+		summarizeBy: none
+		sourceColumn: branch_code
+
+	column uptime_pct
+		dataType: double
+		isHidden
+		lineageTag: cf1012e3-8914-49ce-9497-0e7525378581
+		summarizeBy: none
+		sourceColumn: uptime_pct
+
+	column incident_count
+		dataType: int64
+		isHidden
+		lineageTag: 9a2964eb-e6ae-4052-b24e-96aa4d3becec
+		summarizeBy: none
+		sourceColumn: incident_count
+
+	column cash_out_flag
+		dataType: int64
+		isHidden
+		lineageTag: 96184cee-0e17-4916-b7d1-22240e7e9269
+		summarizeBy: none
+		sourceColumn: cash_out_flag
+
+	column withdrawal_count
+		dataType: int64
+		isHidden
+		lineageTag: a45452d6-83ce-41cc-9a2f-7865aae1c414
+		summarizeBy: none
+		sourceColumn: withdrawal_count
+
+	column withdrawal_amount
+		dataType: int64
+		isHidden
+		lineageTag: 372f5e8d-b50d-4f87-a6bd-fd54a358bb65
+		summarizeBy: none
+		sourceColumn: withdrawal_amount
+
+	partition FactATM = m
+		mode: import
+		source =
+				let
+				    Source = PostgreSQL.Database(PgServer, PgDatabase),
+				    Data = Source{[Schema="rpt",Item="fact_atm_daily"]}[Data]
+				in
+				    Data
+

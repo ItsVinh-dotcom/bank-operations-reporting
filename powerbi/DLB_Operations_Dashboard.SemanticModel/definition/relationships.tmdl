@@ -1,0 +1,96 @@
+relationship FactKPI_month_end_DimDate_Ngày
+	fromColumn: FactKPI.month_end
+	toColumn: DimDate.Ngày
+
+relationship FactDepositDaily_balance_date_DimDate_Ngày
+	fromColumn: FactDepositDaily.balance_date
+	toColumn: DimDate.Ngày
+
+relationship FactLoanPortfolio_snapshot_date_DimDate_Ngày
+	fromColumn: FactLoanPortfolio.snapshot_date
+	toColumn: DimDate.Ngày
+
+relationship FactLoanMigration_month_end_DimDate_Ngày
+	fromColumn: FactLoanMigration.month_end
+	toColumn: DimDate.Ngày
+
+relationship FactChannel_month_end_DimDate_Ngày
+	fromColumn: FactChannel.month_end
+	toColumn: DimDate.Ngày
+
+relationship FactCardSpend_month_end_DimDate_Ngày
+	fromColumn: FactCardSpend.month_end
+	toColumn: DimDate.Ngày
+
+relationship FactCardCohort_issue_month_DimDate_Ngày
+	fromColumn: FactCardCohort.issue_month
+	toColumn: DimDate.Ngày
+
+relationship FactATM_report_date_DimDate_Ngày
+	fromColumn: FactATM.report_date
+	toColumn: DimDate.Ngày
+
+relationship FactComplaint_received_date_DimDate_Ngày
+	fromColumn: FactComplaint.received_date
+	toColumn: DimDate.Ngày
+
+relationship FactBranchOps_business_date_DimDate_Ngày
+	fromColumn: FactBranchOps.business_date
+	toColumn: DimDate.Ngày
+
+relationship FactDQ_business_date_DimDate_Ngày
+	fromColumn: FactDQ.business_date
+	toColumn: DimDate.Ngày
+
+relationship 'FactKPI_branch_code_DimBranch_Mã đơn vị'
+	fromColumn: FactKPI.branch_code
+	toColumn: DimBranch.'Mã đơn vị'
+
+relationship 'FactDepositDaily_branch_code_DimBranch_Mã đơn vị'
+	fromColumn: FactDepositDaily.branch_code
+	toColumn: DimBranch.'Mã đơn vị'
+
+relationship 'FactLoanPortfolio_branch_code_DimBranch_Mã đơn vị'
+	fromColumn: FactLoanPortfolio.branch_code
+	toColumn: DimBranch.'Mã đơn vị'
+
+relationship 'FactChannel_branch_code_DimBranch_Mã đơn vị'
+	fromColumn: FactChannel.branch_code
+	toColumn: DimBranch.'Mã đơn vị'
+
+relationship 'FactCardCohort_branch_code_DimBranch_Mã đơn vị'
+	fromColumn: FactCardCohort.branch_code
+	toColumn: DimBranch.'Mã đơn vị'
+
+relationship 'FactATM_branch_code_DimBranch_Mã đơn vị'
+	fromColumn: FactATM.branch_code
+	toColumn: DimBranch.'Mã đơn vị'
+
+relationship 'FactComplaint_branch_code_DimBranch_Mã đơn vị'
+	fromColumn: FactComplaint.branch_code
+	toColumn: DimBranch.'Mã đơn vị'
+
+relationship 'FactBranchOps_branch_code_DimBranch_Mã đơn vị'
+	fromColumn: FactBranchOps.branch_code
+	toColumn: DimBranch.'Mã đơn vị'
+
+relationship 'FactDepositDaily_product_code_DimProduct_Mã sản phẩm'
+	fromColumn: FactDepositDaily.product_code
+	toColumn: DimProduct.'Mã sản phẩm'
+
+relationship 'FactLoanPortfolio_product_code_DimProduct_Mã sản phẩm'
+	fromColumn: FactLoanPortfolio.product_code
+	toColumn: DimProduct.'Mã sản phẩm'
+
+relationship 'FactLoanMigration_product_code_DimProduct_Mã sản phẩm'
+	fromColumn: FactLoanMigration.product_code
+	toColumn: DimProduct.'Mã sản phẩm'
+
+relationship 'FactCardSpend_product_code_DimProduct_Mã sản phẩm'
+	fromColumn: FactCardSpend.product_code
+	toColumn: DimProduct.'Mã sản phẩm'
+
+relationship 'FactCardCohort_product_code_DimProduct_Mã sản phẩm'
+	fromColumn: FactCardCohort.product_code
+	toColumn: DimProduct.'Mã sản phẩm'
+

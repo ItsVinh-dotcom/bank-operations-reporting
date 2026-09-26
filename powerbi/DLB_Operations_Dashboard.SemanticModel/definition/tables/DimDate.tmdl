@@ -1,0 +1,101 @@
+/// Nguồn: PostgreSQL rpt.dim_date
+table DimDate
+	lineageTag: 5fb74fab-29c0-48dd-a9c3-37d303a395fc
+	dataCategory: Time
+
+	column Ngày
+		dataType: dateTime
+		isUnique
+		formatString: dd/MM/yyyy
+		lineageTag: 1d856cdf-28ce-47a6-a950-8fd6e1a628b9
+		summarizeBy: none
+		sourceColumn: full_date
+
+	column Năm
+		dataType: int64
+		lineageTag: 6c85ecd9-7cde-4da9-994a-910cdb629c69
+		summarizeBy: none
+		sourceColumn: year_no
+
+	column 'Quý số'
+		dataType: int64
+		lineageTag: fb4f1cda-0a17-4927-ae95-e4a2b44f6edc
+		summarizeBy: none
+		sourceColumn: quarter_no
+
+	column 'Tháng số'
+		dataType: int64
+		lineageTag: 633467ae-d27e-4096-9eec-e6a9427ed4d4
+		summarizeBy: none
+		sourceColumn: month_no
+
+	column Tháng
+		dataType: string
+		lineageTag: 87c83831-23f3-438b-8dbe-c84e1c27aeb0
+		summarizeBy: none
+		sourceColumn: month_label
+		sortByColumn: year_month_key
+
+	column year_month_key
+		dataType: int64
+		isHidden
+		lineageTag: 1cc705d7-f2b7-45d4-be71-364d8d10c101
+		summarizeBy: none
+		sourceColumn: year_month_key
+
+	column Quý
+		dataType: string
+		lineageTag: 185cef4e-8f6f-47bf-9a4c-56e326e8055a
+		summarizeBy: none
+		sourceColumn: quarter_label
+
+	column 'Cuối tháng'
+		dataType: dateTime
+		formatString: MM/yyyy
+		lineageTag: 1d517854-f0e4-4554-844f-b3eaa6d2aa1c
+		summarizeBy: none
+		sourceColumn: month_end
+
+	column is_month_end
+		dataType: boolean
+		isHidden
+		lineageTag: 49206e30-b559-4e72-aa63-219002a6c7b0
+		summarizeBy: none
+		sourceColumn: is_month_end
+
+	column is_business_day
+		dataType: boolean
+		isHidden
+		lineageTag: 0c8222e4-b4c1-41e2-970b-9cfcd03adfe1
+		summarizeBy: none
+		sourceColumn: is_business_day
+
+	column day_of_week
+		dataType: int64
+		isHidden
+		lineageTag: e6b417e7-5487-4cd3-b16f-c77b4bfa266b
+		summarizeBy: none
+		sourceColumn: day_of_week
+
+	column Thứ
+		dataType: string
+		lineageTag: 7333cb55-51f1-424b-b31f-6f58bed5d516
+		summarizeBy: none
+		sourceColumn: day_name_vi
+		sortByColumn: day_of_week
+
+	column 'Tháng (ngắn)' = FORMAT ( DimDate[Cuối tháng], "M/yy" )
+		dataType: string
+		lineageTag: 1fd625ec-75a6-4229-954e-a9ec386fbd36
+		summarizeBy: none
+		sortByColumn: year_month_key
+
+	partition DimDate = m
+		mode: import
+		source =
+				let
+				    Source = PostgreSQL.Database(PgServer, PgDatabase),
+				    Data = Source{[Schema="rpt",Item="dim_date"]}[Data]
+				in
+				    Data
+

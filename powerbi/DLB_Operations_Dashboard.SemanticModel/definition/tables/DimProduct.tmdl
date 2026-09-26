@@ -1,0 +1,43 @@
+/// Nguồn: PostgreSQL rpt.dim_product
+table DimProduct
+	lineageTag: 40b845ce-e05a-46d7-868c-60507aa47450
+
+	column 'Mã sản phẩm'
+		dataType: string
+		lineageTag: 86a3b259-8253-49c5-91f1-16d4ed653631
+		summarizeBy: none
+		sourceColumn: product_code
+
+	column 'Sản phẩm'
+		dataType: string
+		lineageTag: 390424d2-e8ba-4e8a-865e-531ffa6fbdf5
+		summarizeBy: none
+		sourceColumn: product_name
+
+	column 'Nhóm sản phẩm'
+		dataType: string
+		lineageTag: 21e729dd-dac0-458b-8739-09e7062fc980
+		summarizeBy: none
+		sourceColumn: product_group
+
+	column 'Loại sản phẩm'
+		dataType: string
+		lineageTag: e27497de-cb77-4ceb-9215-6ba2ec5905b4
+		summarizeBy: none
+		sourceColumn: product_type
+
+	column 'Loại khách hàng'
+		dataType: string
+		lineageTag: 028c11ec-543a-4c2b-9f7f-b6feb31612cd
+		summarizeBy: none
+		sourceColumn: customer_type
+
+	partition DimProduct = m
+		mode: import
+		source =
+				let
+				    Source = PostgreSQL.Database(PgServer, PgDatabase),
+				    Data = Source{[Schema="rpt",Item="dim_product"]}[Data]
+				in
+				    Data
+

@@ -1,0 +1,77 @@
+/// Nguồn: PostgreSQL rpt.fact_loan_migration
+table FactLoanMigration
+	lineageTag: 4205e656-695a-459d-a045-d2222d416848
+
+	column month_end
+		dataType: dateTime
+		isHidden
+		formatString: dd/MM/yyyy
+		lineageTag: 9480898f-c3a6-415d-8fc6-4d58975529dc
+		summarizeBy: none
+		sourceColumn: month_end
+
+	column product_code
+		dataType: string
+		isHidden
+		lineageTag: 32d9e22e-5b3d-45ce-8601-8213e2c5142e
+		summarizeBy: none
+		sourceColumn: product_code
+
+	column from_order
+		dataType: int64
+		isHidden
+		lineageTag: c7711698-b2ab-4021-aba7-c5f36bbf4f33
+		summarizeBy: none
+		sourceColumn: from_order
+
+	column to_order
+		dataType: int64
+		isHidden
+		lineageTag: becc9482-b9c3-43f7-af28-5aae6ff5a29f
+		summarizeBy: none
+		sourceColumn: to_order
+
+	column 'Nhóm đầu kỳ'
+		dataType: string
+		lineageTag: 91eef170-ca0c-423e-8cd4-f1d8544bd715
+		summarizeBy: none
+		sourceColumn: from_state
+		sortByColumn: from_order
+
+	column 'Nhóm cuối kỳ'
+		dataType: string
+		lineageTag: 6e82b755-cd9f-469c-89dc-d01a250a36e7
+		summarizeBy: none
+		sourceColumn: to_state
+		sortByColumn: to_order
+
+	column loan_count
+		dataType: int64
+		isHidden
+		lineageTag: e1507a0c-929f-44be-b353-66b5155965be
+		summarizeBy: none
+		sourceColumn: loan_count
+
+	column amount_from
+		dataType: double
+		isHidden
+		lineageTag: d1a5e4d3-6166-4036-9eab-579cccdbd285
+		summarizeBy: none
+		sourceColumn: amount_from
+
+	column amount_to
+		dataType: double
+		isHidden
+		lineageTag: f11cc3f8-4d9b-456e-b2ca-e75316ba663d
+		summarizeBy: none
+		sourceColumn: amount_to
+
+	partition FactLoanMigration = m
+		mode: import
+		source =
+				let
+				    Source = PostgreSQL.Database(PgServer, PgDatabase),
+				    Data = Source{[Schema="rpt",Item="fact_loan_migration"]}[Data]
+				in
+				    Data
+

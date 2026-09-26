@@ -1,0 +1,49 @@
+/// Nguồn: PostgreSQL rpt.fact_card_cohort
+table FactCardCohort
+	lineageTag: b170ff0c-cad2-46bd-a732-b7453e9ea358
+
+	column issue_month
+		dataType: dateTime
+		isHidden
+		formatString: dd/MM/yyyy
+		lineageTag: 87f3c3e3-7ed2-427d-9537-eacffc5bc33d
+		summarizeBy: none
+		sourceColumn: issue_month
+
+	column product_code
+		dataType: string
+		isHidden
+		lineageTag: 5a6ef892-0cfe-42be-a8b6-77f0cf16ece0
+		summarizeBy: none
+		sourceColumn: product_code
+
+	column branch_code
+		dataType: string
+		isHidden
+		lineageTag: d6435bca-ae1e-4baf-8e0c-d4edbf1a4557
+		summarizeBy: none
+		sourceColumn: branch_code
+
+	column cards_issued
+		dataType: int64
+		isHidden
+		lineageTag: 9d914cef-2a39-4f96-b643-17088d9cc446
+		summarizeBy: none
+		sourceColumn: cards_issued
+
+	column cards_activated
+		dataType: int64
+		isHidden
+		lineageTag: dca9f0ed-e424-4aa6-a2b3-a85e032ee51e
+		summarizeBy: none
+		sourceColumn: cards_activated
+
+	partition FactCardCohort = m
+		mode: import
+		source =
+				let
+				    Source = PostgreSQL.Database(PgServer, PgDatabase),
+				    Data = Source{[Schema="rpt",Item="fact_card_cohort"]}[Data]
+				in
+				    Data
+

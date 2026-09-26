@@ -1,0 +1,55 @@
+/// Nguồn: PostgreSQL rpt.dim_branch
+table DimBranch
+	lineageTag: 165d6a9f-4f29-4e72-b80c-5d28c68c3889
+
+	column 'Mã đơn vị'
+		dataType: string
+		lineageTag: 721ec2d3-77af-464d-b182-55842ecb46c5
+		summarizeBy: none
+		sourceColumn: branch_code
+
+	column 'Đơn vị'
+		dataType: string
+		lineageTag: 001b5d63-93f9-4a4e-a516-43dc1066fa74
+		summarizeBy: none
+		sourceColumn: branch_name
+
+	column 'Cấp đơn vị'
+		dataType: string
+		lineageTag: ff7ad772-6e5a-4c79-b507-87e6df16999e
+		summarizeBy: none
+		sourceColumn: branch_level
+
+	column 'Mã chi nhánh'
+		dataType: string
+		lineageTag: a164283e-0d3f-4e8a-a2ac-5b25214da059
+		summarizeBy: none
+		sourceColumn: managing_branch_code
+
+	column 'Chi nhánh'
+		dataType: string
+		lineageTag: 9940faf3-22eb-4993-a6ce-3e0a33745a22
+		summarizeBy: none
+		sourceColumn: managing_branch_name
+
+	column Tỉnh/Thành
+		dataType: string
+		lineageTag: 1775112b-7d49-44b7-9830-2a9d7edde3b1
+		summarizeBy: none
+		sourceColumn: province_name
+
+	column Vùng
+		dataType: string
+		lineageTag: 533a881a-07b1-4697-bef9-1da6536e488b
+		summarizeBy: none
+		sourceColumn: region
+
+	partition DimBranch = m
+		mode: import
+		source =
+				let
+				    Source = PostgreSQL.Database(PgServer, PgDatabase),
+				    Data = Source{[Schema="rpt",Item="dim_branch"]}[Data]
+				in
+				    Data
+

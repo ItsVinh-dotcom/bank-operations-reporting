@@ -1,0 +1,56 @@
+/// Nguồn: PostgreSQL rpt.fact_branch_ops
+table FactBranchOps
+	lineageTag: 879b33a7-16a7-4c65-8698-1c3e73e8d274
+
+	column business_date
+		dataType: dateTime
+		isHidden
+		formatString: dd/MM/yyyy
+		lineageTag: 2f13bd3d-71ed-4964-bb02-640db7c9d5cc
+		summarizeBy: none
+		sourceColumn: business_date
+
+	column branch_code
+		dataType: string
+		isHidden
+		lineageTag: e9806cb7-93bf-429b-808d-3d26a243185f
+		summarizeBy: none
+		sourceColumn: branch_code
+
+	column counter_txn_count
+		dataType: int64
+		isHidden
+		lineageTag: aca5c34b-105b-408d-a814-77bd12638919
+		summarizeBy: none
+		sourceColumn: counter_txn_count
+
+	column service_request_count
+		dataType: int64
+		isHidden
+		lineageTag: 6f3f10fa-7604-4944-972e-244996fa9d04
+		summarizeBy: none
+		sourceColumn: service_request_count
+
+	column avg_wait_minutes
+		dataType: double
+		isHidden
+		lineageTag: 11e08547-b74c-4817-91cf-71f3b15bf656
+		summarizeBy: none
+		sourceColumn: avg_wait_minutes
+
+	column pct_wait_under_15m
+		dataType: double
+		isHidden
+		lineageTag: 4771a6da-e36e-469c-a383-39c27164df11
+		summarizeBy: none
+		sourceColumn: pct_wait_under_15m
+
+	partition FactBranchOps = m
+		mode: import
+		source =
+				let
+				    Source = PostgreSQL.Database(PgServer, PgDatabase),
+				    Data = Source{[Schema="rpt",Item="fact_branch_ops"]}[Data]
+				in
+				    Data
+

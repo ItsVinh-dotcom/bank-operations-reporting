@@ -7,7 +7,203 @@
         "x": 0,
         "y": 0
       },
-      "nodes": [],
+      "nodes": [
+        {
+          "location": {
+            "x": 0,
+            "y": 26
+          },
+          "nodeIndex": "DimBranch",
+          "nodeLineageTag": "165d6a9f-4f29-4e72-b80c-5d28c68c3889",
+          "size": {
+            "height": 248,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 284,
+            "y": 0
+          },
+          "nodeIndex": "DimDate",
+          "nodeLineageTag": "5fb74fab-29c0-48dd-a9c3-37d303a395fc",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 568,
+            "y": 50
+          },
+          "nodeIndex": "DimProduct",
+          "nodeLineageTag": "40b845ce-e05a-46d7-868c-60507aa47450",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 852,
+            "y": 14
+          },
+          "nodeIndex": "FactATM",
+          "nodeLineageTag": "4765d3f1-63ee-48e7-8edd-2ec4cb6c75aa",
+          "size": {
+            "height": 272,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 1136,
+            "y": 38
+          },
+          "nodeIndex": "FactBranchOps",
+          "nodeLineageTag": "879b33a7-16a7-4c65-8698-1c3e73e8d274",
+          "size": {
+            "height": 224,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 1420,
+            "y": 50
+          },
+          "nodeIndex": "FactCardCohort",
+          "nodeLineageTag": "b170ff0c-cad2-46bd-a732-b7453e9ea358",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 1704,
+            "y": 14
+          },
+          "nodeIndex": "FactCardSpend",
+          "nodeLineageTag": "0ebceee6-7941-455e-9da1-35312b6ff755",
+          "size": {
+            "height": 272,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 1988,
+            "y": 2
+          },
+          "nodeIndex": "FactChannel",
+          "nodeLineageTag": "fb630e28-4206-4dc0-a0c9-6cae5004d6c0",
+          "size": {
+            "height": 296,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 2272,
+            "y": 0
+          },
+          "nodeIndex": "FactComplaint",
+          "nodeLineageTag": "e48ee863-7f26-4ba5-b200-223cb398d826",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 2556,
+            "y": 62
+          },
+          "nodeIndex": "FactDepositDaily",
+          "nodeLineageTag": "1730a08e-5d34-4f83-8391-211028458e9c",
+          "size": {
+            "height": 176,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 2840,
+            "y": 2
+          },
+          "nodeIndex": "FactDQ",
+          "nodeLineageTag": "166237c7-8f7b-4feb-86fc-a997478f3c30",
+          "size": {
+            "height": 296,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 3124,
+            "y": 0
+          },
+          "nodeIndex": "FactKPI",
+          "nodeLineageTag": "86f18cf8-c250-44ac-a35e-11a409a29485",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 3408,
+            "y": 2
+          },
+          "nodeIndex": "FactLoanMigration",
+          "nodeLineageTag": "4205e656-695a-459d-a045-d2222d416848",
+          "size": {
+            "height": 296,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 3692,
+            "y": 0
+          },
+          "nodeIndex": "FactLoanPortfolio",
+          "nodeLineageTag": "d3e118de-0f36-4bcb-9df3-3c88d2d2d7a6",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 3976,
+            "y": 50
+          },
+          "nodeIndex": "_Measures",
+          "nodeLineageTag": "6b1a6b6d-4e12-4129-8ea4-3bc752eddf59",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 0
+        }
+      ],
       "name": "All tables",
       "zoomValue": 100,
       "pinKeyFieldsToTop": false,

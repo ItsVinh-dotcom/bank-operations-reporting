@@ -1,0 +1,42 @@
+/// Nguồn: PostgreSQL rpt.fact_deposit_daily
+table FactDepositDaily
+	lineageTag: 1730a08e-5d34-4f83-8391-211028458e9c
+
+	column balance_date
+		dataType: dateTime
+		isHidden
+		formatString: dd/MM/yyyy
+		lineageTag: 968c6baf-286b-479a-92d8-e8480f3a5e10
+		summarizeBy: none
+		sourceColumn: balance_date
+
+	column branch_code
+		dataType: string
+		isHidden
+		lineageTag: c06cbd62-7a50-4543-bf27-be3e35b7bc50
+		summarizeBy: none
+		sourceColumn: branch_code
+
+	column product_code
+		dataType: string
+		isHidden
+		lineageTag: 8bd218fe-ffba-4acf-8a9f-a0412484dc5f
+		summarizeBy: none
+		sourceColumn: product_code
+
+	column balance
+		dataType: double
+		isHidden
+		lineageTag: 956d920e-04f5-4a8f-b910-3b14c1740083
+		summarizeBy: none
+		sourceColumn: balance
+
+	partition FactDepositDaily = m
+		mode: import
+		source =
+				let
+				    Source = PostgreSQL.Database(PgServer, PgDatabase),
+				    Data = Source{[Schema="rpt",Item="fact_deposit_daily"]}[Data]
+				in
+				    Data
+

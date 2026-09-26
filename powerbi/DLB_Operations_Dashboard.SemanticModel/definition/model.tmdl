@@ -9,7 +9,25 @@ model Model
 
 annotation __PBI_TimeIntelligenceEnabled = 1
 
-annotation PBI_ProTooling = ["DevMode"]
+annotation PBI_ProTooling = ["DevMode","MCP-PBIModeling"]
+
+annotation PBI_QueryOrder = ["DimBranch","DimDate","DimProduct","FactATM","FactBranchOps","FactCardCohort","FactCardSpend","FactChannel","FactComplaint","FactDepositDaily","FactDQ","FactKPI","FactLoanMigration","FactLoanPortfolio","PgServer","PgDatabase"]
+
+ref table DimBranch
+ref table DimDate
+ref table DimProduct
+ref table FactATM
+ref table FactBranchOps
+ref table FactCardCohort
+ref table FactCardSpend
+ref table FactChannel
+ref table FactComplaint
+ref table FactDepositDaily
+ref table FactDQ
+ref table FactKPI
+ref table FactLoanMigration
+ref table FactLoanPortfolio
+ref table _Measures
 
 ref cultureInfo en-GB
 

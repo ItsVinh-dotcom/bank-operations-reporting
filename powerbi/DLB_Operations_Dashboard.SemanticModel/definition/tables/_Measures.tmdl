@@ -1,0 +1,470 @@
+/// Bảng chứa toàn bộ measure của báo cáo
+table _Measures
+	lineageTag: 6b1a6b6d-4e12-4129-8ea4-3bc752eddf59
+
+	/// Ngày cuối tháng mới nhất trong phạm vi lọc
+	measure 'Ngày dữ liệu' = MAX ( FactKPI[month_end] )
+		formatString: dd/MM/yyyy
+		displayFolder: 0. Chung
+		lineageTag: 7582530e-82af-472c-b8ec-5b98dd215844
+
+	measure 'Nhãn ngày dữ liệu' = "Số liệu đến ngày " & FORMAT ( [Ngày dữ liệu], "dd/MM/yyyy" ) & "  |  Đơn vị: tỷ đồng"
+		displayFolder: 0. Chung
+		lineageTag: f51bdccf-bb60-4d14-9bf6-e2be3b1f2276
+
+	/// Số dư tiền gửi khách hàng cuối kỳ (CASA + có kỳ hạn), tỷ đồng
+	measure 'Tổng huy động' =
+			VAR _m = MAX ( FactKPI[month_end] )
+			RETURN
+			    DIVIDE ( CALCULATE ( SUM ( FactKPI[deposit_balance] ), REMOVEFILTERS ( DimDate ), DimDate[Ngày] = _m ), 1e9 )
+		formatString: #,##0.0 "tỷ"
+		displayFolder: 1. Huy động
+		lineageTag: bc5fbc92-dbff-4315-a522-83703634ba2b
+
+	/// Tiền gửi không kỳ hạn cuối kỳ, tỷ đồng
+	measure CASA =
+			VAR _m = MAX ( FactKPI[month_end] )
+			RETURN
+			    DIVIDE ( CALCULATE ( SUM ( FactKPI[casa_balance] ), REMOVEFILTERS ( DimDate ), DimDate[Ngày] = _m ), 1e9 )
+		formatString: #,##0.0 "tỷ"
+		displayFolder: 1. Huy động
+		lineageTag: 45506236-a2d8-4fdf-99f3-92d1ffcab761
+
+	measure 'Tiền gửi có kỳ hạn' =
+			VAR _m = MAX ( FactKPI[month_end] )
+			RETURN
+			    DIVIDE ( CALCULATE ( SUM ( FactKPI[td_balance] ), REMOVEFILTERS ( DimDate ), DimDate[Ngày] = _m ), 1e9 )
+		formatString: #,##0.0 "tỷ"
+		displayFolder: 1. Huy động
+		lineageTag: 52551286-6bd7-4477-b8a1-fbcf7f47e72b
+
+	/// CASA / Tổng huy động
+	measure 'Tỷ lệ CASA' = DIVIDE ( [CASA], [Tổng huy động] )
+		formatString: 0.0%;-0.0%;0.0%
+		displayFolder: 1. Huy động
+		lineageTag: eb91d871-07bc-4e3a-8bf7-3079acd10604
+
+	measure 'Kế hoạch huy động' =
+			VAR _m = MAX ( FactKPI[month_end] )
+			RETURN
+			    DIVIDE ( CALCULATE ( SUM ( FactKPI[plan_deposit] ), REMOVEFILTERS ( DimDate ), DimDate[Ngày] = _m ), 1e9 )
+		formatString: #,##0.0 "tỷ"
+		displayFolder: 1. Huy động
+		lineageTag: ed96e14f-61bb-4bc1-9750-4653ee160b8c
+
+	measure '% HT KH huy động' = DIVIDE ( [Tổng huy động], [Kế hoạch huy động] )
+		formatString: 0.0%;-0.0%;0.0%
+		displayFolder: 1. Huy động
+		lineageTag: 21aad783-f34d-48b5-9a81-3336e521443c
+
+	measure 'Huy động cùng kỳ' =
+			VAR _m = MAX ( FactKPI[month_end] )
+			RETURN
+			    DIVIDE ( CALCULATE ( SUM ( FactKPI[deposit_balance] ), REMOVEFILTERS ( DimDate ), DimDate[Ngày] = EOMONTH ( _m, -12 ) ), 1e9 )
+		formatString: #,##0.0 "tỷ"
+		displayFolder: 1. Huy động
+		lineageTag: 18416e8e-63b5-4b85-b5a0-fa0cb62c8032
+
+	measure 'Tăng trưởng huy động YoY' = DIVIDE ( [Tổng huy động] - [Huy động cùng kỳ], [Huy động cùng kỳ] )
+		formatString: 0.0%;-0.0%;0.0%
+		displayFolder: 1. Huy động
+		lineageTag: bad81e36-0e26-48c1-a154-a440871be2b9
+
+	measure 'Huy động đầu năm' =
+			VAR _m = MAX ( FactKPI[month_end] )
+			RETURN
+			    DIVIDE ( CALCULATE ( SUM ( FactKPI[deposit_balance] ), REMOVEFILTERS ( DimDate ), DimDate[Ngày] = DATE ( YEAR ( _m ) - 1, 12, 31 ) ), 1e9 )
+		formatString: #,##0.0 "tỷ"
+		displayFolder: 1. Huy động
+		lineageTag: 3837a25e-5c30-4a3c-a9ac-35233148ecaa
+
+	measure 'Tăng trưởng huy động YTD' = DIVIDE ( [Tổng huy động] - [Huy động đầu năm], [Huy động đầu năm] )
+		formatString: 0.0%;-0.0%;0.0%
+		displayFolder: 1. Huy động
+		lineageTag: 9d50b7b3-7c16-4975-8637-4e97ac88e93f
+
+	/// Số dư theo ngày (value date), dùng cho biểu đồ theo ngày
+	measure 'Số dư huy động ngày' =
+			VAR _m = MAX ( FactDepositDaily[balance_date] )
+			RETURN
+			    DIVIDE ( CALCULATE ( SUM ( FactDepositDaily[balance] ), REMOVEFILTERS ( DimDate ), DimDate[Ngày] = _m ), 1e9 )
+		formatString: #,##0.0 "tỷ"
+		displayFolder: 1. Huy động
+		lineageTag: 5607241a-2f97-467f-a1e7-59a6023c3424
+
+	/// Dư nợ cho vay cuối kỳ, tỷ đồng
+	measure 'Dư nợ' =
+			VAR _m = MAX ( FactKPI[month_end] )
+			RETURN
+			    DIVIDE ( CALCULATE ( SUM ( FactKPI[loan_balance] ), REMOVEFILTERS ( DimDate ), DimDate[Ngày] = _m ), 1e9 )
+		formatString: #,##0.0 "tỷ"
+		displayFolder: 2. Tín dụng & rủi ro
+		lineageTag: 3292a6bd-c2be-4d92-be72-0b9d3caaa6b2
+
+	measure 'Dư nợ bán lẻ' =
+			VAR _m = MAX ( FactKPI[month_end] )
+			RETURN
+			    DIVIDE ( CALCULATE ( SUM ( FactKPI[loan_retail_balance] ), REMOVEFILTERS ( DimDate ), DimDate[Ngày] = _m ), 1e9 )
+		formatString: #,##0.0 "tỷ"
+		displayFolder: 2. Tín dụng & rủi ro
+		lineageTag: ae2a2904-6996-436a-9265-307a91262831
+
+	measure 'Dư nợ SME' =
+			VAR _m = MAX ( FactKPI[month_end] )
+			RETURN
+			    DIVIDE ( CALCULATE ( SUM ( FactKPI[loan_sme_balance] ), REMOVEFILTERS ( DimDate ), DimDate[Ngày] = _m ), 1e9 )
+		formatString: #,##0.0 "tỷ"
+		displayFolder: 2. Tín dụng & rủi ro
+		lineageTag: 49810e6f-4ff4-456f-8e67-bf8985a6b02e
+
+	/// Dư nợ nhóm 3-5
+	measure 'Nợ xấu' =
+			VAR _m = MAX ( FactKPI[month_end] )
+			RETURN
+			    DIVIDE ( CALCULATE ( SUM ( FactKPI[npl_balance] ), REMOVEFILTERS ( DimDate ), DimDate[Ngày] = _m ), 1e9 )
+		formatString: #,##0.0 "tỷ"
+		displayFolder: 2. Tín dụng & rủi ro
+		lineageTag: 33ee5d53-d081-4a36-b276-b9e70f4956b0
+
+	measure 'Nợ nhóm 2' =
+			VAR _m = MAX ( FactKPI[month_end] )
+			RETURN
+			    DIVIDE ( CALCULATE ( SUM ( FactKPI[group2_balance] ), REMOVEFILTERS ( DimDate ), DimDate[Ngày] = _m ), 1e9 )
+		formatString: #,##0.0 "tỷ"
+		displayFolder: 2. Tín dụng & rủi ro
+		lineageTag: 19bb6e30-79a9-427b-9361-e68d81d79b80
+
+	measure 'Tỷ lệ nợ xấu' = DIVIDE ( [Nợ xấu], [Dư nợ] )
+		formatString: 0.00%;-0.00%;0.00%
+		displayFolder: 2. Tín dụng & rủi ro
+		lineageTag: 474c0d8e-dfc8-4319-bab0-b38233d9649e
+
+	measure 'Tỷ lệ nợ nhóm 2' = DIVIDE ( [Nợ nhóm 2], [Dư nợ] )
+		formatString: 0.00%;-0.00%;0.00%
+		displayFolder: 2. Tín dụng & rủi ro
+		lineageTag: 8a894555-de3a-4489-aad6-53ee9d2e4a00
+
+	measure 'Dự phòng rủi ro' =
+			VAR _m = MAX ( FactKPI[month_end] )
+			RETURN
+			    DIVIDE ( CALCULATE ( SUM ( FactKPI[specific_provision] ) + SUM ( FactKPI[general_provision] ), REMOVEFILTERS ( DimDate ), DimDate[Ngày] = _m ), 1e9 )
+		formatString: #,##0.0 "tỷ"
+		displayFolder: 2. Tín dụng & rủi ro
+		lineageTag: 9ecf80e4-f82b-49cf-a187-3b18170c4e70
+
+	/// Dự phòng / Nợ xấu (LLR)
+	measure 'Tỷ lệ bao phủ nợ xấu' = DIVIDE ( [Dự phòng rủi ro], [Nợ xấu] )
+		formatString: 0%
+		displayFolder: 2. Tín dụng & rủi ro
+		lineageTag: be6d0bec-ac96-4ec0-94b1-cd496fbeab78
+
+	/// Dư nợ / Huy động
+	measure LDR = DIVIDE ( [Dư nợ], [Tổng huy động] )
+		formatString: 0.0%;-0.0%;0.0%
+		displayFolder: 2. Tín dụng & rủi ro
+		lineageTag: 7c121763-a153-4e00-bf0c-93d7942c957e
+
+	measure 'Kế hoạch dư nợ' =
+			VAR _m = MAX ( FactKPI[month_end] )
+			RETURN
+			    DIVIDE ( CALCULATE ( SUM ( FactKPI[plan_loan] ), REMOVEFILTERS ( DimDate ), DimDate[Ngày] = _m ), 1e9 )
+		formatString: #,##0.0 "tỷ"
+		displayFolder: 2. Tín dụng & rủi ro
+		lineageTag: 8c59264a-6f0a-40c9-b6ea-09aef1926def
+
+	measure '% HT KH dư nợ' = DIVIDE ( [Dư nợ], [Kế hoạch dư nợ] )
+		formatString: 0.0%;-0.0%;0.0%
+		displayFolder: 2. Tín dụng & rủi ro
+		lineageTag: eacfb47b-cc91-4ede-a385-77fd21efeb0c
+
+	measure 'Dư nợ đầu năm' =
+			VAR _m = MAX ( FactKPI[month_end] )
+			RETURN
+			    DIVIDE ( CALCULATE ( SUM ( FactKPI[loan_balance] ), REMOVEFILTERS ( DimDate ), DimDate[Ngày] = DATE ( YEAR ( _m ) - 1, 12, 31 ) ), 1e9 )
+		formatString: #,##0.0 "tỷ"
+		displayFolder: 2. Tín dụng & rủi ro
+		lineageTag: 7b249d60-72f0-40fe-9a4b-8b1f7e16ff87
+
+	measure 'Tăng trưởng tín dụng YTD' = DIVIDE ( [Dư nợ] - [Dư nợ đầu năm], [Dư nợ đầu năm] )
+		formatString: 0.0%;-0.0%;0.0%
+		displayFolder: 2. Tín dụng & rủi ro
+		lineageTag: 4473ee06-a7e9-4b21-a377-938cc74092ae
+
+	measure 'Giải ngân mới' = DIVIDE ( SUM ( FactKPI[disbursement_amount] ), 1e9 )
+		formatString: #,##0.0 "tỷ"
+		displayFolder: 2. Tín dụng & rủi ro
+		lineageTag: 1139954d-e127-4a55-b881-ccef96d29090
+
+	measure 'Xử lý rủi ro' = DIVIDE ( SUM ( FactKPI[writeoff_amount] ), 1e9 )
+		formatString: #,##0.0 "tỷ"
+		displayFolder: 2. Tín dụng & rủi ro
+		lineageTag: fb73c744-eef2-4c0f-86c5-f4ad4f5e17cc
+
+	/// Dư nợ theo sản phẩm/nhóm nợ từ danh mục khoản vay
+	measure 'Dư nợ (danh mục)' =
+			VAR _m = MAX ( FactLoanPortfolio[snapshot_date] )
+			RETURN
+			    DIVIDE ( CALCULATE ( SUM ( FactLoanPortfolio[outstanding] ), REMOVEFILTERS ( DimDate ), DimDate[Ngày] = _m ), 1e9 )
+		formatString: #,##0.0 "tỷ"
+		displayFolder: 2. Tín dụng & rủi ro
+		lineageTag: 8ccd1ba0-c4ab-48ed-bb37-3ee4c03c3388
+
+	measure 'Nợ xấu (danh mục)' =
+			VAR _m = MAX ( FactLoanPortfolio[snapshot_date] )
+			RETURN
+			    DIVIDE ( CALCULATE ( SUM ( FactLoanPortfolio[outstanding] ), REMOVEFILTERS ( DimDate ), DimDate[Ngày] = _m, FactLoanPortfolio[is_npl] = 1 ), 1e9 )
+		formatString: #,##0.0 "tỷ"
+		displayFolder: 2. Tín dụng & rủi ro
+		lineageTag: d020e1f8-0893-4616-98f1-b46a34479f8f
+
+	measure 'Tỷ lệ nợ xấu (danh mục)' = DIVIDE ( [Nợ xấu (danh mục)], [Dư nợ (danh mục)] )
+		formatString: 0.00%;-0.00%;0.00%
+		displayFolder: 2. Tín dụng & rủi ro
+		lineageTag: 06d259e8-8d56-4e02-87d8-1afd09c54e5c
+
+	measure 'Số khoản vay chuyển nhóm' = SUM ( FactLoanMigration[loan_count] )
+		formatString: #,##0
+		displayFolder: 2. Tín dụng & rủi ro
+		lineageTag: 8c4076a8-ab2c-4215-b1f0-a6c5d4a9acd8
+
+	measure 'Dư nợ đầu kỳ (chuyển nhóm)' = DIVIDE ( SUM ( FactLoanMigration[amount_from] ), 1e9 )
+		formatString: #,##0.0 "tỷ"
+		displayFolder: 2. Tín dụng & rủi ro
+		lineageTag: 84fa8872-c34e-48c7-8325-5d8cd4f68b27
+
+	measure 'Khách hàng mới' = SUM ( FactKPI[new_customers] )
+		formatString: #,##0 "KH"
+		displayFolder: 3. Khách hàng, thẻ & kênh
+		lineageTag: 525b544d-b59a-47da-8dc5-38d2d6303535
+
+	measure 'Kế hoạch khách hàng mới' = SUM ( FactKPI[plan_new_customers] )
+		formatString: #,##0 "KH"
+		displayFolder: 3. Khách hàng, thẻ & kênh
+		lineageTag: e1672fcd-aa30-4f9b-b68b-be3a58aa0f7e
+
+	measure 'Khách hàng hoạt động' =
+			VAR _m = MAX ( FactKPI[month_end] )
+			RETURN
+			    CALCULATE ( SUM ( FactKPI[active_customers] ), REMOVEFILTERS ( DimDate ), DimDate[Ngày] = _m )
+		formatString: #,##0 "KH"
+		displayFolder: 3. Khách hàng, thẻ & kênh
+		lineageTag: ffab31bf-3af2-45f8-89b9-65365bf59f5b
+
+	/// Số thẻ phát hành theo tháng phát hành
+	measure 'Thẻ tín dụng phát hành' = SUM ( FactCardCohort[cards_issued] )
+		formatString: #,##0 "thẻ"
+		displayFolder: 3. Khách hàng, thẻ & kênh
+		lineageTag: 856b89ec-6da3-41fa-8d3e-8c583c2d7a2c
+
+	/// Số thẻ (theo tháng phát hành) đã được kích hoạt
+	measure 'Thẻ tín dụng đã kích hoạt' = SUM ( FactCardCohort[cards_activated] )
+		formatString: #,##0 "thẻ"
+		displayFolder: 3. Khách hàng, thẻ & kênh
+		lineageTag: 48ee3804-64ba-4b90-b0ad-0ae25c99c678
+
+	measure 'Tỷ lệ kích hoạt thẻ' = DIVIDE ( [Thẻ tín dụng đã kích hoạt], [Thẻ tín dụng phát hành] )
+		formatString: 0%
+		displayFolder: 3. Khách hàng, thẻ & kênh
+		lineageTag: 40f75a7b-bed7-4ca5-bf82-381d2e5d461a
+
+	measure 'Chi tiêu thẻ tín dụng' = DIVIDE ( SUM ( FactCardSpend[amount] ), 1e9 )
+		formatString: #,##0.0 "tỷ"
+		displayFolder: 3. Khách hàng, thẻ & kênh
+		lineageTag: e407ac44-8a14-4e7e-92f4-00c63806d5f2
+
+	measure 'Số giao dịch thẻ' = SUM ( FactCardSpend[txn_count] )
+		formatString: #,##0 "GD"
+		displayFolder: 3. Khách hàng, thẻ & kênh
+		lineageTag: aaedf693-0d12-4e2a-82be-329936cef3cd
+
+	/// Giao dịch do khách hàng thực hiện (không gồm giao dịch hệ thống)
+	measure 'Số giao dịch' = CALCULATE ( SUM ( FactChannel[txn_count] ), FactChannel[Nhóm kênh] <> "Hệ thống" )
+		formatString: #,##0 "GD"
+		displayFolder: 3. Khách hàng, thẻ & kênh
+		lineageTag: e378a946-bc8a-457d-b2ff-29f38964ae12
+
+	measure 'Tỷ trọng kênh số' = DIVIDE ( CALCULATE ( SUM ( FactChannel[txn_count] ), FactChannel[Nhóm kênh] = "Kênh số" ), [Số giao dịch] )
+		formatString: 0.0%;-0.0%;0.0%
+		displayFolder: 3. Khách hàng, thẻ & kênh
+		lineageTag: f5559a02-635e-4073-812f-c169b0869ec8
+
+	measure 'Tỷ trọng giao dịch' = DIVIDE ( [Số giao dịch], CALCULATE ( [Số giao dịch], REMOVEFILTERS ( FactChannel[Kênh], FactChannel[Nhóm kênh] ) ) )
+		formatString: 0.0%;-0.0%;0.0%
+		displayFolder: 3. Khách hàng, thẻ & kênh
+		lineageTag: a674349d-7a26-4794-9737-6edbb8349538
+
+	measure 'Uptime ATM' = AVERAGE ( FactATM[uptime_pct] )
+		formatString: 0.00%;-0.00%;0.00%
+		displayFolder: 4. Vận hành
+		lineageTag: 75b47696-058b-48cc-ad73-ace90347230d
+
+	measure 'Số sự cố ATM' = SUM ( FactATM[incident_count] )
+		formatString: #,##0 "sự cố"
+		displayFolder: 4. Vận hành
+		lineageTag: cfd46278-78de-4eb6-9a8d-00da66d506f2
+
+	measure 'Lượt rút tiền ATM' = SUM ( FactATM[withdrawal_count] )
+		formatString: #,##0 "lượt"
+		displayFolder: 4. Vận hành
+		lineageTag: 46954345-cf94-4668-9f10-4c1e0bc5b8de
+
+	measure 'Số khiếu nại' = COUNTROWS ( FactComplaint )
+		formatString: #,##0 "vụ"
+		displayFolder: 4. Vận hành
+		lineageTag: e2deaa56-f04b-467b-95f7-3971bbba69fd
+
+	measure 'Tỷ lệ vi phạm SLA' = DIVIDE ( SUM ( FactComplaint[is_sla_breached] ), CALCULATE ( COUNTROWS ( FactComplaint ), FactComplaint[status] = "CLOSED" ) )
+		formatString: 0.0%;-0.0%;0.0%
+		displayFolder: 4. Vận hành
+		lineageTag: cf53488e-22e8-47bc-9608-0ae89d399d1f
+
+	measure 'Thời gian xử lý TB (ngày LV)' = AVERAGE ( FactComplaint[resolution_bdays] )
+		formatString: 0.0 "ngày"
+		displayFolder: 4. Vận hành
+		lineageTag: eca5df9f-631b-42c3-a76f-2e71e178487a
+
+	measure 'Thời gian chờ TB (phút)' = DIVIDE ( SUMX ( FactBranchOps, FactBranchOps[avg_wait_minutes] * ( FactBranchOps[counter_txn_count] + FactBranchOps[service_request_count] ) ), SUM ( FactBranchOps[counter_txn_count] ) + SUM ( FactBranchOps[service_request_count] ) )
+		formatString: 0.0 "phút"
+		displayFolder: 4. Vận hành
+		lineageTag: 3c2f6047-357b-44e3-96f2-c8ff725212d1
+
+	measure 'Giao dịch tại quầy' = SUM ( FactBranchOps[counter_txn_count] )
+		formatString: #,##0 "GD"
+		displayFolder: 4. Vận hành
+		lineageTag: b6a9c892-23e0-4e44-8def-1f5cc42df997
+
+	measure 'Số bản ghi lỗi' = SUM ( FactDQ[failed_rows] )
+		formatString: #,##0
+		displayFolder: 5. Chất lượng dữ liệu
+		lineageTag: d9592101-6193-4dab-a435-a508284f1601
+
+	measure 'Số bản ghi kiểm tra' = SUM ( FactDQ[checked_rows] )
+		formatString: #,##0
+		displayFolder: 5. Chất lượng dữ liệu
+		lineageTag: 848e3894-a71f-4fd5-ab43-7f1a23fc0fd8
+
+	measure 'Số lô FAIL' = CALCULATE ( COUNTROWS ( FactDQ ), FactDQ[Trạng thái] = "FAIL" )
+		formatString: #,##0
+		displayFolder: 5. Chất lượng dữ liệu
+		lineageTag: 8e553e96-491c-4088-a1ee-19374f0756d2
+
+	measure 'Tỷ lệ lỗi' = DIVIDE ( [Số bản ghi lỗi], [Số bản ghi kiểm tra] )
+		formatString: 0.000%
+		displayFolder: 5. Chất lượng dữ liệu
+		lineageTag: 378aab08-52af-4f93-8436-e329c3d903db
+
+	measure 'CASA cùng kỳ' =
+			VAR _m = MAX ( FactKPI[month_end] )
+			RETURN
+			    DIVIDE ( CALCULATE ( SUM ( FactKPI[casa_balance] ), REMOVEFILTERS ( DimDate ), DimDate[Ngày] = EOMONTH ( _m, -12 ) ), 1e9 )
+		formatString: #,##0.0 "tỷ"
+		displayFolder: 1. Huy động
+		lineageTag: ec914b1d-e859-4121-afcd-88ba7bb22a25
+
+	measure 'Tỷ lệ CASA cùng kỳ' = DIVIDE ( [CASA cùng kỳ], [Huy động cùng kỳ] )
+		formatString: 0.0%
+		displayFolder: 1. Huy động
+		lineageTag: 117d4072-5a66-488b-973c-c624d58ba0b9
+
+	measure 'Tỷ lệ KH khách hàng mới' = DIVIDE ( [Khách hàng mới], [Kế hoạch khách hàng mới] )
+		formatString: 0%
+		displayFolder: 3. Khách hàng, thẻ & kênh
+		lineageTag: f65d4651-5620-43b7-9591-94e4bcd6329a
+
+	measure 'Nhãn · Tổng huy động' = "YTD " & FORMAT ( [Tăng trưởng huy động YTD], "+0.0%;-0.0%" ) & " · KH " & FORMAT ( [% HT KH huy động], "0%" )
+		displayFolder: 9. Nhãn thẻ KPI
+		lineageTag: ae9c10ec-351c-4fb9-8bfe-611e71d51a92
+
+	measure 'Nhãn · Dư nợ' = "YTD " & FORMAT ( [Tăng trưởng tín dụng YTD], "+0.0%;-0.0%" ) & " · KH " & FORMAT ( [% HT KH dư nợ], "0%" )
+		displayFolder: 9. Nhãn thẻ KPI
+		lineageTag: c3a9ff85-ae4a-4e9c-8fda-4e55f2e163f3
+
+	measure 'Nhãn · Tỷ lệ CASA' = "Cùng kỳ: " & FORMAT ( [Tỷ lệ CASA cùng kỳ], "0.0%" )
+		displayFolder: 9. Nhãn thẻ KPI
+		lineageTag: 39dd8dbd-e3e4-40cf-a254-272467860dd2
+
+	measure 'Nhãn · CASA' = FORMAT ( [Tỷ lệ CASA], "0.0%" ) & " tổng huy động"
+		displayFolder: 9. Nhãn thẻ KPI
+		lineageTag: f270110a-99a5-4ebb-a941-bfef84a3f6a1
+
+	measure 'Nhãn · Tiền gửi có kỳ hạn' = FORMAT ( 1 - [Tỷ lệ CASA], "0.0%" ) & " tổng huy động"
+		displayFolder: 9. Nhãn thẻ KPI
+		lineageTag: f6b5499b-1d00-452f-bf20-53bf7936e046
+
+	measure 'Nhãn · Tăng trưởng YoY' = "Cùng kỳ: " & FORMAT ( [Huy động cùng kỳ], "#,##0" ) & " tỷ"
+		displayFolder: 9. Nhãn thẻ KPI
+		lineageTag: 0535d9f4-0217-408c-b883-918e6a812359
+
+	measure 'Nhãn · Tỷ lệ nợ xấu' = "Nợ nhóm 2: " & FORMAT ( [Tỷ lệ nợ nhóm 2], "0.00%" )
+		displayFolder: 9. Nhãn thẻ KPI
+		lineageTag: 1ff7f9e0-a83f-4793-bcbf-524c68935700
+
+	measure 'Nhãn · LDR' = "Trần quy định: 85%"
+		displayFolder: 9. Nhãn thẻ KPI
+		lineageTag: ee82262a-ab7c-4a7d-9c95-fcbc560c39bc
+
+	measure 'Nhãn · Khách hàng mới' = "Đạt " & FORMAT ( DIVIDE ( [Khách hàng mới YTD], [Kế hoạch KH mới YTD] ), "0%" ) & " KH lũy kế năm"
+		displayFolder: 9. Nhãn thẻ KPI
+		lineageTag: 0b2a8e94-ed03-479c-9993-8cdebea2333b
+
+	measure 'Nhãn · Nợ xấu' = "Dự phòng: " & FORMAT ( [Dự phòng rủi ro], "#,##0.0" ) & " tỷ"
+		displayFolder: 9. Nhãn thẻ KPI
+		lineageTag: b5ffcbad-f28b-445f-9555-b6d4703f4364
+
+	measure 'Nhãn · Thẻ phát hành' = "Kích hoạt: " & FORMAT ( [Thẻ tín dụng đã kích hoạt], "#,##0" ) & " thẻ"
+		displayFolder: 9. Nhãn thẻ KPI
+		lineageTag: e3226466-2595-486c-b3e7-a7513b056878
+
+	measure 'Nhãn · Uptime ATM' = "Mục tiêu ≥ 99%"
+		displayFolder: 9. Nhãn thẻ KPI
+		lineageTag: 4919eaf3-fa4c-45cb-9dad-947b5ed431e0
+
+	measure 'Nhãn · SLA' = "Mục tiêu ≤ 10%"
+		displayFolder: 9. Nhãn thẻ KPI
+		lineageTag: fd44940c-3333-4d6f-9931-afa227a99314
+
+	/// =1 cho 13 tháng gần nhất trong phạm vi lọc (dùng làm filter cho biểu đồ xu hướng)
+	measure 'Hiển thị 13 tháng' =
+			VAR _last = CALCULATE ( MAX ( DimDate[Ngày] ), ALLSELECTED ( DimDate ) )
+			VAR _cur = MAX ( DimDate[Ngày] )
+			RETURN
+			    IF ( _cur > EOMONTH ( _last, -13 ) && _cur <= EOMONTH ( _last, 0 ), 1, 0 )
+		formatString: 0
+		displayFolder: 0. Chung
+		lineageTag: d047bbb6-c040-49fa-ba14-ddf1be0b55c9
+
+	measure 'Hiển thị 18 tháng' =
+			VAR _last = CALCULATE ( MAX ( DimDate[Ngày] ), ALLSELECTED ( DimDate ) )
+			VAR _cur = MAX ( DimDate[Ngày] )
+			RETURN
+			    IF ( _cur > EOMONTH ( _last, -18 ) && _cur <= EOMONTH ( _last, 0 ), 1, 0 )
+		formatString: 0
+		displayFolder: 0. Chung
+		lineageTag: 64601fa6-4e96-4177-98e0-f943d5a66309
+
+	measure 'Khách hàng mới YTD' =
+			VAR _m = MAX ( FactKPI[month_end] )
+			RETURN
+			    CALCULATE ( [Khách hàng mới], REMOVEFILTERS ( DimDate ), DATESBETWEEN ( DimDate[Ngày], DATE ( YEAR ( _m ), 1, 1 ), _m ) )
+		formatString: #,##0 "KH"
+		displayFolder: 3. Khách hàng, thẻ & kênh
+		lineageTag: dc5369b0-284e-41f5-81f9-ef323d377540
+
+	measure 'Kế hoạch KH mới YTD' =
+			VAR _m = MAX ( FactKPI[month_end] )
+			RETURN
+			    CALCULATE ( [Kế hoạch khách hàng mới], REMOVEFILTERS ( DimDate ), DATESBETWEEN ( DimDate[Ngày], DATE ( YEAR ( _m ), 1, 1 ), _m ) )
+		formatString: #,##0 "KH"
+		displayFolder: 3. Khách hàng, thẻ & kênh
+		lineageTag: 874010f9-194b-4423-af34-2baae42d6bb9
+
+	column _
+		isHidden
+		lineageTag: 3b30c7bc-fa0b-4e9e-9a69-8c63316faade
+		isNameInferred
+		sourceColumn: [_]
+
+	partition _Measures = calculated
+		mode: import
+		source = ROW("_", BLANK())
+

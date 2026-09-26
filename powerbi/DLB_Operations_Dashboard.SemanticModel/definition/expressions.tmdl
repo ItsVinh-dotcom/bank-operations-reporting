@@ -1,0 +1,12 @@
+/// PostgreSQL server (host:port)
+expression PgServer = "localhost" meta [IsParameterQuery=true, Type="Text", IsParameterQueryRequired=true]
+	lineageTag: f424ab32-0ac3-4d1f-9bd6-167fc53811fd
+
+	annotation PBI_ResultType = Text
+
+/// PostgreSQL database of the DLB data warehouse
+expression PgDatabase = "dlb_dwh" meta [IsParameterQuery=true, Type="Text", IsParameterQueryRequired=true]
+	lineageTag: 6257294c-4b5c-422c-a344-c7fd2df8679e
+
+	annotation PBI_ResultType = Text
+

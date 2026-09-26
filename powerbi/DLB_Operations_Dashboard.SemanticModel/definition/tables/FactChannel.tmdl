@@ -1,0 +1,73 @@
+/// Nguồn: PostgreSQL rpt.fact_channel_month
+table FactChannel
+	lineageTag: fb630e28-4206-4dc0-a0c9-6cae5004d6c0
+
+	column month_end
+		dataType: dateTime
+		isHidden
+		formatString: dd/MM/yyyy
+		lineageTag: 3290ed34-170c-4b88-be52-f10708d92fcb
+		summarizeBy: none
+		sourceColumn: month_end
+
+	column branch_code
+		dataType: string
+		isHidden
+		lineageTag: ad2efa03-3173-468f-af79-3f0be88c0799
+		summarizeBy: none
+		sourceColumn: branch_code
+
+	column channel_code
+		dataType: string
+		isHidden
+		lineageTag: 5a7f01bb-25d9-44b8-85d4-0da72ee8a01c
+		summarizeBy: none
+		sourceColumn: channel_code
+
+	column Kênh
+		dataType: string
+		lineageTag: 322f9d0b-558b-45e2-b434-dde4cdaddbeb
+		summarizeBy: none
+		sourceColumn: channel_name
+
+	column 'Nhóm kênh'
+		dataType: string
+		lineageTag: 82ac8c99-5135-4479-9ec2-307c90e77858
+		summarizeBy: none
+		sourceColumn: channel_group
+
+	column txn_type
+		dataType: string
+		lineageTag: 7bccb41e-6abe-4d75-a4fd-98c1d39bc2e7
+		summarizeBy: none
+		sourceColumn: txn_type
+
+	column 'Loại KH'
+		dataType: string
+		lineageTag: 4629e500-4ad9-4116-afcc-8bd27740a55b
+		summarizeBy: none
+		sourceColumn: customer_type
+
+	column txn_count
+		dataType: int64
+		isHidden
+		lineageTag: 8164cdea-f675-4350-bb4e-226f3f75ce7a
+		summarizeBy: none
+		sourceColumn: txn_count
+
+	column amount
+		dataType: double
+		isHidden
+		lineageTag: 2e766e4f-bd43-4c24-8ad2-1e3a92255aa7
+		summarizeBy: none
+		sourceColumn: amount
+
+	partition FactChannel = m
+		mode: import
+		source =
+				let
+				    Source = PostgreSQL.Database(PgServer, PgDatabase),
+				    Data = Source{[Schema="rpt",Item="fact_channel_month"]}[Data]
+				in
+				    Data
+

@@ -1,0 +1,238 @@
+/// Nguồn: PostgreSQL rpt.fact_kpi_branch_month
+table FactKPI
+	lineageTag: 86f18cf8-c250-44ac-a35e-11a409a29485
+
+	column month_end
+		dataType: dateTime
+		isHidden
+		formatString: dd/MM/yyyy
+		lineageTag: e9caccab-4624-49a3-b55e-3c982ae84e31
+		summarizeBy: none
+		sourceColumn: month_end
+
+	column branch_code
+		dataType: string
+		isHidden
+		lineageTag: 149341d0-0701-43c7-8bf5-29e81009d4c7
+		summarizeBy: none
+		sourceColumn: branch_code
+
+	column casa_balance
+		dataType: double
+		isHidden
+		lineageTag: 9d6fa8c1-ac87-481d-b3f5-a2a53b0f269f
+		summarizeBy: none
+		sourceColumn: casa_balance
+
+	column td_balance
+		dataType: double
+		isHidden
+		lineageTag: 1f1b5ae0-a25f-475b-862d-5fa3ffc8b7ac
+		summarizeBy: none
+		sourceColumn: td_balance
+
+	column deposit_balance
+		dataType: double
+		isHidden
+		lineageTag: ba2133d9-67da-427f-b190-9e26d59b474d
+		summarizeBy: none
+		sourceColumn: deposit_balance
+
+	column loan_balance
+		dataType: double
+		isHidden
+		lineageTag: eece0cd8-53e1-4d2e-9140-ec357d6f83e5
+		summarizeBy: none
+		sourceColumn: loan_balance
+
+	column loan_retail_balance
+		dataType: double
+		isHidden
+		lineageTag: 2eb5129e-57c3-4abd-8109-f9832fa184ed
+		summarizeBy: none
+		sourceColumn: loan_retail_balance
+
+	column loan_sme_balance
+		dataType: double
+		isHidden
+		lineageTag: 12f7802c-6f7f-498c-868c-badf41d3b0b8
+		summarizeBy: none
+		sourceColumn: loan_sme_balance
+
+	column group2_balance
+		dataType: double
+		isHidden
+		lineageTag: 62be3880-2e03-4db7-ab51-f7548130718c
+		summarizeBy: none
+		sourceColumn: group2_balance
+
+	column npl_balance
+		dataType: double
+		isHidden
+		lineageTag: c90c392d-1a31-4834-a861-4ef4e7b50edc
+		summarizeBy: none
+		sourceColumn: npl_balance
+
+	column specific_provision
+		dataType: double
+		isHidden
+		lineageTag: ff457d3f-1509-49be-b0da-8c593fab95e3
+		summarizeBy: none
+		sourceColumn: specific_provision
+
+	column general_provision
+		dataType: double
+		isHidden
+		lineageTag: 48a5895e-78a6-4036-89cd-4b79d85c824a
+		summarizeBy: none
+		sourceColumn: general_provision
+
+	column writeoff_amount
+		dataType: double
+		isHidden
+		lineageTag: 61ab0da6-9c08-4f11-8bf3-7478edd80ad4
+		summarizeBy: none
+		sourceColumn: writeoff_amount
+
+	column disbursement_amount
+		dataType: double
+		isHidden
+		lineageTag: 8d37196c-5589-45c4-bd6e-4e159bd994fa
+		summarizeBy: none
+		sourceColumn: disbursement_amount
+
+	column disbursement_count
+		dataType: int64
+		isHidden
+		lineageTag: 61793ef1-8236-488d-8b2f-37abf81e421e
+		summarizeBy: none
+		sourceColumn: disbursement_count
+
+	column new_customers
+		dataType: int64
+		isHidden
+		lineageTag: b0d103af-a4f2-4c19-b4de-786d1c9fba81
+		summarizeBy: none
+		sourceColumn: new_customers
+
+	column closed_customers
+		dataType: int64
+		isHidden
+		lineageTag: 11456124-8b1f-44bf-9633-73f5e45ca28d
+		summarizeBy: none
+		sourceColumn: closed_customers
+
+	column active_customers
+		dataType: int64
+		isHidden
+		lineageTag: faf29a8c-1bd2-4b72-9619-066909900b56
+		summarizeBy: none
+		sourceColumn: active_customers
+
+	column credit_cards_issued
+		dataType: int64
+		isHidden
+		lineageTag: c1a78159-600e-4c9d-8b61-6a4692c9a73f
+		summarizeBy: none
+		sourceColumn: credit_cards_issued
+
+	column credit_cards_activated
+		dataType: int64
+		isHidden
+		lineageTag: 992de453-b0a5-404a-8647-7d873554ef49
+		summarizeBy: none
+		sourceColumn: credit_cards_activated
+
+	column active_credit_cards
+		dataType: int64
+		isHidden
+		lineageTag: bf351150-8df2-4d14-9c09-8cc92b38a29f
+		summarizeBy: none
+		sourceColumn: active_credit_cards
+
+	column card_spend_amount
+		dataType: double
+		isHidden
+		lineageTag: d563d337-32c5-4beb-aba3-a95234f5fa65
+		summarizeBy: none
+		sourceColumn: card_spend_amount
+
+	column casa_txn_count
+		dataType: int64
+		isHidden
+		lineageTag: 47db31dc-907e-4636-a27b-c024f32849e2
+		summarizeBy: none
+		sourceColumn: casa_txn_count
+
+	column digital_txn_count
+		dataType: int64
+		isHidden
+		lineageTag: ed405a04-750a-4c97-b555-c1b89a9694e4
+		summarizeBy: none
+		sourceColumn: digital_txn_count
+
+	column counter_txn_count
+		dataType: int64
+		isHidden
+		lineageTag: d9cccef1-48a9-4d9a-bf66-2ebba6e1a406
+		summarizeBy: none
+		sourceColumn: counter_txn_count
+
+	column complaints_received
+		dataType: int64
+		isHidden
+		lineageTag: 6dda8013-5834-4fd9-870e-26a22e01b04e
+		summarizeBy: none
+		sourceColumn: complaints_received
+
+	column complaints_sla_breached
+		dataType: int64
+		isHidden
+		lineageTag: d6bea7cc-5deb-4505-8e94-08bbe9de4d97
+		summarizeBy: none
+		sourceColumn: complaints_sla_breached
+
+	column plan_deposit
+		dataType: double
+		isHidden
+		lineageTag: a3cdaa8f-71d1-465e-bfa8-cf0870a51783
+		summarizeBy: none
+		sourceColumn: plan_deposit
+
+	column plan_casa
+		dataType: double
+		isHidden
+		lineageTag: 859c6c23-823b-49d3-abb1-23c56ab0bcd8
+		summarizeBy: none
+		sourceColumn: plan_casa
+
+	column plan_loan
+		dataType: double
+		isHidden
+		lineageTag: 81a5336e-e4af-4862-b2d4-c82e6199ed88
+		summarizeBy: none
+		sourceColumn: plan_loan
+
+	column plan_new_customers
+		dataType: double
+		isHidden
+		lineageTag: 65675f7b-053c-4e30-a26d-a019803ba9d4
+		summarizeBy: none
+		sourceColumn: plan_new_customers
+
+	column plan_credit_cards
+		dataType: double
+		isHidden
+		lineageTag: ab2d70b8-bba5-4f10-84cf-99407801a5d3
+		summarizeBy: none
+		sourceColumn: plan_credit_cards
+
+	partition FactKPI = m
+		mode: import
+		source =
+				let
+				    Source = PostgreSQL.Database(PgServer, PgDatabase),
+				    Data = Source{[Schema="rpt",Item="fact_kpi_branch_month"]}[Data]
+				in
+				    Data
+

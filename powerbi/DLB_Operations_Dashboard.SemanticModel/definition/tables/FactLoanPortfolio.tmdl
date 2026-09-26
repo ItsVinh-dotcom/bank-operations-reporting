@@ -1,0 +1,91 @@
+/// Nguồn: PostgreSQL rpt.fact_loan_portfolio
+table FactLoanPortfolio
+	lineageTag: d3e118de-0f36-4bcb-9df3-3c88d2d2d7a6
+
+	column snapshot_date
+		dataType: dateTime
+		isHidden
+		formatString: dd/MM/yyyy
+		lineageTag: 9bf902af-db06-4160-8b9c-8258d6bbc56a
+		summarizeBy: none
+		sourceColumn: snapshot_date
+
+	column branch_code
+		dataType: string
+		isHidden
+		lineageTag: 38dd76cc-9d6a-4d85-b469-47be06effca9
+		summarizeBy: none
+		sourceColumn: branch_code
+
+	column product_code
+		dataType: string
+		isHidden
+		lineageTag: e9833103-9407-49af-b699-a12b7860b1c8
+		summarizeBy: none
+		sourceColumn: product_code
+
+	column loan_group
+		dataType: int64
+		isHidden
+		lineageTag: 7899aa05-fd6c-484f-97e9-a7e867742379
+		summarizeBy: none
+		sourceColumn: loan_group
+
+	column 'Nhóm nợ'
+		dataType: string
+		lineageTag: d8e6c46e-9049-452e-95e8-bb7db3c24661
+		summarizeBy: none
+		sourceColumn: loan_group_name
+		sortByColumn: loan_group
+
+	column is_npl
+		dataType: int64
+		isHidden
+		lineageTag: 5f4afec9-1175-4e6c-b89e-3d8183baeb42
+		summarizeBy: none
+		sourceColumn: is_npl
+
+	column loan_count
+		dataType: int64
+		isHidden
+		lineageTag: 073ec7b0-6ec8-4404-8fd1-12710196b02e
+		summarizeBy: none
+		sourceColumn: loan_count
+
+	column outstanding
+		dataType: double
+		isHidden
+		lineageTag: 3aa43b21-b400-4778-aa3e-9183bcfe467e
+		summarizeBy: none
+		sourceColumn: outstanding
+
+	column overdue
+		dataType: double
+		isHidden
+		lineageTag: 56e0a855-9242-470b-9676-b0001faec4d8
+		summarizeBy: none
+		sourceColumn: overdue
+
+	column specific_provision
+		dataType: double
+		isHidden
+		lineageTag: af62f562-1554-4900-abf9-7190ac285cc1
+		summarizeBy: none
+		sourceColumn: specific_provision
+
+	column general_provision
+		dataType: double
+		isHidden
+		lineageTag: 8e950486-0be6-4ec1-bf51-fc0b1c36390c
+		summarizeBy: none
+		sourceColumn: general_provision
+
+	partition FactLoanPortfolio = m
+		mode: import
+		source =
+				let
+				    Source = PostgreSQL.Database(PgServer, PgDatabase),
+				    Data = Source{[Schema="rpt",Item="fact_loan_portfolio"]}[Data]
+				in
+				    Data
+

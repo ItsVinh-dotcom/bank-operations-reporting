@@ -26,6 +26,7 @@ SQL_FILES = [
     "04_procedures/06_refresh_marts.sql",
     "04_procedures/04_process_batch.sql",
     "05_reports/01_report_views.sql",
+    "05_reports/02_powerbi_views.sql",
 ]
 
 

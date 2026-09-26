@@ -1,0 +1,85 @@
+{
+  "name": "DLB Banking",
+  "dataColors": [
+    "#0B3C5D",
+    "#1D7874",
+    "#F2A541",
+    "#5B8DB8",
+    "#C0392B",
+    "#8E6C8A",
+    "#7FB77E",
+    "#B8B8B8",
+    "#2E4A62",
+    "#E07A5F"
+  ],
+  "background": "#FFFFFF",
+  "foreground": "#1F2937",
+  "tableAccent": "#0B3C5D",
+  "good": "#1D7874",
+  "neutral": "#F2A541",
+  "bad": "#C0392B",
+  "textClasses": {
+    "title": {
+      "fontFace": "Segoe UI Semibold",
+      "color": "#0B3C5D",
+      "fontSize": 11
+    },
+    "label": {
+      "fontFace": "Segoe UI",
+      "color": "#374151",
+      "fontSize": 9
+    }
+  },
+  "visualStyles": {
+    "*": {
+      "*": {
+        "background": [
+          {
+            "show": true,
+            "color": {
+              "solid": {
+                "color": "#FFFFFF"
+              }
+            },
+            "transparency": 0
+          }
+        ],
+        "border": [
+          {
+            "show": true,
+            "color": {
+              "solid": {
+                "color": "#E5E7EB"
+              }
+            },
+            "radius": 8
+          }
+        ],
+        "dropShadow": [
+          {
+            "show": false
+          }
+        ],
+        "subTitle": [
+          {
+            "show": false
+          }
+        ]
+      }
+    },
+    "page": {
+      "*": {
+        "background": [
+          {
+            "color": {
+              "solid": {
+                "color": "#F3F5F8"
+              }
+            },
+            "transparency": 0
+          }
+        ]
+      }
+    }
+  }
+}

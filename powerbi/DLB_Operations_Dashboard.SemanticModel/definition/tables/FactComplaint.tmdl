@@ -1,0 +1,85 @@
+/// Nguồn: PostgreSQL rpt.fact_complaint
+table FactComplaint
+	lineageTag: e48ee863-7f26-4ba5-b200-223cb398d826
+
+	column complaint_id
+		dataType: string
+		lineageTag: 8352bcd3-7924-4119-a2c8-6b97d5e7f0a8
+		summarizeBy: none
+		sourceColumn: complaint_id
+
+	column branch_code
+		dataType: string
+		isHidden
+		lineageTag: 8fbc7d64-84d6-4e4c-98fc-4d41f7c940c0
+		summarizeBy: none
+		sourceColumn: branch_code
+
+	column received_date
+		dataType: dateTime
+		isHidden
+		formatString: dd/MM/yyyy
+		lineageTag: aff983ee-1bb6-4a96-94f3-cea195710b29
+		summarizeBy: none
+		sourceColumn: received_date
+
+	column 'Kênh tiếp nhận'
+		dataType: string
+		lineageTag: d3658f18-b2f6-4ec2-a911-103639c79652
+		summarizeBy: none
+		sourceColumn: channel
+
+	column complaint_type
+		dataType: string
+		isHidden
+		lineageTag: 9a9d5073-ff84-4526-88fb-5b69a76473b1
+		summarizeBy: none
+		sourceColumn: complaint_type
+
+	column 'Loại khiếu nại'
+		dataType: string
+		lineageTag: b1218fab-a1ce-4f59-895d-d227afc2009b
+		summarizeBy: none
+		sourceColumn: complaint_type_name
+
+	column sla_days
+		dataType: int64
+		lineageTag: 87554ac8-fb7f-4680-82b6-070b3d896d0e
+		summarizeBy: none
+		sourceColumn: sla_days
+
+	column resolution_bdays
+		dataType: int64
+		isHidden
+		lineageTag: 20e08afd-d7e5-4f16-9573-395b2de0ed1a
+		summarizeBy: none
+		sourceColumn: resolution_bdays
+
+	column is_sla_breached
+		dataType: int64
+		isHidden
+		lineageTag: 502e5ccb-1a80-4f3d-9a78-1918e6cae9b8
+		summarizeBy: none
+		sourceColumn: is_sla_breached
+
+	column status
+		dataType: string
+		lineageTag: 19ab53a8-c487-445a-86de-d2fe4d93f59a
+		summarizeBy: none
+		sourceColumn: status
+
+	column is_valid
+		dataType: string
+		lineageTag: 0cff4546-4b05-442f-8f99-8e9f1950beaa
+		summarizeBy: none
+		sourceColumn: is_valid
+
+	partition FactComplaint = m
+		mode: import
+		source =
+				let
+				    Source = PostgreSQL.Database(PgServer, PgDatabase),
+				    Data = Source{[Schema="rpt",Item="fact_complaint"]}[Data]
+				in
+				    Data
+

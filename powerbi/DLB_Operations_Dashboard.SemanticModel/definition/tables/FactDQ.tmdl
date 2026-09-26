@@ -1,0 +1,71 @@
+/// Nguồn: PostgreSQL rpt.fact_dq
+table FactDQ
+	lineageTag: 166237c7-8f7b-4feb-86fc-a997478f3c30
+
+	column business_date
+		dataType: dateTime
+		isHidden
+		formatString: dd/MM/yyyy
+		lineageTag: c3fc6bc5-0e40-4420-8f9a-4a1a8e9a3cb7
+		summarizeBy: none
+		sourceColumn: business_date
+
+	column 'Loại lô'
+		dataType: string
+		lineageTag: 9ed62035-f038-438c-a026-902ce66c9515
+		summarizeBy: none
+		sourceColumn: batch_type
+
+	column 'Mã quy tắc'
+		dataType: string
+		lineageTag: 52ff179c-7df4-49f6-a608-b29a187a2024
+		summarizeBy: none
+		sourceColumn: rule_code
+
+	column 'Mức độ'
+		dataType: string
+		lineageTag: 6a56fece-bf6a-4806-bedf-4c8fd3538831
+		summarizeBy: none
+		sourceColumn: severity
+
+	column 'Chiều chất lượng'
+		dataType: string
+		lineageTag: 05d4af8d-9356-4e48-9cd8-d8495a3eb0ce
+		summarizeBy: none
+		sourceColumn: dimension
+
+	column 'Mô tả'
+		dataType: string
+		lineageTag: 68615c57-1d12-4fc8-8569-5dff1754f2ff
+		summarizeBy: none
+		sourceColumn: description
+
+	column checked_rows
+		dataType: int64
+		isHidden
+		lineageTag: 4c0f968a-a5c0-46ee-acb8-5d08ce96b17a
+		summarizeBy: none
+		sourceColumn: checked_rows
+
+	column failed_rows
+		dataType: int64
+		isHidden
+		lineageTag: e15e8a55-9c9e-43ff-b771-11e5eb529ce5
+		summarizeBy: none
+		sourceColumn: failed_rows
+
+	column 'Trạng thái'
+		dataType: string
+		lineageTag: 43f0eab4-a60c-4098-877f-52f43946e99f
+		summarizeBy: none
+		sourceColumn: status
+
+	partition FactDQ = m
+		mode: import
+		source =
+				let
+				    Source = PostgreSQL.Database(PgServer, PgDatabase),
+				    Data = Source{[Schema="rpt",Item="fact_dq"]}[Data]
+				in
+				    Data
+
