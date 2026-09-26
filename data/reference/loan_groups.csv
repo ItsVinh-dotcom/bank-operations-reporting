@@ -1,0 +1,6 @@
+loan_group,loan_group_name,dpd_from,dpd_to,is_npl,specific_provision_rate
+1,Nợ đủ tiêu chuẩn,0,9,0,0.00
+2,Nợ cần chú ý,10,90,0,0.05
+3,Nợ dưới tiêu chuẩn,91,180,1,0.20
+4,Nợ nghi ngờ,181,360,1,0.50
+5,Nợ có khả năng mất vốn,361,99999,1,1.00

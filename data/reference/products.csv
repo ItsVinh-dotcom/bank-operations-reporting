@@ -1,0 +1,20 @@
+product_code,product_name,product_group,product_type,customer_type,term_months_min,term_months_max
+CASA_IND,Tài khoản thanh toán cá nhân,Huy động,CASA,IND,,
+CASA_PAY,Tài khoản thanh toán nhận lương,Huy động,CASA,IND,,
+CASA_SME,Tài khoản thanh toán doanh nghiệp,Huy động,CASA,SME,,
+TD_COUNTER,Tiết kiệm có kỳ hạn tại quầy,Huy động,TERM,IND,1,36
+TD_ONLINE,Tiết kiệm online,Huy động,TERM,IND,1,24
+TD_SME,Tiền gửi có kỳ hạn doanh nghiệp,Huy động,TERM,SME,1,12
+LN_MORTGAGE,Vay mua nhà,Tín dụng,LOAN,IND,120,300
+LN_AUTO,Vay mua ô tô,Tín dụng,LOAN,IND,36,84
+LN_CONSUMER,Vay tiêu dùng tín chấp,Tín dụng,LOAN,IND,12,60
+LN_TDSECURED,Vay cầm cố sổ tiết kiệm,Tín dụng,LOAN,IND,3,12
+LN_HOUSEHOLD,Vay sản xuất kinh doanh hộ kinh doanh,Tín dụng,LOAN,IND,12,60
+LN_CREDITCARD,Dư nợ thẻ tín dụng,Tín dụng,LOAN,IND,,
+LN_SME_WC,Vay vốn lưu động doanh nghiệp,Tín dụng,LOAN,SME,3,12
+LN_SME_TERM,Vay trung dài hạn doanh nghiệp,Tín dụng,LOAN,SME,24,84
+CD_DEBIT_DOM,Thẻ ghi nợ nội địa,Thẻ,CARD,IND,,
+CD_DEBIT_INT,Thẻ ghi nợ quốc tế,Thẻ,CARD,IND,,
+CD_CREDIT_CLASSIC,Thẻ tín dụng Chuẩn,Thẻ,CARD,IND,,
+CD_CREDIT_GOLD,Thẻ tín dụng Vàng,Thẻ,CARD,IND,,
+CD_CREDIT_PLATINUM,Thẻ tín dụng Bạch Kim,Thẻ,CARD,IND,,

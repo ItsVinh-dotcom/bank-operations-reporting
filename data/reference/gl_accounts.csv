@@ -1,0 +1,19 @@
+gl_account,gl_name,gl_group,sign
+4211,Tiền gửi không kỳ hạn của khách hàng bằng VND,Huy động,C
+4212,Tiền gửi có kỳ hạn của tổ chức kinh tế bằng VND,Huy động,C
+4232,Tiền gửi tiết kiệm có kỳ hạn bằng VND,Huy động,C
+2111,Cho vay ngắn hạn - Nợ đủ tiêu chuẩn,Tín dụng,D
+2112,Cho vay ngắn hạn - Nợ cần chú ý,Tín dụng,D
+2113,Cho vay ngắn hạn - Nợ dưới tiêu chuẩn,Tín dụng,D
+2114,Cho vay ngắn hạn - Nợ nghi ngờ,Tín dụng,D
+2115,Cho vay ngắn hạn - Nợ có khả năng mất vốn,Tín dụng,D
+2121,Cho vay trung hạn - Nợ đủ tiêu chuẩn,Tín dụng,D
+2122,Cho vay trung hạn - Nợ cần chú ý,Tín dụng,D
+2123,Cho vay trung hạn - Nợ dưới tiêu chuẩn,Tín dụng,D
+2124,Cho vay trung hạn - Nợ nghi ngờ,Tín dụng,D
+2125,Cho vay trung hạn - Nợ có khả năng mất vốn,Tín dụng,D
+2131,Cho vay dài hạn - Nợ đủ tiêu chuẩn,Tín dụng,D
+2132,Cho vay dài hạn - Nợ cần chú ý,Tín dụng,D
+2133,Cho vay dài hạn - Nợ dưới tiêu chuẩn,Tín dụng,D
+2134,Cho vay dài hạn - Nợ nghi ngờ,Tín dụng,D
+2135,Cho vay dài hạn - Nợ có khả năng mất vốn,Tín dụng,D

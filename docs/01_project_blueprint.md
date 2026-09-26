@@ -1,6 +1,6 @@
 # Bản thiết kế tổng thể: Hệ thống báo cáo vận hành DLB
 
-*Phiên bản 0.1 (bản nháp để duyệt), 25/09/2026*
+*Phiên bản 1.0, 25/09/2026. Nền tảng: PostgreSQL, Python, Excel, Power BI.*
 
 ## 1. Mục tiêu
 
@@ -72,9 +72,9 @@ Các chỉ số dưới đây sẽ được **chốt theo báo cáo tài chính 
 | `ATM_EVENT` | Sự kiện ATM: hoạt động, lỗi, hết tiền | Theo ngày |
 | `BRANCH_QUEUE` | Lượt phục vụ tại quầy: thời gian chờ, thời gian phục vụ | Theo ngày |
 | `COMPLAINT` | Khiếu nại: kênh, loại, thời điểm tiếp nhận/xử lý, SLA | Theo ngày |
-| `PLAN` (Excel) | Kế hoạch chỉ tiêu theo chi nhánh, tháng | Theo năm, điều chỉnh theo quý |
+| `PLAN` (Excel, không phải file core) | Kế hoạch chỉ tiêu theo chi nhánh, tháng | Theo năm, điều chỉnh theo quý |
 
-## 5. Data Warehouse (SQL Server: `DLB_DWH`)
+## 5. Data Warehouse (PostgreSQL: `dlb_dwh`)
 
 **Schema:** `stg` (staging), `dwh` (lõi), `mart` (báo cáo), `dq` (chất lượng dữ liệu), `ctl` (điều khiển batch).
 
@@ -94,7 +94,7 @@ Các chỉ số dưới đây sẽ được **chốt theo báo cáo tài chính 
 | `FactComplaint` | Khiếu nại |
 | `FactPlan` | Chi nhánh × chỉ tiêu × tháng |
 
-**Stored procedure chính:** `ctl.usp_RunEOD` (điều phối batch), `dwh.usp_LoadDim*` (SCD2), `dwh.usp_LoadFact*`, `dwh.usp_ClassifyLoanGroup` (phân nhóm nợ theo số ngày quá hạn), `mart.usp_BuildMonthly*`, `dq.usp_ReconcileGL`.
+**Procedure chính:** `ctl.sp_process_batch` (điều phối lô), `dwh.sp_load_branch` / `dwh.sp_load_customer` (SCD2), `dwh.sp_load_contracts`, `dwh.sp_load_casa_txn`, `dwh.sp_load_snapshots` (tính lại nhóm nợ, dự phòng), `dwh.sp_load_cards_ops`, `dq.sp_run_checks`, `mart.sp_refresh`.
 
 ## 6. Danh mục báo cáo
 
@@ -118,14 +118,14 @@ Các chỉ số dưới đây sẽ được **chốt theo báo cáo tài chính 
 | Module | Chức năng |
 |---|---|
 | `generator/` | Mô phỏng core banking theo ngày: vòng đời khách hàng, tài khoản, khoản vay; mùa vụ (Tết, cuối quý, cuối năm); phân phối lệch; sự kiện cài sẵn; lỗi dữ liệu có chủ đích |
-| `etl/` | Kiểm tra trailer, nạp file vào `stg`, gọi `ctl.usp_RunEOD`, ghi log batch |
+| `etl/` | Kiểm tra trailer, nạp file vào `stg`, gọi `ctl.sp_process_batch`, ghi log lô |
 | `data_quality/` | Bộ quy tắc kiểm tra (đầy đủ, hợp lệ, duy nhất, nhất quán, đối chiếu), xuất báo cáo lỗi |
 | `analytics/` | Dự báo nợ xấu, chấm điểm tín dụng, dự đoán khách rời bỏ, phân khúc RFM |
 | `automation/` | Xuất báo cáo Excel T-1 theo từng chi nhánh, soạn email tóm tắt |
 
 ## 8. Excel
 
-- `PLAN_2024-2026.xlsx`: giao chỉ tiêu theo chi nhánh/tháng, có phân bổ từ chỉ tiêu toàn hàng.
+- `KE_HOACH_KINH_DOANH_2024_2026.xlsx`: giao chỉ tiêu theo chi nhánh/tháng, có phân bổ từ chỉ tiêu toàn hàng (đã làm).
 - `RECON_GL.xlsx`: đối chiếu chi tiết với GL, đánh dấu chênh lệch.
 - `DAILY_BRANCH_REPORT.xlsx`: mẫu báo cáo ngày kết nối SQL bằng Power Query, có định dạng chuẩn.
 
@@ -156,11 +156,11 @@ Các chỉ số dưới đây sẽ được **chốt theo báo cáo tài chính 
 ## 11. Quy ước
 
 - **Commit:** `feat: ...`, `fix: ...`, `docs: ...`, `sql: ...`
-- **Đặt tên SQL:** `PascalCase` cho bảng, tiền tố `usp_` cho stored procedure, `vw_` cho view.
+- **Đặt tên SQL:** `snake_case`; tiền tố `dim_`, `fact_`, `sp_` (procedure), `f_` (function), `v_` (view).
 - **Dữ liệu lớn không đưa lên GitHub:** `data/raw` sinh lại bằng `python/generator` với `random_seed` cố định, nên ai clone về chạy cũng ra cùng một bộ dữ liệu.
 
-## 12. Cần duyệt
+## 12. Quyết định đã chốt
 
-1. Tên ngân hàng hư cấu "Đông Lam" (`DLB`): giữ hay đổi?
-2. Quy mô (~40 điểm giao dịch, ~52.000 khách hàng, 2024–08/2026) có phù hợp máy của bạn không?
-3. Có thêm hoặc bớt báo cáo nào trong mục 6?
+1. Tên ngân hàng hư cấu: Ngân hàng TMCP Đông Lam (`DLB`).
+2. Quy mô: 40 điểm giao dịch, 12.000 KH cá nhân + 500 SME, dữ liệu 31/12/2023 – 31/08/2026.
+3. Cơ sở dữ liệu: PostgreSQL (thay cho SQL Server trong bản nháp).

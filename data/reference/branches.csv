@@ -1,0 +1,41 @@
+branch_code,branch_name,branch_level,parent_branch_code,old_province_code,district,open_date,size_weight,n_atm
+100,CN Sở Giao Dịch,CN,,79,Quận 1,2008-03-15,1.60,3
+101,PGD Bến Thành,PGD,100,79,Quận 1,2010-06-01,0.90,2
+102,PGD Nguyễn Trãi,PGD,100,79,Quận 5,2011-09-12,0.80,1
+103,PGD Phú Mỹ Hưng,PGD,100,79,Quận 7,2013-04-20,1.10,2
+110,CN Sài Gòn,CN,,79,Quận 3,2009-01-10,1.40,3
+111,PGD Tân Bình,PGD,110,79,Quận Tân Bình,2012-02-01,0.85,2
+112,PGD Gò Vấp,PGD,110,79,Quận Gò Vấp,2014-08-18,0.75,1
+113,PGD Tân An,PGD,110,80,TP Tân An,2018-05-07,0.45,1
+120,CN Thủ Đức,CN,,79,TP Thủ Đức,2012-10-01,1.20,3
+121,PGD Thảo Điền,PGD,120,79,TP Thủ Đức,2016-03-21,0.95,1
+122,PGD Biên Hòa,PGD,120,75,TP Biên Hòa,2015-11-02,0.70,2
+123,PGD Long Thành,PGD,120,75,Huyện Long Thành,2021-06-15,0.40,1
+130,CN Bình Dương,CN,,74,TP Thủ Dầu Một,2011-05-09,1.00,2
+131,PGD Dĩ An,PGD,130,74,TP Dĩ An,2017-09-25,0.55,1
+140,CN Vũng Tàu,CN,,77,TP Vũng Tàu,2013-07-01,0.80,2
+141,PGD Bà Rịa,PGD,140,77,TP Bà Rịa,2019-12-02,0.40,1
+200,CN Hà Nội,CN,,01,Quận Hoàn Kiếm,2008-06-02,1.50,3
+201,PGD Cầu Giấy,PGD,200,01,Quận Cầu Giấy,2010-10-11,1.00,2
+202,PGD Đống Đa,PGD,200,01,Quận Đống Đa,2011-03-14,0.85,1
+203,PGD Long Biên,PGD,200,01,Quận Long Biên,2015-05-18,0.65,1
+204,PGD Vinh,PGD,200,40,TP Vinh,2016-08-08,0.50,1
+210,CN Thăng Long,CN,,01,Quận Tây Hồ,2012-01-16,1.20,2
+211,PGD Hà Đông,PGD,210,01,Quận Hà Đông,2014-09-22,0.80,2
+212,PGD Thanh Xuân,PGD,210,01,Quận Thanh Xuân,2013-12-09,0.75,1
+213,PGD Thanh Hóa,PGD,210,38,TP Thanh Hóa,2018-04-02,0.45,1
+220,CN Hải Phòng,CN,,31,Quận Ngô Quyền,2010-04-19,0.95,2
+221,PGD Hạ Long,PGD,220,22,TP Hạ Long,2016-06-06,0.55,1
+222,PGD Lê Chân,PGD,220,31,Quận Lê Chân,2019-03-11,0.45,1
+230,CN Hải Dương,CN,,30,TP Hải Dương,2014-02-24,0.70,1
+240,CN Bắc Ninh,CN,,27,TP Bắc Ninh,2015-10-05,0.85,2
+241,PGD Bắc Giang,PGD,240,24,TP Bắc Giang,2020-07-13,0.45,1
+242,PGD Vĩnh Yên,PGD,240,26,TP Vĩnh Yên,2021-11-01,0.40,1
+300,CN Đà Nẵng,CN,,48,Quận Hải Châu,2010-08-23,1.00,2
+301,PGD Hội An,PGD,300,49,TP Hội An,2017-04-17,0.45,1
+302,PGD Huế,PGD,300,46,TP Huế,2016-10-24,0.50,1
+303,PGD Nha Trang,PGD,300,56,TP Nha Trang,2018-08-27,0.55,1
+400,CN Cần Thơ,CN,,92,Quận Ninh Kiều,2011-11-14,0.90,2
+401,PGD Sóc Trăng,PGD,400,94,TP Sóc Trăng,2019-05-20,0.40,1
+402,PGD Long Xuyên,PGD,400,89,TP Long Xuyên,2018-01-08,0.45,1
+403,PGD Vĩnh Long,PGD,400,86,TP Vĩnh Long,2020-09-14,0.40,1

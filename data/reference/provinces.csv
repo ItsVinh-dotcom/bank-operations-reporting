@@ -1,0 +1,35 @@
+province_code,province_name,province_type,region,is_merged_2025
+01,Hà Nội,Thành phố,Miền Bắc,0
+04,Cao Bằng,Tỉnh,Miền Bắc,0
+08,Tuyên Quang,Tỉnh,Miền Bắc,1
+11,Điện Biên,Tỉnh,Miền Bắc,0
+12,Lai Châu,Tỉnh,Miền Bắc,0
+14,Sơn La,Tỉnh,Miền Bắc,0
+15,Lào Cai,Tỉnh,Miền Bắc,1
+19,Thái Nguyên,Tỉnh,Miền Bắc,1
+20,Lạng Sơn,Tỉnh,Miền Bắc,0
+22,Quảng Ninh,Tỉnh,Miền Bắc,0
+24,Bắc Ninh,Tỉnh,Miền Bắc,1
+25,Phú Thọ,Tỉnh,Miền Bắc,1
+31,Hải Phòng,Thành phố,Miền Bắc,1
+33,Hưng Yên,Tỉnh,Miền Bắc,1
+37,Ninh Bình,Tỉnh,Miền Bắc,1
+38,Thanh Hóa,Tỉnh,Miền Trung,0
+40,Nghệ An,Tỉnh,Miền Trung,0
+42,Hà Tĩnh,Tỉnh,Miền Trung,0
+44,Quảng Trị,Tỉnh,Miền Trung,1
+46,Huế,Thành phố,Miền Trung,0
+48,Đà Nẵng,Thành phố,Miền Trung,1
+51,Quảng Ngãi,Tỉnh,Miền Trung,1
+52,Gia Lai,Tỉnh,Miền Trung,1
+56,Khánh Hòa,Tỉnh,Miền Trung,1
+66,Đắk Lắk,Tỉnh,Miền Trung,1
+68,Lâm Đồng,Tỉnh,Miền Trung,1
+75,Đồng Nai,Tỉnh,Miền Nam,1
+79,TP. Hồ Chí Minh,Thành phố,Miền Nam,1
+80,Tây Ninh,Tỉnh,Miền Nam,1
+82,Đồng Tháp,Tỉnh,Miền Nam,1
+86,Vĩnh Long,Tỉnh,Miền Nam,1
+91,An Giang,Tỉnh,Miền Nam,1
+92,Cần Thơ,Thành phố,Miền Nam,1
+96,Cà Mau,Tỉnh,Miền Nam,1

@@ -1,71 +1,97 @@
 # Bank Operations Reporting
 
-Hệ thống báo cáo vận hành end-to-end cho một **ngân hàng TMCP tư nhân tầm trung, mạnh bán lẻ** tại Việt Nam, mô phỏng đúng luồng dữ liệu thực tế: *Core Banking → File trích xuất cuối ngày → Data Warehouse → Data Mart → Báo cáo*.
+Hệ thống báo cáo vận hành end-to-end cho một **ngân hàng TMCP tư nhân tầm trung, mạnh bán lẻ** tại Việt Nam. Dự án mô phỏng đúng luồng dữ liệu của một ngân hàng thật:
 
-> **Lưu ý:** Toàn bộ dữ liệu là **giả lập**, được hiệu chỉnh theo số liệu công khai (báo cáo tài chính các ngân hàng niêm yết, thống kê ngành). "Ngân hàng TMCP Đông Lam" (mã `DLB`) là tên **hư cấu**, không đại diện cho bất kỳ ngân hàng nào.
+```
+Core Banking (mô phỏng) ──EOD──▶ file trích xuất ──Python ETL──▶ PostgreSQL DWH ──▶ Data Mart ──▶ Power BI / Excel
+                                 (pipe-delimited,        │           (stg → dwh → mart)
+                                  header + trailer)      └── kiểm soát chất lượng dữ liệu (dq)
+```
+
+> **Dữ liệu giả lập.** "Ngân hàng TMCP Đông Lam" (mã `DLB`) là tên **hư cấu**. Toàn bộ dữ liệu do `python/generator` sinh ra và được hiệu chỉnh theo số liệu công khai của ngành ngân hàng Việt Nam (xem [docs/02_calibration.md](docs/02_calibration.md)). Không chứa dữ liệu của bất kỳ ngân hàng hay khách hàng thật nào.
+
+## Quy mô dữ liệu
+
+| Hạng mục | Giá trị |
+|---|---|
+| Giai đoạn | 31/12/2023 (migration) → 31/08/2026 |
+| Mạng lưới | 12 chi nhánh + 28 phòng giao dịch, 61 ATM, theo **34 tỉnh/thành sau sáp nhập 01/07/2025** |
+| Khách hàng | 12.000 cá nhân + 500 doanh nghiệp SME |
+| Giao dịch tài khoản | ~3,7 triệu |
+| Giao dịch thẻ tín dụng | ~250 nghìn |
+| Lô dữ liệu | 33 lô lịch sử (tháng) + 21 lô EOD (ngày làm việc tháng 08/2026) |
 
 ## Công cụ
 
-| Công cụ | Vai trò trong dự án |
+| Công cụ | Vai trò |
 |---|---|
-| **Python** | Sinh dữ liệu core banking, ETL, kiểm tra chất lượng dữ liệu, phân tích nâng cao, tự động hóa báo cáo |
-| **SQL Server** | Data Warehouse (staging → core → mart), stored procedure xử lý cuối ngày, đối chiếu số liệu |
-| **Excel** | Kế hoạch chỉ tiêu, đối chiếu sổ cái, báo cáo định kỳ theo mẫu (Power Query) |
-| **Power BI** | Mô hình dữ liệu, DAX, dashboard điều hành, phân quyền theo chi nhánh (RLS) |
+| **Python** | Mô phỏng core banking, ETL, kiểm thử (pytest), tự động hóa |
+| **PostgreSQL** | Data warehouse: staging → dimension/fact (SCD2, partition) → mart; stored procedure xử lý lô, đối chiếu, DQ |
+| **Excel** | Kế hoạch kinh doanh (giả định, phân bổ chi nhánh, công thức) được ETL nạp vào DWH |
+| **Power BI** | Dashboard điều hành, huy động, tín dụng, thẻ & kênh số, vận hành, chất lượng dữ liệu |
 
-## Cấu trúc thư mục
+## Chạy nhanh
+
+```bash
+pip install -r requirements.txt
+copy .env.example .env                                   # điền mật khẩu PostgreSQL
+python -m python.generator.run_generator --clean         # sinh dữ liệu (~2 phút)
+psql -U postgres -f sql/00_setup/00_create_database.sql
+python -m python.etl.setup_db                            # tạo đối tượng DB
+python -m python.etl.run_pipeline --mode all             # nạp 54 lô
+python -m python.etl.load_plan                           # nạp kế hoạch từ Excel
+```
+
+Chi tiết từng bước và cách xử lý lỗi: [docs/05_runbook.md](docs/05_runbook.md).
+
+## Cấu trúc
 
 ```
 bank-operations-reporting/
-├── config/          # Cấu hình mẫu (config.example.yaml)
+├── config/              # cấu hình mẫu
 ├── data/
-│   ├── raw/         # File trích xuất core banking (gitignored, sinh lại bằng script)
-│   ├── staging/     # Dữ liệu trung gian (gitignored)
-│   ├── reference/   # Danh mục: tỉnh/thành, sản phẩm, mã ngành...
-│   └── sample/      # Mẫu dữ liệu nhỏ để xem nhanh
-├── docs/            # Thiết kế, data dictionary, nghiệp vụ, hình ảnh
-├── sql/
-│   ├── 00_setup/    # Tạo database, schema
-│   ├── 01_staging/  # Bảng staging (giống cấu trúc file core)
-│   ├── 02_core/     # Dim/Fact của DWH (SCD Type 2)
-│   ├── 03_mart/     # Data mart phục vụ báo cáo
-│   ├── 04_procedures/ # Batch cuối ngày, tính toán, đối chiếu
-│   ├── 05_reports/  # Truy vấn báo cáo
-│   └── 99_tests/    # Kiểm thử số liệu
+│   ├── reference/       # danh mục: 34 tỉnh/thành + bảng chuyển đổi 63→34, chi nhánh, sản phẩm, lãi suất, ngày lễ...
+│   └── raw/             # file trích xuất core banking (gitignored, sinh lại bằng generator)
+├── docs/                # thiết kế, hiệu chỉnh, từ điển dữ liệu, DQ, runbook
+├── excel/templates/     # kế hoạch kinh doanh 2024–2026
 ├── python/
-│   ├── generator/   # Mô phỏng hệ thống core banking
-│   ├── etl/         # Nạp file cuối ngày vào SQL
-│   ├── data_quality/# Kiểm tra chất lượng dữ liệu
-│   ├── analytics/   # Dự báo nợ xấu, chấm điểm tín dụng, churn
-│   └── automation/  # Xuất và gửi báo cáo tự động
-├── notebooks/       # Phân tích khám phá (Jupyter)
-├── excel/           # Mẫu và báo cáo Excel
-└── powerbi/         # Dự án Power BI (PBIP) và theme
+│   ├── common/          # cấu hình, layout file
+│   ├── generator/       # mô phỏng core banking + dựng file kế hoạch Excel
+│   └── etl/             # setup DB, nạp lô, nạp kế hoạch
+├── sql/
+│   ├── 00_setup/        # database, schema, bảng điều khiển lô
+│   ├── 01_staging/      # bảng staging
+│   ├── 02_core/         # dimension, fact, bảng DQ
+│   ├── 03_mart/         # mart báo cáo
+│   ├── 04_procedures/   # nạp SCD2, fact, DQ, refresh mart, điều phối lô
+│   └── 05_reports/      # view báo cáo
+└── tests/               # pytest
 ```
 
-## Bắt đầu
+## Điểm nhấn nghiệp vụ
 
-```bash
-git clone https://github.com/<your-username>/bank-operations-reporting.git
-cd bank-operations-reporting
-python -m venv .venv
-.venv\Scripts\activate          # Windows
-pip install -r requirements.txt
-copy .env.example .env           # sau đó chỉnh thông tin kết nối SQL Server
-```
-
-Yêu cầu: Python 3.11+, SQL Server 2019+ (Developer/Express) + SSMS, ODBC Driver 18, Excel 365, Power BI Desktop.
+- **Nhịp EOD thật:** file theo ngày làm việc; giao dịch cuối tuần/ngày lễ hạch toán ngày làm việc kế tiếp; file lỗi trailer bị từ chối và dùng file gửi lại `_R1`.
+- **Sáp nhập tỉnh 01/07/2025:** chi nhánh và khách hàng đổi mã/tên tỉnh, xử lý bằng **SCD Type 2**.
+- **Phân loại nợ 5 nhóm** theo số ngày quá hạn, kết hợp nhóm nợ CIC, trích lập dự phòng cụ thể và chung, xử lý rủi ro, ma trận chuyển nhóm nợ.
+- **Số dư sinh từ giao dịch:** số dư đầu kỳ + phát sinh = số dư cuối kỳ cho mọi tài khoản; đối chiếu chi tiết với sổ cái (GL).
+- **Mùa vụ & sự kiện:** Tết (rút tiền ATM, thưởng tháng 13), chạy số cuối quý, chiến dịch thẻ tín dụng, nợ xấu tăng ở cụm Cần Thơ, sự cố ATM, lỗi app.
+- **15 quy tắc chất lượng dữ liệu** với lỗi được cài sẵn để phát hiện.
 
 ## Tài liệu
 
-- [Bản thiết kế tổng thể](docs/01_project_blueprint.md)
+1. [Thiết kế tổng thể](docs/01_project_blueprint.md)
+2. [Hiệu chỉnh số liệu & nguồn](docs/02_calibration.md)
+3. [Từ điển dữ liệu](docs/03_data_dictionary.md)
+4. [Chất lượng dữ liệu](docs/04_data_quality.md)
+5. [Hướng dẫn chạy](docs/05_runbook.md)
 
 ## Lộ trình
 
-- [x] Khởi tạo repo, thiết kế tổng thể
-- [ ] Giai đoạn 1: Danh mục tham chiếu và bộ sinh dữ liệu core banking
-- [ ] Giai đoạn 2: Data Warehouse và batch cuối ngày (SQL)
-- [ ] Giai đoạn 3: ETL và kiểm tra chất lượng dữ liệu (Python)
-- [ ] Giai đoạn 4: Excel: kế hoạch, đối chiếu, báo cáo mẫu
-- [ ] Giai đoạn 5: Power BI dashboard
-- [ ] Giai đoạn 6: Phân tích nâng cao và tự động hóa
+- [x] Thiết kế tổng thể, danh mục tham chiếu
+- [x] Bộ sinh dữ liệu core banking (history + EOD)
+- [x] Data warehouse PostgreSQL, batch EOD, SCD2, mart
+- [x] ETL Python, kiểm soát chất lượng dữ liệu, kiểm thử
+- [x] Kế hoạch kinh doanh Excel → DWH
+- [ ] Power BI: mô hình dữ liệu, DAX, dashboard
+- [ ] Excel: báo cáo ngày T-1 (Power Query), file đối chiếu GL
+- [ ] Phân tích nâng cao: dự báo nợ xấu, chấm điểm tín dụng, khách hàng rời bỏ
