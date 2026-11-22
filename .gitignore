@@ -37,3 +37,6 @@ Claude outputs/
 # Logs
 logs/
 *.log
+
+# AI working notes
+Claude outputs/
